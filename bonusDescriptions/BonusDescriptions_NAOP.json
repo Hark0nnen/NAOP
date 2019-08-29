@@ -1,0 +1,58 @@
+{
+  "Settings": [
+    {
+      "Bonus": "SMAmmo",
+      "Short": "SM Ammo",
+      "Long": "Smart Missile Ammo",
+      "Full": "Smart Missile Ammo - {0} Shots"
+    },
+    {
+      "Bonus": "IsParticleWeapon",
+      "Short": "Particle Weapon",
+      "Long": "Particle Weapon",
+      "Full": "Particle Weapons: high accuracy; inflicts status effects on target; require constant cooling; cooldown for safe firing"
+    },
+    {
+      "Bonus": "IsSmartMissile",
+      "Short": "Smart Missiles",
+      "Long": "Smart Missiles",
+      "Full": "Smart Missiles: high accuracy; long range; accuracy bonus against a previously attacked target"
+    },
+    {
+      "Bonus": "IsCoilLauncher",
+      "Short": "CL Missiles",
+      "Long": "Coil-Launched Missiles",
+      "Full": "Coil-Launched Missiles: extreme range; high accuracy; high damage; passive heat generation"
+    },
+    {
+      "Bonus": "ActiveEvaPips",
+      "Short": "{0} Eva.Pips",
+      "Long": "{0} Evasion Pips",
+      "Full": "{0} Evasion Pips gained from movement when active"
+    },
+    {
+      "Bonus": "FailStab",
+      "Short": "{0} Stab.Dmg.Fail.",
+      "Long": "{0} Failure Stab..Dmg.",
+      "Full": "{0} stability damage on failure"
+    },
+    {
+      "Bonus": "ActiveSignature",
+      "Short": "{0} Sig",
+      "Long": "{0} Signature",
+      "Full": "{0} sensor signature when active"
+    },
+    {
+      "Bonus": "ActiveDamageTaken",
+      "Short": "{0} Dmg.Tkn",
+      "Long": "{0} Damage taken",
+      "Full": "{0} damage taken when active"
+    },
+    {
+      "Bonus": "Predator",
+      "Short": "Predator Armor",
+      "Long": "Predator Armor",
+      "Full": "Provides Stealth Charges. Absorbs damage. Making unit harder to hit. Is Self Repairing."
+    }
+  ]
+}
