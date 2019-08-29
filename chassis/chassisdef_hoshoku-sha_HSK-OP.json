@@ -1,0 +1,315 @@
+{
+  "Custom": {
+  },
+  "ChassisTags": {
+    "items": [
+      "mr-resize-0.9"
+    ],
+    "tagSetSourceFile": ""
+  },
+  "FixedEquipment": [
+    {
+      "ComponentDefID": "Weapon_Thunder_Blade",
+      "ComponentDefType": "Weapon",
+      "DamageLevel": "Functional",
+      "GUID": null,
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "MountedLocation": "RightArm",
+      "SimGameUID": "",
+      "hasPrefabName": false,
+      "prefabName": null
+    },
+    {
+      "ComponentDefID": "Weapon_Thunder_Blade",
+      "ComponentDefType": "Weapon",
+      "DamageLevel": "Functional",
+      "GUID": null,
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "MountedLocation": "LeftArm",
+      "SimGameUID": "",
+      "hasPrefabName": false,
+      "prefabName": null
+    },
+    {
+      "ComponentDefID": "Gear_Articulated_Gyro",
+      "ComponentDefType": "JumpJet",
+      "DamageLevel": "Functional",
+      "GUID": null,
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "MountedLocation": "CenterTorso",
+      "SimGameUID": "",
+      "hasPrefabName": false,
+      "prefabName": null
+    },
+    {
+      "ComponentDefID": "Gear_JumpJet_Directional_Linked",
+      "ComponentDefType": "JumpJet",
+      "DamageLevel": "Functional",
+      "GUID": null,
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "MountedLocation": "RightTorso",
+      "SimGameUID": "",
+      "hasPrefabName": false,
+      "prefabName": null
+    },
+    {
+      "ComponentDefID": "Gear_JumpJet_Directional_Linked",
+      "ComponentDefType": "JumpJet",
+      "DamageLevel": "Functional",
+      "GUID": null,
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "MountedLocation": "LeftTorso",
+      "SimGameUID": "",
+      "hasPrefabName": false,
+      "prefabName": null
+    },
+    {
+      "ComponentDefID": "Gear_JumpJet_Directional_Linked",
+      "ComponentDefType": "JumpJet",
+      "DamageLevel": "Functional",
+      "GUID": null,
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "MountedLocation": "RightLeg",
+      "SimGameUID": "",
+      "hasPrefabName": false,
+      "prefabName": null
+    },
+    {
+      "ComponentDefID": "Gear_JumpJet_Directional_Linked",
+      "ComponentDefType": "JumpJet",
+      "DamageLevel": "Functional",
+      "GUID": null,
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "MountedLocation": "LeftLeg",
+      "SimGameUID": "",
+      "hasPrefabName": false,
+      "prefabName": null
+    },
+    {
+      "ComponentDefID": "Gear_Nano_Repair",
+      "ComponentDefType": "Upgrade",
+      "DamageLevel": "Functional",
+      "GUID": null,
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "MountedLocation": "RightTorso",
+      "SimGameUID": "",
+      "hasPrefabName": false,
+      "prefabName": null
+    },
+    {
+      "ComponentDefID": "emod_armorslots_predator",
+      "ComponentDefType": "Upgrade",
+      "DamageLevel": "Functional",
+      "GUID": null,
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "MountedLocation": "CenterTorso",
+      "SimGameUID": "",
+      "hasPrefabName": false,
+      "prefabName": null
+    }
+  ],
+  "Description": {
+    "Cost": 20000000,
+    "Details": "The No-Dachi was designed by Cosby as a test bed for two new technologies. The first was the Sword. The seven-meter long katana that the 'Mech wields was designed to counter the Hatchet used by some Federated Commonwealth 'Mechs. Because the samurai mindset had been so successfully drilled into the warriors of the Draconis Combine, they were loathe to use a ''barbaric'' ax. The second new technology was the Triple Strength Myomer that had been pioneered by the Federated Suns. The new melee weapon, combined with the improved myomers, make the No-Dachi a dangerous in-fighter. <b><color=#53ff1a>Restricted Actuators- Left: Lower</color></b>",
+    "Icon": "HatchetMan3",
+    "Id": "chassisdef_hoshoku-sha_HSK-OP",
+    "Manufacturer": null,
+    "Model": null,
+    "Name": "Hoshoku-sha",
+    "Purchasable": false,
+    "Rarity": 99,
+    "UIName": "Hoshoku-sha"
+  },
+  "HardpointDataDefID": "hardpointdatadef_hatchetman",
+  "MovementCapDefID": "movedef_hatchetman_HCT-3F",
+  "PathingCapDefID": "pathingdef_medium",
+  "PrefabBase": "hatchetman",
+  "PrefabIdentifier": "chrPrfMech_hatchetmanBase-001",
+  "weightClass": "MEDIUM",
+  "Tonnage": 40,
+  "InitialTonnage": 0,
+  "MaxJumpjets": 8,
+  "MeleeDamage": 20,
+  "MeleeInstability": 10,
+  "MeleeToHitModifier": 0,
+  "DFADamage": 40,
+  "DFAInstability": 20,
+  "DFASelfDamage": 40,
+  "DFAToHitModifier": 0,
+  "PunchesWithLeftArm": false,
+  "Radius": 5,
+  "VisibilityMultiplier": 1,
+  "SensorRangeMultiplier": 1,
+  "Signature": 0,
+  "SpotterDistanceMultiplier": 1,
+  "Stability": 100,
+  "StabilityDefenses": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "StockRole": "Predator",
+  "TopSpeed": 120,
+  "TurnRadius": 90,
+  "Heatsinks": 0,
+  "LOSSourcePositions": [
+    {
+      "x": 0,
+      "y": 14,
+      "z": 0
+    },
+    {
+      "x": 4,
+      "y": 14,
+      "z": 0
+    },
+    {
+      "x": -4,
+      "y": 14,
+      "z": 0
+    }
+  ],
+  "LOSTargetPositions": [
+    {
+      "x": 0,
+      "y": 14,
+      "z": 0
+    },
+    {
+      "x": 4,
+      "y": 14,
+      "z": 0
+    },
+    {
+      "x": -4,
+      "y": 14,
+      "z": 0
+    },
+    {
+      "x": 2.5,
+      "y": 6,
+      "z": 2.5
+    },
+    {
+      "x": -2.5,
+      "y": 6,
+      "z": 2.5
+    }
+  ],
+  "Locations": [
+    {
+      "Hardpoints": [],
+      "InternalStructure": 16,
+      "InventorySlots": 6,
+      "Location": "Head",
+      "MaxArmor": 45,
+      "MaxRearArmor": -1,
+      "Tonnage": 0
+    },
+    {
+      "Hardpoints": [
+        {
+          "Omni": false,
+          "WeaponMount": "AntiPersonnel"
+        },
+        {
+          "Omni": false,
+          "WeaponMount": "AntiPersonnel"
+        }
+      ],
+      "InternalStructure": 40,
+      "InventorySlots": 12,
+      "Location": "LeftArm",
+      "MaxArmor": 80,
+      "MaxRearArmor": -1,
+      "Tonnage": 0
+    },
+    {
+      "Hardpoints": [
+	{
+          "WeaponMount": "AntiPersonnel",
+          "Omni": false
+        }
+      ],
+      "InternalStructure": 60,
+      "InventorySlots": 12,
+      "Location": "LeftTorso",
+      "MaxArmor": 120,
+      "MaxRearArmor": 60,
+      "Tonnage": 0
+    },
+    {
+      "Hardpoints": [],
+      "InternalStructure": 80,
+      "InventorySlots": 12,
+      "Location": "CenterTorso",
+      "MaxArmor": 160,
+      "MaxRearArmor": 80,
+      "Tonnage": 0
+    },
+    {
+      "Hardpoints": [
+        {
+          "Omni": false,
+          "WeaponMount": "AntiPersonnel"
+        }
+      ],
+      "InternalStructure": 60,
+      "InventorySlots": 12,
+      "Location": "RightTorso",
+      "MaxArmor": 120,
+      "MaxRearArmor": 60,
+      "Tonnage": 0
+    },
+    {
+      "Hardpoints": [
+       {
+          "Omni": false,
+          "WeaponMount": "AntiPersonnel"
+        },
+        {
+          "Omni": false,
+          "WeaponMount": "AntiPersonnel"
+        }
+      ],
+      "InternalStructure": 40,
+      "InventorySlots": 12,
+      "Location": "RightArm",
+      "MaxArmor": 80,
+      "MaxRearArmor": -1,
+      "Tonnage": 0
+    },
+    {
+      "Hardpoints": [],
+      "InternalStructure": 60,
+      "InventorySlots": 6,
+      "Location": "LeftLeg",
+      "MaxArmor": 120,
+      "MaxRearArmor": -1,
+      "Tonnage": 0
+    },
+    {
+      "Hardpoints": [],
+      "InternalStructure": 60,
+      "InventorySlots": 6,
+      "Location": "RightLeg",
+      "MaxArmor": 120,
+      "MaxRearArmor": -1,
+      "Tonnage": 0
+    }
+  ],
+  "VariantName": "HSK-OP",
+  "YangsThoughts": "The No-Dachi was designed by Cosby as a test bed for two new technologies. The first was the Sword. The seven-meter long katana that the 'Mech wields was designed to counter the Hatchet used by some Federated Commonwealth 'Mechs. Because the samurai mindset had been so successfully drilled into the warriors of the Draconis Combine, they were loathe to use a ''barbaric'' ax. The second new technology was the Triple Strength Myomer that had been pioneered by the Federated Suns. The new melee weapon, combined with the improved myomers, make the No-Dachi a dangerous in-fighter. <b><color=#53ff1a>Restricted Actuators- Left: Lower</color></b>"
+}

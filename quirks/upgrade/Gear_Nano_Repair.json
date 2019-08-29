@@ -1,0 +1,72 @@
+{
+    "Custom": {
+        "Category": [
+        ],
+        "BonusDescriptions": {
+            "Bonuses": [
+				"NanoBots",
+				"NanoBotsTurn",
+                "NanoBotsArmor: 10",
+                "NanoBotsStructure: 5"
+            ]
+        },
+        "InventorySorter": {
+            "SortKey": "00027"
+        },
+        "ActivatableComponent": {
+            "ButtonName": "NanoRepair",
+			"CanNotBeActivatedManualy": true,
+			"NoUniqueCheck": true,
+			"ActivationMessage": "Repairs Initiated",
+			"DeactivationMessage": "Repairs Complete",
+            "Repair":{ 
+				"InnerStructure": 5,
+				"Armor": 10,
+				"MechStructureLocations":["Head","LeftArm","LeftTorso","CenterTorso","RightTorso","RightArm","LeftLeg","RightLeg"],
+				"MechArmorLocations":["Head","LeftArm","LeftTorso","CenterTorso","RightTorso","RightArm","LeftLeg","RightLeg","LeftTorsoRear","CenterTorsoRear","RightTorsoRear"],
+				"VehicleLocations":[],
+				"BuildingLocations":[],
+				"AffectInstalledLocation":false,
+				"repairTrigger":{
+					"OnActivation":false,
+					"OnDamage":"None",
+					"AtEndOfTurn":true
+				}
+			} 
+        }
+    },
+    "StatName": null,
+    "RelativeModifier": 0,
+    "AbsoluteModifier": 0,
+    "Description": {
+        "Cost": 2000000,
+        "Rarity": 99,
+        "Purchasable": false,
+        "Manufacturer": "Unknown",
+        "Model": "Self Repair System",
+        "UIName": "NanoBots Repair",
+        "Id": "Gear_Nano_Repair",
+        "Name": "NanoBots Self Repair System",
+        "Details": "A hive of nonamachines which constantly repair any damage a mech receives",
+        "Icon": "uixSvgIcon_action_end"
+    },
+    "BonusValueA": "+ 15% PPC Damage",
+    "BonusValueB": "+ 20% PPC Heat",
+    "ComponentType": "Upgrade",
+    "ComponentSubType": "NotSet",
+    "PrefabIdentifier": "",
+    "BattleValue": 0,
+    "InventorySize": 4,
+    "Tonnage": 0,
+    "AllowedLocations": "Torso",
+    "DisallowedLocations": "All",
+    "CriticalComponent": false,
+    "statusEffects": [],
+    "ComponentTags": {
+        "items": [
+            "component_type_variant",
+            "component_type_variant2"
+        ],
+        "tagSetSourceFile": ""
+    }
+}

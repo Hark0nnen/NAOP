@@ -1,0 +1,592 @@
+{
+    "Custom": {
+        "Category": [
+		   { "CategoryID": "Cockpit" },
+		   { "CategoryID" : "LifeSupportA" },
+		   { "CategoryID" : "LifeSupportB" }
+        ],
+        "WorkOrderCosts": {
+            "Install": {
+                "TechCost": "[[Chassis.Tonnage]]/8",
+                "CBillCost": "[[Chassis.Tonnage]] * 1.3"
+            }
+        },
+        "BonusDescriptions": {
+            "Bonuses": [
+                "TorsoMount",
+                "Initiative: +4",
+                "Health: +10",
+                "Accuracy: +2",
+                "MeleeAcc: +2",
+                "Recoil: -2",
+                "CalledShot: 50%",
+                "StabDamageTaken: -50%",
+                "DFASelfDamage: -25%",
+                "Sensors: +50%",
+                "Sight: +50%",
+                "EvaMax: +2",
+                "PilotOverheat",
+		"PilotShutDown",
+                "IsCockpit"
+            ]
+        },
+		"Linked": {
+            "Links": [
+                {
+                    "ComponentDefId": "Gear_Cockpit_LifeSupportA_Torso",
+                    "Location": "LeftTorso",
+					"ComponentDefType": "Upgrade"
+                },
+                {
+                    "ComponentDefId": "Gear_Cockpit_LifeSupportB_Torso",
+                    "Location": "RightTorso",
+					"ComponentDefType": "Upgrade"
+                }
+            ]
+        },
+        "Sorter": {
+            "Order": 6
+        },
+        "InventorySorter": {
+            "SortKey": "00019"
+        }
+    },
+    "Description": {
+        "Cost": 3000000,
+        "Rarity": 99,
+        "Purchasable": false,
+        "Manufacturer": "Unknown",
+        "Model": "Torso DNI Cockpit",
+        "UIName": "Torso Mount DNI Cockpit",
+        "Id": "Gear_Cockpit_Torsomount_DNI",
+        "Name": "Torso DNI Cockpit",
+        "Details": "You cant really call this a cockpit. Its an armored anti-overload cocoon, with no monitors or controls. All it has is a DNI connector system that is far superior to Clan's EI or WoB's VDNI systems",
+        "Icon": "uixSvgIcon_equipment_Cockpit"
+    },
+    "BonusValueA": "Headshot Immunity",
+    "BonusValueB": "",
+    "ComponentType": "Upgrade",
+    "ComponentSubType": "NotSet",
+    "PrefabIdentifier": "",
+    "BattleValue": 0,
+    "InventorySize": 2,
+    "Tonnage": 4,
+    "AllowedLocations": "CenterTorso",
+    "DisallowedLocations": "All",
+    "CriticalComponent": false,
+    "statusEffects": [
+        {
+            "durationData": {
+                "duration": -1,
+                "ticksOnActivations": false,
+                "useActivationsOfTarget": false,
+                "ticksOnEndOfRound": false,
+                "ticksOnMovements": false,
+                "stackLimit": -1,
+                "clearedWhenAttacked": false
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "triggerLimit": 0,
+                "extendDurationOnTrigger": 0,
+                "specialRules": "NotSet",
+                "effectTargetType": "Creator",
+                "range": 0,
+                "forcePathRebuild": false,
+                "forceVisRebuild": false,
+                "showInTargetPreview": false,
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "CockpitInitativeEffect",
+                "Name": "CockpitTechBonus",
+                "Details": "Provides + 1 Initiative and several buffs.",
+                "Icon": "uixSvgIcon_equipment_Cockpit"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "appliesEachTick": false,
+                "effectsPersistAfterDestruction": false,
+                "statName": "BaseInitiative",
+                "operation": "Int_Add",
+                "modValue": "-4",
+                "modType": "System.Int32",
+                "additionalRules": "NotSet",
+                "targetCollection": "NotSet",
+                "targetWeaponCategory": "NotSet",
+                "targetWeaponType": "NotSet",
+                "targetAmmoCategory": "NotSet",
+                "targetWeaponSubType": "NotSet"
+            },
+            "tagData": null,
+            "floatieData": null,
+            "actorBurningData": null,
+            "vfxData": null,
+            "instantModData": null,
+            "poorlyMaintainedEffectData": null
+        },
+        {
+            "durationData": {
+                "duration": -1,
+                "stackLimit": -1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "effectTargetType": "Creator",
+                "showInStatusPanel": true
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "StatusEffect-Torso_Cockpit",
+                "Name": "Torso Mounted Cockpit",
+                "Details": "+10 Health.",
+                "Icon": "uixSvgIcon_equipment_Cockpit"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "appliesEachTick": false,
+                "effectsPersistAfterDestruction": false,
+                "statName": "BonusHealth",
+                "operation": "Int_Add",
+                "modValue": "10",
+                "modType": "System.Int32",
+                "additionalRules": "NotSet",
+                "targetCollection": "Pilot",
+                "targetWeaponCategory": "NotSet",
+                "targetWeaponType": "NotSet",
+                "targetAmmoCategory": "NotSet",
+                "targetWeaponSubType": "NotSet"
+            }
+        },
+        {
+            "durationData": {
+                "duration": -1,
+                "ticksOnActivations": false,
+                "useActivationsOfTarget": false,
+                "ticksOnEndOfRound": false,
+                "ticksOnMovements": false,
+                "stackLimit": -1,
+                "clearedWhenAttacked": false
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "triggerLimit": 0,
+                "extendDurationOnTrigger": 0,
+                "specialRules": "NotSet",
+                "effectTargetType": "Creator",
+                "range": 0,
+                "forcePathRebuild": false,
+                "forceVisRebuild": false,
+                "showInTargetPreview": false,
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "BAProbe",
+                "Name": "HP-CockpitSensors-Sensor",
+                "Details": "Increased Sensors",
+                "Icon": "uixSvgIcon_equipment_Cockpit"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "appliesEachTick": false,
+                "effectsPersistAfterDestruction": false,
+                "statName": "SensorDistanceAbsolute",
+                "operation": "Float_Multiply",
+                "modValue": "1.5",
+                "modType": "System.Single",
+                "additionalRules": "NotSet",
+                "targetCollection": "NotSet",
+                "targetWeaponCategory": "NotSet",
+                "targetWeaponType": "NotSet",
+                "targetAmmoCategory": "NotSet",
+                "targetWeaponSubType": "NotSet"
+            },
+            "tagData": null,
+            "floatieData": null,
+            "actorBurningData": null,
+            "vfxData": null,
+            "instantModData": null,
+            "poorlyMaintainedEffectData": null
+        },
+            {
+            "durationData": {
+                "duration": -1,
+                "ticksOnActivations": false,
+                "useActivationsOfTarget": false,
+                "ticksOnEndOfRound": false,
+                "ticksOnMovements": false,
+                "stackLimit": -1,
+                "clearedWhenAttacked": false
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "triggerLimit": 0,
+                "extendDurationOnTrigger": 0,
+                "specialRules": "NotSet",
+                "effectTargetType": "Creator",
+                "range": 0,
+                "forcePathRebuild": false,
+                "forceVisRebuild": false,
+                "showInTargetPreview": false,
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "HP-CockpitSensors-Spot",
+                "Name": "SPOTTING DISTANCE INCREASED",
+                "Details": "Increases spotting distance by 50%.",
+                "Icon": "uixSvgIcon_equipment_Cockpit"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "appliesEachTick": false,
+                "effectsPersistAfterDestruction": false,
+                "statName": "SpotterDistanceAbsolute",
+                "operation": "Float_Multiply",
+                "modValue": "1.5",
+                "modType": "System.Single",
+                "additionalRules": "NotSet",
+                "targetCollection": "NotSet",
+                "targetWeaponCategory": "NotSet",
+                "targetWeaponType": "NotSet",
+                "targetAmmoCategory": "NotSet",
+                "targetWeaponSubType": "NotSet"
+            },
+            "tagData": null,
+            "floatieData": null,
+            "actorBurningData": null,
+            "vfxData": null,
+            "instantModData": null,
+            "poorlyMaintainedEffectData": null
+        },
+        {
+            "durationData": {
+                "duration": -1,
+                "ticksOnActivations": false,
+                "useActivationsOfTarget": false,
+                "ticksOnEndOfRound": false,
+                "ticksOnMovements": false,
+                "stackLimit": -1,
+                "clearedWhenAttacked": false
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "triggerLimit": 0,
+                "extendDurationOnTrigger": 0,
+                "specialRules": "NotSet",
+                "effectTargetType": "Creator",
+                "range": 0,
+                "forcePathRebuild": false,
+                "forceVisRebuild": false,
+                "showInTargetPreview": false,
+                "showInStatusPanel": true
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "TC-TO-HIT",
+                "Name": "Targeting Computer",
+                "Details": "Breaching Shot, Improved Accuracy/Recoil.",
+                "Icon": "uixSvgIcon_ability_precisionstrike"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "appliesEachTick": false,
+                "effectsPersistAfterDestruction": false,
+                "statName": "AccuracyModifier",
+                "operation": "Float_Add",
+                "modValue": "-2.0",
+                "modType": "System.Single",
+                "additionalRules": "NotSet",
+                "targetCollection": "Weapon",
+                "targetWeaponCategory": "NotSet",
+                "targetWeaponType": "NotSet",
+                "targetAmmoCategory": "NotSet",
+                "targetWeaponSubType": "NotSet"
+            },
+            "tagData": null,
+            "floatieData": null,
+            "actorBurningData": null,
+            "vfxData": null,
+            "instantModData": null,
+            "poorlyMaintainedEffectData": null
+        },
+        {
+            "durationData": {
+                "duration": -1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "effectTargetType": "Creator"
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "TCRecoil",
+                "Name": "Improved Called Shot",
+                "Details": "Called Shots twice as reliable",
+                "Icon": "uixSvgIcon_ability_mastertactician"
+            },
+            "statisticData": {
+                "statName": "RefireModifier",
+                "operation": "Int_Add",
+                "modValue": "-2",
+                "modType": "System.Int32",
+                "targetCollection": "Weapon"
+            }
+        },
+        {
+            "durationData": {
+                "duration": -1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "effectTargetType": "Creator"
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "TCCALLSHOT",
+                "Name": "Improved Called Shot",
+                "Details": "Called Shots twice as reliable",
+                "Icon": "uixSvgIcon_ability_mastertactician"
+            },
+            "statisticData": {
+                "statName": "CalledShotBonusMultiplier",
+                "operation": "Float_Multiply",
+                "modValue": "1.5",
+                "modType": "System.Single"
+            }
+        },
+        {
+            "durationData": {
+                "duration": -1,
+                "ticksOnActivations": false,
+                "useActivationsOfTarget": false,
+                "ticksOnEndOfRound": false,
+                "ticksOnMovements": false,
+                "stackLimit": -1,
+                "clearedWhenAttacked": false
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "triggerLimit": 0,
+                "extendDurationOnTrigger": 0,
+                "specialRules": "NotSet",
+                "effectTargetType": "Creator",
+                "range": 0,
+                "forcePathRebuild": false,
+                "forceVisRebuild": false,
+                "showInTargetPreview": false,
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "StatusEffect-DNI-StabDefense",
+                "Name": "INCOMING STABILITY DAMAGE DECREASED",
+                "Details": "Incoming stability damage reduced by 10%.",
+                "Icon": "uixSvgIcon_equipment_Gyro"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "appliesEachTick": false,
+                "effectsPersistAfterDestruction": false,
+                "statName": "ReceivedInstabilityMultiplier",
+                "operation": "Float_Multiply",
+                "modValue": "0.50",
+                "modType": "System.Single",
+                "additionalRules": "NotSet",
+                "targetCollection": "NotSet",
+                "targetWeaponCategory": "NotSet",
+                "targetWeaponType": "NotSet",
+                "targetAmmoCategory": "NotSet",
+                "targetWeaponSubType": "NotSet"
+            },
+            "tagData": null,
+            "floatieData": null,
+            "actorBurningData": null,
+            "vfxData": null,
+            "instantModData": null,
+            "poorlyMaintainedEffectData": null
+        },
+	{
+            "durationData": {
+                "duration": -1,
+                "stackLimit": -1
+            },
+            "targetingData": {
+                "effectTargetsCreator": true,
+                "effectTriggerType": "Passive",
+                "effectTargetType": "Creator"
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "DNI-Penalty",
+                "Name": "OverheatPilotDamage",
+                "Details": "Take Damage on Overheat",
+                "Icon": "uixSvgIcon_equipment_Cockpit"
+            },
+            "nature": "Debuff",
+            "statisticData": {
+                "statName": "ReceiveHeatDamageInjury",
+                "operation": "Set",
+                "modValue": "true",
+                "modType": "System.Boolean"
+            }
+        },
+        {
+            "durationData": {
+                "duration": -1,
+                "stackLimit": -1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "effectTargetType": "Creator"
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "MaxEvasion",
+                "Name": "EVASIVE MOVE",
+                "Details": "This unit generates an extra EVASIVE charge from movement actions (up to its maximum).",
+                "Icon": "uixSvgIcon_action_evasivemove"
+            },
+            "statisticData": {
+                "statName": "MaxEvasivePips",
+                "operation": "Int_Add",
+                "modValue": "2",
+                "modType": "System.Int32"
+            },
+            "nature": "Buff"
+        },
+        {
+            "durationData": {
+                "duration": -1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "effectTargetType": "Creator"
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "DNIDFASelfDmgReduction",
+                "Name": "Safer DFA",
+                "Details": "When performing a 'Death from Above,' this unit takes 15% less damage to its legs",
+                "Icon": "uixSvgIcon_ability_mastertactician"
+            },
+            "statisticData": {
+                "statName": "DFASelfDamage",
+                "operation": "Float_Multiply",
+                "modValue": "0.75",
+                "modType": "System.Single"
+            },
+            "nature": "Buff"
+        },
+        {
+            "durationData": {
+                "duration": -1,
+                "ticksOnActivations": false,
+                "useActivationsOfTarget": false,
+                "ticksOnEndOfRound": false,
+                "ticksOnMovements": false,
+                "stackLimit": -1,
+                "clearedWhenAttacked": false
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "triggerLimit": 0,
+                "extendDurationOnTrigger": 0,
+                "specialRules": "NotSet",
+                "effectTargetType": "Creator",
+                "range": 0,
+                "forcePathRebuild": false,
+                "forceVisRebuild": false,
+                "showInTargetPreview": false,
+                "showInStatusPanel": true
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "DNI-StatusEffect-Attack_ToHit",
+                "Name": "Man Machine Interface",
+                "Details": "Active DNI Grants Melee Accuracy and Damage resistance.",
+                "Icon": "uixSvgIcon_equipment_TTS"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "appliesEachTick": false,
+                "effectsPersistAfterDestruction": false,
+                "statName": "AccuracyModifier",
+                "operation": "Float_Add",
+                "modValue": "-2.0",
+                "modType": "System.Single",
+                "additionalRules": "NotSet",
+                "targetCollection": "Weapon",
+                "targetWeaponCategory": "NotSet",
+                "targetWeaponType": "NotSet",
+                "targetAmmoCategory": "NotSet",
+                "targetWeaponSubType": "Melee"
+            },
+            "tagData": null,
+            "floatieData": null,
+            "actorBurningData": null,
+            "vfxData": null,
+            "instantModData": null,
+            "poorlyMaintainedEffectData": null
+        },
+        {
+            "durationData": {
+                "duration": -1,
+                "ticksOnActivations": false,
+                "useActivationsOfTarget": false,
+                "ticksOnEndOfRound": false,
+                "ticksOnMovements": false,
+                "stackLimit": -1,
+                "clearedWhenAttacked": false
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "triggerLimit": 0,
+                "extendDurationOnTrigger": 0,
+                "specialRules": "NotSet",
+                "effectTargetType": "Creator",
+                "range": 0,
+                "forcePathRebuild": false,
+                "forceVisRebuild": false,
+                "showInTargetPreview": false,
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "SC-Injury",
+                "Name": "Small Cockpit",
+                "Details": "Small Cockpit incurs penalty to accuracy and injury on shutdown.",
+                "Icon": "uixSvgIcon_ability_precisionstrike"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "appliesEachTick": false,
+                "effectsPersistAfterDestruction": false,
+                "statName": "ReceiveShutdownInjury",
+                "operation": "Set",
+                "modValue": "true",
+                "modType": "System.Boolean",
+                "additionalRules": "NotSet",
+                "targetCollection": "Weapon",
+                "targetWeaponCategory": "NotSet",
+                "targetWeaponType": "NotSet",
+                "targetAmmoCategory": "NotSet",
+                "targetWeaponSubType": "NotSet"
+            },
+            "tagData": null,
+            "floatieData": null,
+            "actorBurningData": null,
+            "vfxData": null,
+            "instantModData": null,
+            "poorlyMaintainedEffectData": null
+        }
+    ],
+    "ComponentTags": {
+        "items": [
+            "component_type_stock"
+        ],
+        "tagSetSourceFile": ""
+    }
+}
