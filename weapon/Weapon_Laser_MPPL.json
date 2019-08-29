@@ -1,14 +1,14 @@
 {
 
-	"Custom": { "Category" : { "CategoryID" : "ParticleWeapon"},
+	"Custom": { "Category" : { "CategoryID" : "w/e/l/pulse"},
         "BonusDescriptions": {
             "Bonuses": [
 				"IsParticleWeapon",
 				"WpnAccuracy: +1",
 				"PipsIgnored: 2",
 				"ImpMove: 10%",
-                "ImpAccuracy: -2",
-                "ImpHeatSink: -10%",
+		                "ImpAccuracy: -2",
+		                "ImpHeatSink: -10%",
 				"CoolDown: 1",
 				"HeatPerTurn: +10",
 				"WpnRecoil: 2",
@@ -42,6 +42,9 @@
     "HeatDamage" : 0,
     "AccuracyModifier" : -1,
     "CriticalChanceMultiplier" : 1,
+  "APArmorShardsMod": 0.1,
+  "APMaxArmorThickness": 39.6,
+  "APCriticalChanceMultiplier": 0.066,
     "AOECapable" : false,
     "IndirectFireCapable" : false,
     "RefireModifier" : 2,
@@ -60,7 +63,7 @@
         "UIName" : "M. Phased Lance",
         "Id" : "Weapon_Laser_MPPL",
         "Name" : "M Phased Lance",
-        "Details" : "Particle weapons have longer ranges in atmosphere than lasers, are significantly more efficient at transferring energy to the target, are nearly as accurate, and can have ionizing effects, disrupting the opponent's electronics and sensors. However, they require constant cooling even when not firing and equire to cooldown to fire safely. Furthermore, particle generators have unmistakable emissions, which are impractical to conceal on 'Mech sized vehicles, increasing the sensors signature of the 'Mech carrying them. <b><color=#ffcc00>This weapon generates almost no heat and has a cooldown of 1 turn in normal mode. In can be overcharged to fire every turn with 40% jamming chance. </color></b>",
+        "Details" : "Particle weapons have longer ranges in atmosphere than lasers, are significantly more efficient at transferring energy to the target, are nearly as accurate, and can have ionizing effects, disrupting the opponent's electronics and sensors. However, they require constant cooling even when not firing and require to cooldown to fire safely. Furthermore, particle generators have unmistakable emissions, which are impractical to conceal on 'Mech sized vehicles, increasing the sensors signature of the 'Mech carrying them. <b><color=#ffcc00>This weapon generates almost no heat and has a cooldown of 1 turn in normal mode. In can be overcharged to fire every turn with 40% jamming chance. </color></b>",
         "Icon" : "uixSvgIcon_weapon_Energy"
     },
     "BonusValueA" : "",

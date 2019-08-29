@@ -1,5 +1,8 @@
 {
     "Custom": {
+                "Category" : [
+                        { "CategoryID" : "a/a/a/lbx" }
+                ],
         "Flags": {
             "flags": [
                 "not_broken"
@@ -11,10 +14,12 @@
         },
         "BonusDescriptions": {
             "Bonuses": [
-				"WpnCrits: +50%",
+                               "WpnCrits: +50%",
                 "WpnAccuracy: +1",
                 "PipsIgnored: +1",
-				"LBXCluster: 20",
+                                "LBXCluster: 15",
+                                "LBXClusterPenalty: 20%",
+                                "LBXClusterRange: 120",
 				"LBX2ClusterAmmo: 12"
             ]
         },		

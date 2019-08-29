@@ -45,10 +45,10 @@
         {
             "DamageLevel": "Functional",
             "Location": "CenterTorso",
-            "CurrentArmor": 210,
+            "CurrentArmor": 206,
             "CurrentRearArmor": 105,
             "CurrentInternalStructure": 105,
-            "AssignedArmor": 210,
+            "AssignedArmor": 206,
             "AssignedRearArmor": 105
         },
         {
@@ -90,19 +90,19 @@
         {
             "DamageLevel": "Functional",
             "Location": "LeftLeg",
-            "CurrentArmor": 140,
+            "CurrentArmor": 145,
             "CurrentRearArmor": 0,
             "CurrentInternalStructure": 75,
-            "AssignedArmor": 140,
+            "AssignedArmor": 145,
             "AssignedRearArmor": 0
         },
         {
             "DamageLevel": "Functional",
             "Location": "RightLeg",
-            "CurrentArmor": 140,
+            "CurrentArmor": 145,
             "CurrentRearArmor": 0,
             "CurrentInternalStructure": 75,
-            "AssignedArmor": 140,
+            "AssignedArmor": 145,
             "AssignedRearArmor": 0
         }
     ],
@@ -242,7 +242,7 @@
         
     {
       "MountedLocation": "Head",
-      "ComponentDefID": "Gear_FCS_LaserHeat",
+      "ComponentDefID": "Gear_FCS_AdvancedTC_Clan",
       "SimGameUID": null,
       "ComponentDefType": "Upgrade",
       "HardpointSlot": -1,
@@ -270,20 +270,20 @@
       "DamageLevel": "Functional",
       "prefabName": null,
       "hasPrefabName": false
-    }, {
-      "MountedLocation": "Head",
-      "ComponentDefID": "Gear_UAV",
-      "SimGameUID": null,
-      "ComponentDefType": "Upgrade",
-      "HardpointSlot": -1,
-      "GUID": null,
-      "DamageLevel": "Functional",
-      "prefabName": null,
-      "hasPrefabName": false
     }, 
 		{
             "MountedLocation": "RightTorso",
             "ComponentDefID": "Gear_TargetingTrackingSystem_RCA_InstaTrac-XII",
+            "SimGameUID": "",
+            "ComponentDefType": "Upgrade",
+            "HardpointSlot": -1,
+            "IsFixed": false,
+            "DamageLevel": "Functional",
+            "hasPrefabName": false
+        },
+		{
+            "MountedLocation": "RightTorso",
+            "ComponentDefID": "Gear_TargetingTrackingSystem_Heat",
             "SimGameUID": "",
             "ComponentDefType": "Upgrade",
             "HardpointSlot": -1,

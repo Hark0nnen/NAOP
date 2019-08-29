@@ -1,6 +1,8 @@
 {
 
-"Custom": { "Category" : { "CategoryID" : "Railgun"}, "ComponentExplosion": { "ExplosionDamage": 75, "HeatDamage": 30, "StabilityDamage": 25 },
+        "Custom": { 
+	    "Category" : { "CategoryID" : "w/a/g/railgun" }, 
+	    "ComponentExplosion": { "ExplosionDamage": 75, "HeatDamage": 30, "StabilityDamage": 25 },
         "BonusDescriptions": {
             "Bonuses": [
 				"WpnRecoil: 2",
@@ -36,6 +38,9 @@
     "HeatDamage" : 0,
     "AccuracyModifier" : -1,
     "CriticalChanceMultiplier" : 1,
+ "APArmorShardsMod": 0.5,
+  "APMaxArmorThickness": 255,
+  "APCriticalChanceMultiplier": 1.275,
     "AOECapable" : false,
     "IndirectFireCapable" : false,
     "RefireModifier" : 2,

@@ -1,16 +1,18 @@
 {
 
-	"Custom": { "Category" : { "CategoryID" : "CGLauncher"},
+	"Custom": { "Category" : { "CategoryID" : "w/m/l/lrm"},
 			"BonusDescriptions": {
             "Bonuses": [
-				"TAG: 2",
+				"TAG: 8",
 				"PipsIgnored: 2",
 				"WpnAccuracy: +2",
 				"HeatPerTurn: +12",
 				"WpnRecoil: 1",
 				"IsSmartMissile",
 				"IsCoilLauncher",
-				"Painter: 1"
+				"Painter: +1",
+			        "PainterSensors: 20%",
+			        "PainterVisibility: 20%"
             ]
         },
             "InventorySorter" : {
@@ -39,6 +41,9 @@
     "HeatDamage" : 0,
     "AccuracyModifier" : -2,
     "CriticalChanceMultiplier" : 1,
+ "APArmorShardsMod": 0.25,
+  "APMaxArmorThickness": 90,
+  "APCriticalChanceMultiplier": 0.045,
     "AOECapable" : false,
     "IndirectFireCapable" : true,
     "RefireModifier" : 1,
@@ -123,60 +128,7 @@
             "instantModData" : null,
             "poorlyMaintainedEffectData" : null
         },
-	        {
-            "durationData" : {
-                "duration" : 2,
-                "ticksOnActivations" : true,
-                "useActivationsOfTarget" : true,
-                "ticksOnEndOfRound" : false,
-                "ticksOnMovements" : false,
-                "stackLimit" : 10,
-                "clearedWhenAttacked" : false
-            },
-            "targetingData" : {
-                "effectTriggerType" : "OnHit",
-                "triggerLimit" : 0,
-                "extendDurationOnTrigger" : 0,
-                "specialRules" : "NotSet",
-                "effectTargetType" : "NotSet",
-                "range" : 0,
-                "forcePathRebuild" : false,
-                "forceVisRebuild" : false,
-                "showInTargetPreview" : false,
-                "showInStatusPanel" : true
-            },
-            "effectType" : "StatisticEffect",
-            "Description" : {
-                "Id" : "CL-LRM",
-                "Name" : "Zeroing In!",
-                "Details" : "Further attacks against this target have their accuracy increased by [AMT]",
-                "Icon" : "uixSvgIcon_genericDiamond"
-            },
-            "nature" : "Debuff",
-            "statisticData" :            {
-                "statName": "ToHitThisActor",
-                "operation": "Float_Add",
-                "modValue": "-1.0",
-                "modType": "System.Single",
-                "additionalRules" : "NotSet",
-                "targetCollection" : "NotSet",
-                "targetWeaponCategory" : "NotSet",
-                "targetWeaponType" : "NotSet",
-                "targetAmmoCategory" : "NotSet",
-                "targetWeaponSubType" : "NotSet"				
-            },
-            "tagData": {
-                "tagList": [
-                    "lv-tag-effect"
-                ]
-            },
-            "floatieData" : null,
-            "actorBurningData" : null,
-            "vfxData" : null,
-            "instantModData" : null,
-            "poorlyMaintainedEffectData" : null
-        },
-		{
+	{
             "durationData" : {
                 "duration" : 1,
                 "ticksOnActivations" : false,
@@ -277,7 +229,80 @@
             "vfxData" : null,
             "instantModData" : null,
             "poorlyMaintainedEffectData" : null
-        }
+        },
+    {
+      "durationData": {
+        "duration": 8,
+        "ticksOnActivations": true,
+        "useActivationsOfTarget": true,
+        "ticksOnEndOfRound": false,
+        "ticksOnMovements": true,
+        "stackLimit": 1,
+        "clearedWhenAttacked": false
+      },
+      "targetingData": {
+        "effectTriggerType": "OnHit",
+        "triggerLimit": 0,
+        "extendDurationOnTrigger": 0,
+        "specialRules": "NotSet",
+        "effectTargetType": "NotSet",
+        "range": 0,
+        "forcePathRebuild": false,
+        "forceVisRebuild": false,
+        "showInTargetPreview": false,
+        "showInStatusPanel": false
+      },
+      "effectType": "StatisticEffect",
+      "Description": {
+        "Id": "PainterEffect",
+        "Name": "Target Acquired",
+        "Details": "This target was TAG'ed. +1 to hit.",
+        "Icon": "uixSvgIcon_artillery"
+      },
+      "nature": "Debuff",
+      "statisticData": {
+        "statName": "LV_TAG",
+        "operation": "Set",
+        "modValue": "0.2_3_-1",
+        "modType": "System.String"
+      }
+    },
+    {
+      "durationData": {
+        "duration": 7,
+        "ticksOnActivations": true,
+        "useActivationsOfTarget": true,
+        "ticksOnEndOfRound": false,
+        "ticksOnMovements": true,
+        "stackLimit": 1
+      },
+      "targetingData": {
+        "effectTriggerType": "Passive",
+        "triggerLimit": 0,
+        "extendDurationOnTrigger": 0,
+        "specialRules": "NotSet",
+        "effectTargetType": "Creator",
+        "range": 0,
+        "forcePathRebuild": false,
+        "forceVisRebuild": false,
+        "showInTargetPreview": false,
+        "showInStatusPanel": false
+      },
+      "effectType": "StatisticEffect",
+      "Description": {
+        "Id": "PainterEffect2",
+        "Name": "Detected",
+        "Details": "TAG increases Visibility",
+        "Icon": "uixSvgIcon_artillery"
+      },
+      "nature": "Buff",
+      "statisticData": {
+        "statName": "SpottingVisibilityMultiplier",
+        "operation": "Float_Multiply",
+        "modValue": "1.2",
+        "modType": "System.Single"
+      }
+    }
 	],
     "ComponentTags" : {
         "items" : [

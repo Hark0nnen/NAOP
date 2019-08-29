@@ -1,12 +1,12 @@
 {
 
 	"Custom": {
-	        "BonusDescriptions": {
-            "Bonuses": [
+            "Category" : { "CategoryID" : "w/s/m/ac" },
+            "BonusDescriptions": {
+               "Bonuses": [
 				"WpnAccuracy: -1",
 				"PipsIgnored: 1",
-				"IsMG"
-            ]
+        	]
         },
 		
             "InventorySorter" : {

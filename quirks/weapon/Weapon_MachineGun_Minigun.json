@@ -1,6 +1,9 @@
 {
 
 	"Custom": {
+        "Category": [
+                        { "CategoryID": "w/a/o/mg" }
+                ],
 	        "BonusDescriptions": {
             "Bonuses": [
 				"WpnAccuracy: +1",
@@ -38,6 +41,9 @@
     "HeatDamage" : 0,
     "AccuracyModifier" : -1,
     "CriticalChanceMultiplier" : 1,
+       "APArmorShardsMod": 0,
+        "APMaxArmorThickness": 1,
+        "APCriticalChanceMultiplier": 0.5,
     "AOECapable" : false,
     "IndirectFireCapable" : false,
     "RefireModifier" : 4,

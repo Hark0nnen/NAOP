@@ -1,12 +1,15 @@
 {
 
-	"Custom": { "Category" : { "CategoryID" : "ParticleWeapon"},
+	"Custom": { 
+        "Category": [
+                        { "CategoryID": "w/s/m/energy" },
+                        { "CategoryID": "w/e/l/pulse" }
+                ],
         "BonusDescriptions": {
             "Bonuses": [
 				"IsParticleWeapon",
 				"WpnAccuracy: +1",
 				"PipsIgnored: 1",
-
 				"ImpMove: 5%",
                 "ImpAccuracy: -1",
                 "ImpHeatSink: -5%",
@@ -43,6 +46,9 @@
     "HeatDamage" : 0,
     "AccuracyModifier" : -1,
     "CriticalChanceMultiplier" : 1,
+  "APArmorShardsMod": 0.1,
+  "APMaxArmorThickness": 18.0,
+  "APCriticalChanceMultiplier": 0.033,
     "AOECapable" : false,
     "IndirectFireCapable" : false,
     "RefireModifier" : 1,

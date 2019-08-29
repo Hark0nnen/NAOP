@@ -1,13 +1,13 @@
 {
 
 	"Custom": {
-	        "BonusDescriptions": {
+	    "Category" : { "CategoryID" : "w/s/m/ac" },
+	    "BonusDescriptions": {
             "Bonuses": [
 				"WpnAccuracy: -1",
 				"WpnRecoil: 3",
 				"PipsIgnored: 2",
 				"WeaponJAM: 25",
-				"IsMG"
             ]
         },
 		

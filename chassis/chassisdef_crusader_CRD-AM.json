@@ -65,8 +65,8 @@
   },
   "MovementCapDefID": "movedef_thunderbolt_TDR-5S",
   "PathingCapDefID": "pathingdef_heavy",
-  "HardpointDataDefID": "hardpointdatadef_jagermech",
-  "PrefabIdentifier": "chrPrfMech_phoenixhawkHotD-001",
+  "HardpointDataDefID": "hardpointdatadef_crusader",
+  "PrefabIdentifier": "chrprfmech_crusaderhotd-001",
   "PrefabBase": "phoenixhawk",
   "Tonnage": 65,
   "InitialTonnage": 6.5,
@@ -133,9 +133,11 @@
         {
           "WeaponMount": "Missile",
           "Omni": false
+        },
+        {
+          "WeaponMount": "Missile",
+          "Omni": false
         }
-
-
       ],
       "Tonnage": 0,
       "InventorySlots": 12,
@@ -164,14 +166,6 @@
         },
         {
           "WeaponMount": "Ballistic",
-          "Omni": false
-        },
-	  {
-          "WeaponMount": "Missile",
-          "Omni": false
-        },
-        {
-          "WeaponMount": "Missile",
           "Omni": false
         }
       ],
@@ -215,16 +209,7 @@
         {
           "WeaponMount": "Ballistic",
           "Omni": false
-        },
-	   {
-          "WeaponMount": "Missile",
-          "Omni": false
-        },
-        {
-          "WeaponMount": "Missile",
-          "Omni": false
         }
-
         
       ],
       "Tonnage": 0,
@@ -251,8 +236,11 @@
         {
           "WeaponMount": "Missile",
           "Omni": false
+        },
+        {
+          "WeaponMount": "Missile",
+          "Omni": false
         }
-
 	  
       ],
       "Tonnage": 0,

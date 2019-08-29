@@ -2,13 +2,14 @@
     "Name": "NAOP_CustomMechsNParts",
     "Enabled": true,
 
-    "Version": "0.5",
+    "Version": "0.6",
     "Description": "Custom quirks, components and Mechs by NewAgeOfPower. Special thanks to the RogueTech team. Requires RogueTech.",
     "Author": "NewAgeOfPower",
+    "Editor": "Harkonnen",
     "Website": "",
     "Contact": "",
 	
-	"DependsOn": [ "RogueTech Core", "CustomComponents", "MechEngineer", "Custom Ammo categories", "CustomActivatableEquipment"],
+	"DependsOn": [ "RogueTech Core", "CustomComponents", "MechEngineer", "Custom Ammo Categories", "CustomActivatableEquipment"],
 	"ConflictsWith": [],
 
     "Manifest": [
@@ -27,7 +28,9 @@
 			{ "Type": "HeatSinkDef", "Path": "engine_parts" },
 			{ "Type": "HeatSinkDef","Path": "quirks/heatsink/" },
 			{ "Type": "HeatSinkDef", "Path": "quirks/engine_parts" },
-			{ "Type": "Sprite", "Path": "portrait" }
+			{ "Type": "JumpJetDef", "Path": "quirks/jumpjet/" },
+			{ "Type": "Sprite", "Path": "portrait" },
+			{ "Type": "MEBonusDescriptions", "Path": "bonusDescriptions" }
     ]
 	
 }

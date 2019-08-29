@@ -1,6 +1,10 @@
 {
 
-	"Custom": {"ComponentExplosion": { "ExplosionDamage": 200, "HeatDamage": 100, "StabilityDamage": 50 }, 
+	"Custom": {
+        "Category": [
+                        { "CategoryID": "w/e/l/pulse" }
+                ],
+	"ComponentExplosion": { "ExplosionDamage": 200, "HeatDamage": 100, "StabilityDamage": 50 }, 
         "BonusDescriptions": {
             "Bonuses": [
 				"PPCDEBUFF: 8",
@@ -40,6 +44,9 @@
     "HeatDamage" : 0,
     "AccuracyModifier" : 0,
     "CriticalChanceMultiplier" : 1,
+ "APArmorShardsMod": 0.1,
+  "APMaxArmorThickness": 360.0,
+  "APCriticalChanceMultiplier": 0.6,
     "AOECapable" : false,
     "IndirectFireCapable" : false,
     "RefireModifier" : 8,

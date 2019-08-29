@@ -17,7 +17,7 @@
 				"Accuracy: +2",
 				"Resolve: +2",
 				"Range: +15%",
-                "SensorBoost: 1",
+		                "CockpitSensors: 2",
 				"AdvZoom: 2",
 				"AdvZoomRange: 270",
 				"ThermalVision: 1",
@@ -302,13 +302,126 @@
                 "targetCollection" : "Weapon"		
 			},		
 			"nature" : "Buff"
-		}
+		},
+               {
+            "durationData": {
+                "duration": -1,
+                "stackLimit": -1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "effectTargetType": "Creator",
+                "showInTargetPreview": false,
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "Zoom Vision Effect",
+                "Name": "Bonus Accuracy at range",
+                "Details": "range bracket bonus accuracy",
+                "Icon": "uixSvgIcon_ability_precisionstrike"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "statName": "LV_ZOOM_VISION",
+                "operation": "Set",
+                "modValue": "0_-2_9",
+                "modType": "System.String"
+            }
+        },
+        {
+            "durationData": {
+                "duration": -1,
+                "stackLimit": -1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "effectTargetType": "Creator",
+                "showInTargetPreview": false,
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "Heat Vision Effect",
+                "Name": "Bonus Accuracy against heat",
+                "Details": "heat bonus accuracy",
+                "Icon": "uixSvgIcon_ability_precisionstrike"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "statName": "LV_HEAT_VISION",
+                "operation": "Set",
+                "modValue": "1_40",
+                "modType": "System.String"
+            }
+        },
+        {
+            "durationData" : {
+                "duration": -1,
+                "stackLimit": -1
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "specialRules" : "NotSet",
+                "effectTargetType" : "Creator",
+                "range" : 0.0,
+                "forcePathRebuild" : false,
+                "forceVisRebuild" : true,
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false
+            },
+            "effectType" : "StatisticEffect",
+            "Description" :
+            {
+                "Id" : "LV_Probe_Carrier",
+                "Name" : "Active Probe (Passive)",
+                "Details" : "Reduces effectiveness of stealthed and ECM shielded units",
+                "Icon" : "uixSvgIcon_status_ECM-ghost"
+            },
+            "statisticData" :
+            {
+                "statName" : "LV_Probe_Carrier",
+                "operation": "Int_Add",
+                "modValue": "1",
+                "modType": "System.Int32"
+            },
+            "nature" : "Buff"
+        },
+                   {
+            "durationData" : {
+                "duration": -1,
+                "stackLimit": -1
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "specialRules" : "NotSet",
+                "effectTargetType" : "Creator",
+                "range" : 0.0,
+                "forcePathRebuild" : false,
+                "forceVisRebuild" : true,
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false
+            },
+            "effectType" : "StatisticEffect",
+            "Description" :
+            {
+                "Id" : "LV_Advanced_Sensors",
+                "Name" : "Advanced Sensors",
+                "Details" : "Provides detailed information on enemy units",
+                "Icon" : "uixSvgIcon_status_ECM-ghost"
+            },
+            "statisticData" :
+            {
+                "statName" : "LV_Advanced_Sensors",
+                "operation": "Int_Add",
+                "modValue": "2",
+                "modType": "System.Int32"
+            },
+            "nature" : "Buff"
+        }
     ],
     "ComponentTags" : {
         "items" : [
-			"lv-probe-boost_m1",
-			"lv-vismode-heat_m1_d40",
-			"lv-vismode-zoom_m0_c-2_s9",
             "component_type_stock",
 			"lv-shares-sensors",
 			"ClanCockpit",

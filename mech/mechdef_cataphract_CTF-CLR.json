@@ -57,10 +57,10 @@
 		}, {
 			"DamageLevel": "Functional",
 			"Location": "CenterTorso",
-			"CurrentArmor": 160,
+			"CurrentArmor": 162,
 			"CurrentRearArmor": 75,
 			"CurrentInternalStructure": 110,
-			"AssignedArmor": 160,
+			"AssignedArmor": 162,
 			"AssignedRearArmor": 75
 		}, {
 			"DamageLevel": "Functional",
@@ -81,18 +81,18 @@
 		}, {
 			"DamageLevel": "Functional",
 			"Location": "LeftLeg",
-			"CurrentArmor": 90,
+			"CurrentArmor": 95,
 			"CurrentRearArmor": -1,
 			"CurrentInternalStructure": 75,
-			"AssignedArmor": 90,
+			"AssignedArmor": 95,
 			"AssignedRearArmor": -1
 		}, {
 			"DamageLevel": "Functional",
 			"Location": "RightLeg",
-			"CurrentArmor": 90,
+			"CurrentArmor": 95,
 			"CurrentRearArmor": -1,
 			"CurrentInternalStructure": 75,
-			"AssignedArmor": 90,
+			"AssignedArmor": 95,
 			"AssignedRearArmor": -1
 		}
 	],
@@ -218,7 +218,7 @@
         },		
         {
             "MountedLocation": "CenterTorso",
-            "ComponentDefID": "emod_engine_cooling",
+            "ComponentDefID": "Gear_Engine_Heatsinks",
             "SimGameUID": null,
             "ComponentDefType": "HeatSink",
             "HardpointSlot": -1,
@@ -290,7 +290,7 @@
 		},
 		{
 			"MountedLocation": "LeftTorso",
-			"ComponentDefID": "Ammo_AmmunitionBox_Ultra_AC10",
+			"ComponentDefID": "Ammo_AmmunitionBox_LBX_SLUG_AC10",
 			"SimGameUID": null,
 			"ComponentDefType": "AmmunitionBox",
 			"HardpointSlot": -1,
@@ -300,7 +300,7 @@
 			"hasPrefabName": false
 		},		{
 			"MountedLocation": "LeftTorso",
-			"ComponentDefID": "Ammo_AmmunitionBox_Ultra_AC10",
+			"ComponentDefID": "Ammo_AmmunitionBox_LBX_SLUG_AC10",
 			"SimGameUID": null,
 			"ComponentDefType": "AmmunitionBox",
 			"HardpointSlot": -1,

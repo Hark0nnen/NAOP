@@ -9,6 +9,7 @@
 		"Flags" : { "flags" : [ "not_broken", "no_salvage", "autorepair" ] },
         "BonusDescriptions": {
             "Bonuses": [
+		"ACAccuracy: +2",
 		"ACDamage: +25%",
 		"BallisticACRange: +15%",
 				"ACHeatGenerated: +10%",
@@ -47,6 +48,34 @@
     "DisallowedLocations": "All",
     "CriticalComponent": false,
     "statusEffects": [
+       {
+            "durationData": {
+                "duration": -1,
+                "stackLimit": -1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "effectTargetType": "Creator",
+                "showInTargetPreview": false,
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "StatusEffect-FCS_AC2",
+                "Name": "ENERGY WEAPON TTS",
+                "Details": "+1Acc, +25% Crit for Energy Weapons.",
+                "Icon": "uixSvgIcon_equipment_TTS"
+            },
+            "nature": "Buff",
+            "statisticData": {
+            "statName": "AccuracyModifier",
+            "operation": "Float_Add",
+            "modValue": "-2.0",
+            "modType": "System.Single",
+            "targetCollection": "Weapon",
+            "targetWeaponType": "Autocannon"
+            }
+        },
 		{
             "durationData": {
                 "duration": -1,

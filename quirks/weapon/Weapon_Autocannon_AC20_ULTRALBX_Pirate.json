@@ -1,7 +1,7 @@
 {
 
 	"Custom": {
-	"Category": [{ "CategoryID" : "LBX"}], "ComponentExplosion": { "ExplosionDamage": 60, "HeatDamage": 30, "StabilityDamage": 30},
+	"Category": [{ "CategoryID" : "w/a/a/lbx"}], "ComponentExplosion": { "ExplosionDamage": 60, "HeatDamage": 30, "StabilityDamage": 30},
         "BonusDescriptions": {
             "Bonuses": [
 				"WpnRecoil: 4",
@@ -36,7 +36,10 @@
     "DamageVariance" : 0,
     "HeatDamage" : 0,
     "AccuracyModifier" : 0,
-    "CriticalChanceMultiplier" : 1,
+    "CriticalChanceMultiplier" : 1.5,
+ "APArmorShardsMod": 1,
+  "APMaxArmorThickness": 200,
+  "APCriticalChanceMultiplier": 0.5,
     "AOECapable" : false,
     "IndirectFireCapable" : false,
     "RefireModifier" : 2,
@@ -46,6 +49,8 @@
     "Instability" : 4.4,
     "FireTerrainChance": 0.08,
     "DisableClustering": false,
+       "ImprovedBallistic":true,
+    "BallisticDamagePerPallet": true,
     "WeaponEffectID" : "WeaponEffect-Weapon_AC10_Single",
     "Description" : {
         "Cost" : 1134000,
@@ -56,7 +61,7 @@
         "UIName" : "Ultra LBX 20 (P)",
         "Id" : "Weapon_Autocannon_AC20_ULTRALBX_Pirate",
         "Name" : "Ultra LBX 20 (P)",
-        "Details" : "Boss, the pirates jury-rigged an rotary autoloader, specialized for LBX shells, on a Clan Ultra autocannon. On one hand, it can jam and double feed, resulting in the gun exploding. On the upside, it's possible to fire off an almost-literal wall of lead with this weapon, which *should* make it even easier to hit the target... except the frame the pirates put on it rattles. Oh, they also wired it to some extremely heavy duty speakers that blare out 'ULTRAKILL!' every time the MechWarrior destroys something with them. \n\n <b><color=#ffcc00>Single shot uses LBX20 ammo/Double shot uses UAC20 ammo.</color></b> \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch firing mode</color> </b>",
+        "Details" : "Boss, the pirates jury-rigged an rotary autoloader, specialized for LBX shells, on a Clan Ultra autocannon. On one hand, it can jam and double feed, resulting in the gun exploding. On the upside, it's possible to fire off an almost-literal wall of lead with this weapon, which *should* make it even easier to hit the target... except the frame the pirates put on it rattles. Oh, they also wired it to some extremely heavy duty speakers that blare out 'ULTRAKILL!' every time the MechWarrior destroys something with them. \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch firing mode</color> </b>",
         "Icon" : "uixSvgIcon_weapon_Ballistic"
     },
     "BonusValueA" : "",
@@ -74,15 +79,13 @@
     "Modes":[
                 {
                         "Id":"x1",
-                        "UIName":"LBX",
-                        "isBaseMode":false,
-                        "ShotsWhenFired":0
+                        "UIName":"x1",
+                        "isBaseMode":false
                 },
                 {
                         "Id":"x2",
-                        "UIName":"Ultra",
+                        "UIName":"x2",
                         "isBaseMode":true,
-						"AmmoCategory": "UAC20",
                         "ShotsWhenFired": 1,
                         "RefireModifier" : 2,
                         "HeatGenerated" : 15

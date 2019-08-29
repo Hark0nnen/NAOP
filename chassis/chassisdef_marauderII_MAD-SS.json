@@ -3,7 +3,15 @@
     "ArmActuatorSupport": {
       "LeftLimit": "Lower",
       "RightLimit": "Lower"
-    }
+    },
+   "ChassisDefaults" : [
+                {
+                        "CategoryID" : "Cooling",
+                        "DefID" : "emod_kit_dhs_RISC",
+                        "Location" : "CenterTorso",
+                        "Type" : "HeatSink"
+                }
+        ]
   },
   
   "FixedEquipment": [
