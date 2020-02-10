@@ -2,7 +2,9 @@
 
 	"Custom": {
 		"Category": [
-           { "CategoryID": "ChassisSupport"},
+                {
+                    "CategoryID": "PositiveQuirk"
+                },
 		   { "CategoryID": "Exchanger" },
 		   { "CategoryID": "HeatBank" }
         ],
@@ -11,19 +13,20 @@
             "ExplosionDamage": 50,
             "StabilityDamage": 25
         },
-		"Flags" : { "flags" : [ "not_broken", "no_salvage", "autorepair" ] },
+		"Flags" : { "flags" : [ "not_broken", "not_destroyed", "default" ] },
 		"InventorySorter" : {
-                "SortKey" : "00027"
+                "SortKey" : "00201"
             },
         "BonusDescriptions": {
             "Bonuses": [
 				"TEHeatgen: -25%",
                 "HeatPerTurn: -15",
-				"BankMaxHeat: 30",
-                "BankThreshhold: 45",
+		"HeatEfficiency: 20%",
                 "ChangerBoom: 100"
             ]
-        }
+        },
+               "MechConfiguration" : {
+                }
 	},
 	
     "DissipationCapacity": 15,
@@ -45,8 +48,8 @@
     "ComponentSubType": "Heatsink",
     "PrefabIdentifier": "",
     "BattleValue": 0,
-    "InventorySize": 2,
-    "Tonnage": 1.5,
+    "InventorySize": 1,
+    "Tonnage": 0,
     "AllowedLocations": "All",
     "DisallowedLocations": "All",
     "CriticalComponent": false,
@@ -58,7 +61,7 @@
                 "useActivationsOfTarget": false,
                 "ticksOnEndOfRound": false,
                 "ticksOnMovements": false,
-                "stackLimit": 1,
+                "stackLimit": -1,
                 "clearedWhenAttacked": false
             },
             "targetingData": {
@@ -102,107 +105,31 @@
             "instantModData": null,
             "poorlyMaintainedEffectData": null
         },
-		{
-            "durationData": {
-                "duration": -1,
-                "ticksOnActivations": false,
-                "useActivationsOfTarget": false,
-                "ticksOnEndOfRound": false,
-                "ticksOnMovements": false,
-                "stackLimit": 1,
-                "clearedWhenAttacked": false
-            },
-            "targetingData": {
-                "effectTriggerType": "Passive",
-                "triggerLimit": 0,
-                "extendDurationOnTrigger": 0,
-                "specialRules": "NotSet",
-                "effectTargetType": "Creator",
-                "range": 0,
-                "forcePathRebuild": false,
-                "forceVisRebuild": false,
-                "showInTargetPreview": false,
-                "showInStatusPanel": true
-            },
-            "effectType": "StatisticEffect",
-            "Description": {
-                "Id": "StatusEffect-Heat_Max-T3",
-                "Name": "MAX HEAT INCREASED",
-                "Details": "Improves Heat 40Max/20Threshhold.",
-                "Icon": "uixSvgIcon_equipment_HeatBank"
-            },
-            "nature": "Buff",
-            "statisticData": {
-                "appliesEachTick": false,
-                "effectsPersistAfterDestruction": false,
-                "statName": "MaxHeat",
-                "operation": "Int_Add",
-                "modValue": "30",
-                "modType": "System.Int32",
-                "additionalRules": "NotSet",
-                "targetCollection": "NotSet",
-                "targetWeaponCategory": "NotSet",
-                "targetWeaponType": "NotSet",
-                "targetAmmoCategory": "NotSet",
-                "targetWeaponSubType": "NotSet"
-            },
-            "tagData": null,
-            "floatieData": null,
-            "actorBurningData": null,
-            "vfxData": null,
-            "instantModData": null,
-            "poorlyMaintainedEffectData": null
-        },
         {
             "durationData": {
                 "duration": -1,
-                "ticksOnActivations": false,
-                "useActivationsOfTarget": false,
-                "ticksOnEndOfRound": false,
-                "ticksOnMovements": false,
-                "stackLimit": 1,
-                "clearedWhenAttacked": false
+                "stackLimit": -1
             },
             "targetingData": {
                 "effectTriggerType": "Passive",
-                "triggerLimit": 0,
-                "extendDurationOnTrigger": 0,
-                "specialRules": "NotSet",
                 "effectTargetType": "Creator",
-                "range": 0,
-                "forcePathRebuild": false,
-                "forceVisRebuild": false,
                 "showInTargetPreview": false,
                 "showInStatusPanel": false
             },
             "effectType": "StatisticEffect",
             "Description": {
-                "Id": "StatusEffect-Overheat_Threshold-T3",
-                "Name": "Increased Overheat Level",
-                "Details": "Overheat threshold increased by 15",
+                "Id": "HeatSinkEfficiency_20",
+                "Name": "MAX HEAT INCREASED",
+                "Details": "Improves Heat 15Max/10Threshhold.",
                 "Icon": "uixSvgIcon_equipment_HeatBank"
             },
             "nature": "Buff",
             "statisticData": {
-                "appliesEachTick": false,
-                "effectsPersistAfterDestruction": false,
-                "statName": "OverheatLevel",
-                "operation": "Int_Add",
-                "modValue": "45",
-                "modType": "System.Int32",
-                "additionalRules": "NotSet",
-                "targetCollection": "NotSet",
-                "targetWeaponCategory": "NotSet",
-                "targetWeaponType": "NotSet",
-                "targetAmmoCategory": "NotSet",
-                "targetWeaponSubType": "NotSet"
-            },
-            "tagData": null,
-            "floatieData": null,
-            "actorBurningData": null,
-            "vfxData": null,
-            "instantModData": null,
-            "poorlyMaintainedEffectData": null
+                "statName": "HeatSinkCapacity",
+                "operation": "Int_Multiply_Float",
+                "modValue": "1.2",
+                "modType": "System.Single"
+            }
         }
     ],
     "ComponentTags" : {

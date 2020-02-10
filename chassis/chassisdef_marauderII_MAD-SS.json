@@ -70,7 +70,7 @@
 			"GUID": null,
 			"HardpointSlot": -1,
 			"IsFixed": true,
-			"MountedLocation": "LeftTorso",
+			"MountedLocation": "CenterTorso",
 			"SimGameUID": "",
 			"hasPrefabName": false,
 			"prefabName": null
@@ -101,7 +101,7 @@
     "Details": "Based on the Champion of Solaris design, the MAD-S7, this custom Marauder II was painstakingly built by Optimus using a fusion of Clan, LosTech and prototype technology. It features advanced weapon support systems, upgraded damage control and armor design. <b><color=#53ff1a>Restricted Actuators- Left: Lower, Right: Lower</color></b>",
     "Icon": "uixTxrIcon_marauder"
   },
-  "MovementCapDefID": "movedef_marauderII_MAD-4A",
+  "MovementCapDefID": "movedef_assaultmech",
   "PathingCapDefID": "pathingdef_assault",
   "HardpointDataDefID": "hardpointdatadef_marauderii",
   "PrefabIdentifier": "chrprfmech_marauderiibase-001",
@@ -113,7 +113,7 @@
   "Heatsinks": 0,
   "TopSpeed": 64,
   "TurnRadius": 90,
-  "MaxJumpjets": 4,
+  "MaxJumpjets": 20,
   "Stability": 100,
   "StabilityDefenses": [
     0,
@@ -241,10 +241,26 @@
         {
           "WeaponMount": "AntiPersonnel",
           "Omni": false
+        },
+        {
+          "WeaponMountID": "Special",
+          "Omni": false
+        },
+        {
+          "WeaponMountID": "Special",
+          "Omni": false
+        },
+        {
+          "WeaponMountID": "SpecialMelee",
+          "Omni": false
+        },
+        {
+          "WeaponMountID": "SpecialMelee",
+          "Omni": false
         }
       ],
       "Tonnage": 0,
-      "InventorySlots": 12,
+      "InventorySlots": 15,
       "MaxArmor": 270,
       "MaxRearArmor": 135,
       "InternalStructure": 135

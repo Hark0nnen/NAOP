@@ -1,18 +1,25 @@
 {
 
-	"Custom" :  {"Category": [{ "CategoryID": "SensorsRefit"}],
+	"Custom" :  {"Category": [{ "CategoryID": "SensorsRefit"},
+		    { "CategoryID": "Special" }],
         "BonusDescriptions": {
             "Bonuses": [
 				"Sensors: +50%",
 				"Sight: -15%",
-				"Initiative: -1"
+				"Initiative: -1",
+                                "Special"
             ]
         },
             "InventorySorter" : {
-                "SortKey" : "00024"
-            }		
-	},
-
+                "SortKey" : "00201"
+            },
+               "MechConfiguration" : {
+                },
+        "HandHeld" : {
+        "Tonnage" : 0,
+        "HandsUsed" : false
+        }
+    },
     "StatName" : null,
     "RelativeModifier" : 0,
     "AbsoluteModifier" : 0,
@@ -26,7 +33,7 @@
         "Id" : "Gear_Refit_Sensors_Multispectral",
         "Name" : "Multispectral Refit",
         "Details" : "While most MechWarriors preferred visual combat, some of the most elite pilots preferred sensors-centric combat. They asked for the opposite of the Electro Optical refit - sacrifice some of their Mech's visual target acquisition systems for more wide spectrum systems. This rig does exactly that, exchanging camera systems for additional Magnetic Anomaly detectors, Seismic sensors, Infrared Search-and-Track gear. Though this refit tremendously increases scan range for a small decrease in vision, quite a few pilots reported a loss in situational awareness.",
-        "Icon" : "uixSvgIcon_equipment_TTS"
+        "Icon" : "circuitry"
     },
     "BonusValueA" : "-10% Sight",
     "BonusValueB" : "+50% Sensors",
@@ -36,7 +43,7 @@
     "BattleValue" : 0,
     "InventorySize" : 1,
     "Tonnage" : 0,
-    "AllowedLocations" : "All",
+    "AllowedLocations" : "CenterTorso",
     "DisallowedLocations" : "All",
     "CriticalComponent" : false,
     "statusEffects" : [
@@ -197,7 +204,6 @@
     "ComponentTags" : {
         "items" : [
             "component_type_stock",
-			"lv-sensor-boost_m4"
         ],
         "tagSetSourceFile" : ""
     }

@@ -15,7 +15,7 @@
         },
         "BonusDescriptions": {
             "Bonuses": [
-                "SMAmmo: 203"
+                "SMAmmo: 225"
             ]
         },		
         "InventorySorter": {
@@ -23,7 +23,7 @@
         }
     },
     "AmmoID": "Ammunition_SmartMissile",
-    "Capacity": 203,
+    "Capacity": 225,
     "Description": {
         "Cost": 200000,
         "Rarity": 1,
@@ -33,7 +33,7 @@
         "UIName": "Ammo SM [DBL]",
         "Id": "Ammo_AmmunitionBox_SmartMissile_double",
         "Name": "SM Ammo",
-        "Details": "Smart Missiles achieve extreme performance in a small package by using cryogenic hybrid fuel chemistry; namely a Flourine : Lithium Hydride rocket motor, which offers incredible performance but also requires constant cryocooling, and poses a massive detonation hazard should this compartment be penetrated. This double magazine generates <b><color=#ffcc00>2 heat per turn</color></b> and contains <b><color=#F79232>203 rounds</color></b>.\n\n <b><color=#00ffff>Right Click on Chance to hit during battle to swap Ammo Type</color> </b>",
+        "Details": "Smart Missiles achieve extreme performance in a small package by using cryogenic hybrid fuel chemistry; namely a Flourine : Lithium Hydride rocket motor, which offers incredible performance but also requires constant cryocooling, and poses a massive detonation hazard should this compartment be penetrated. This double magazine generates <b><color=#ffcc00>2 heat per turn</color></b> and contains <b><color=#F79232>203 rounds</color></b>.\n\n <b><color=#00ffff>Right Click on Chance to hit during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color></color> </b>",
         "Icon": "uixSvgIcon_ammoBox_Missile"
     },
     "BonusValueA": "",

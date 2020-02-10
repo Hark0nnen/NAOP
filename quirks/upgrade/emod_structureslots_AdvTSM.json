@@ -1,0 +1,303 @@
+{
+    "Custom": {
+        "Color": {
+            "UIColor": "Orange"
+        },
+        "DynamicSlots": {
+            "ReservedSlots": 12,
+            "BackgroundColor": "OrangeHalf",
+            "ShowIcon": false,
+            "NameText": "Advanced Myomer",
+            "BonusAText": "Dynamic Slot",
+            "BonusBText": " "
+        },
+		"TSMInfo" : {
+	"HandHeldFactor" : 3
+	},
+        "Weights": {
+            "StructureFactor": 0.75
+        },
+        "WorkOrderCosts": {
+            "Install": {
+                "TechCost": "2.5 * [[Chassis.Tonnage]] / 8",
+                "CBillCost": "1800 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 40"
+            }
+        },
+        "Category": [
+            {"CategoryID": "Structure"},
+		{"CategoryID": "EndoTSM"}
+        ],
+		"StructureRepair": {
+            "StructureTPCost": 1.5,
+            "StructureCBCost": 2.0
+        },
+        "Flags": {
+            "flags": [
+		"no_salvage",
+                "ignore_damage",
+                "autorepair",
+                "not_broken"
+            ]
+        },
+        "BonusDescriptions": {
+            "Bonuses": [
+                "StructureFactor: -25%",
+                "MeleeAcc: +2",
+                "MeleeDef: +3",
+		"DFASelfDamage: -20%",
+		"ActivateHeatLevel: 20",
+		"DeActivateHeatLevel: 18",
+                "ActiveMelee: X2",
+                "ActiveWalkSpeed: +60m",
+		"ActiveEvaMax: +1",
+		"ActiveEvaPips: +1",
+		"StructureTPCost: 50%",
+                "StructureCBCost: 100%",
+                "Reserved: 12",
+		"CarryWeight: X3"
+            ]
+        },
+        "InventorySorter": {
+            "SortKey": "00010"
+        },
+		"ActivatableComponent":{
+			"ButtonName":"TSM",
+			"AutoActivateOnHeat": 20,
+			"AutoDeactivateOnHeat": 18,
+			"CanNotBeActivatedManualy": true,
+			"NoUniqueCheck": true,
+			"statusEffects": [
+				                {
+                    "durationData": {
+                        "duration": -1,
+                        "stackLimit": -1
+                    },
+                    "targetingData": {
+                        "effectTriggerType": "Passive",
+                        "effectTargetType": "Creator",
+						"forcePathRebuild": true,
+                        "showInTargetPreview": true,
+                        "showInStatusPanel": true
+                    },
+                    "effectType": "StatisticEffect",
+                    "Description": {
+                        "Id": "TSMActive",
+                        "Name": "TSM ACTIVATED!",
+                        "Details": "Stronger Melee and faster Movement",
+                        "Icon": "uixSvgIcon_equipment_ActuatorArm"
+                    },
+                    "statisticData": {
+                        "statName": "DamagePerShot",
+                        "operation": "Float_Multiply",
+                        "modValue": "2",
+                        "modType": "System.Single",
+                        "targetCollection": "Weapon",
+                        "targetWeaponSubType": "Melee"
+                    },
+                    "nature": "Buff"
+                },
+                {
+                    "durationData": {
+                        "duration": -1,
+                        "stackLimit": -1
+                    },
+                    "targetingData": {
+                        "effectTriggerType": "Passive",
+                        "effectTargetType": "Creator",
+                        "showInTargetPreview": false,
+                        "showInStatusPanel": false
+                    },
+                    "effectType": "StatisticEffect",
+                    "Description": {
+                        "Id": "TSMActive1",
+                        "Name": "TSM ACTIVATED!",
+                        "Details": "Stronger Melee and faster Movement",
+                        "Icon": "uixSvgIcon_equipment_ActuatorArm"
+                    },
+                    "statisticData": {
+                        "statName": "WalkSpeed",
+                        "operation": "Float_Add",
+                        "modValue": "60",
+                        "modType": "System.Single"
+                    },
+                    "nature": "Buff"
+                },
+        {
+            "durationData": {
+                "duration": -1,
+                "stackLimit": -1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "effectTargetType": "Creator",
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "GainEvasion",
+                "Name": "EVASIVE MOVE",
+                "Details": "This unit generates an extra EVASIVE charge from movement actions (up to its maximum).",
+                "Icon": "uixSvgIcon_action_evasivemove"
+            },
+            "statisticData": {
+                "statName": "EvasivePipsGainedAdditional",
+                "operation": "Int_Add",
+                "modValue": "1",
+                "modType": "System.Int32"
+            },
+            "nature": "Buff"
+        },
+        {
+            "durationData": {
+                "duration": -1,
+                "stackLimit": -1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "effectTargetType": "Creator"
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "MaxEvasion",
+                "Name": "EVASIVE MOVE",
+                "Details": "This unit generates an extra EVASIVE charge from movement actions (up to its maximum).",
+                "Icon": "uixSvgIcon_action_evasivemove"
+            },
+            "statisticData": {
+                "statName": "MaxEvasivePips",
+                "operation": "Int_Add",
+                "modValue": "1",
+                "modType": "System.Int32"
+            },
+            "nature": "Buff"
+        }
+			]
+		}
+    },
+    "Description": {
+        "Cost": 500000,
+        "Rarity": 99,
+        "Purchasable": true,
+        "Manufacturer": "Unknown",
+        "Model": "Structure",
+        "UIName": "Advanced Myomer",
+        "Id": "emod_structureslots_AdvTSM",
+        "Name": "Advanced Myomer Composite",
+        "Details": "Instead of normal structure, almost entire insides of this mech is with filled advanced myomers interwoven with composite \"bones\". The mech doesnt have riggid joints, it is actually held as a whole by myomer, which makes it incredibly flexlible",
+        "Icon": "Structure"
+    },
+    "BonusValueA": "-50% Structure Weight|",
+    "BonusValueB": "Reserves 14 Slots",
+    "ComponentType": "Upgrade",
+    "ComponentSubType": "NotSet",
+    "PrefabIdentifier": "",
+    "BattleValue": 0,
+    "InventorySize": 1,
+    "Tonnage": 0,
+    "AllowedLocations": "CenterTorso",
+    "DisallowedLocations": "All",
+    "CriticalComponent": false,
+    "statusEffects": [
+        {
+            "durationData": {
+                "duration": -1,
+                "stackLimit": -1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "effectTargetType": "Creator",
+                "showInTargetPreview": false,
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "StatusEffect-EliteSword",
+                "Name": "Solaris ChainSword",
+                "Details": "Melee attacks have +2 Accuracy.",
+                "Icon": "uixSvgIcon_run_n_gun"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "statName": "AccuracyModifier",
+                "operation": "Float_Add",
+                "modValue": "-2.0",
+                "modType": "System.Single",
+                "targetCollection": "Weapon",
+                "targetWeaponSubType": "Melee"
+            }
+        },
+       {
+            "durationData": {
+                "duration": -1,
+                "stackLimit": -1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "effectTargetType": "Creator",
+                "showInTargetPreview": false,
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "MeleeDef",
+                "Name": "GECM Interference",
+                "Details": "Guardian ECM making this unit harder to hit.",
+                "Icon": "uixSvgIcon_equipment_Gyro"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "appliesEachTick": false,
+                "effectsPersistAfterDestruction": false,
+                "statName": "ToHitThisActor",
+                "operation": "Float_Add",
+                "modValue": "3.0",
+                "modType": "System.Single",
+		"targetCollection": "Weapon",
+                "targetWeaponSubType": "Melee"
+            },
+            "tagData": null,
+            "floatieData": null,
+            "actorBurningData": null,
+            "vfxData": null,
+            "instantModData": null,
+            "poorlyMaintainedEffectData": null
+        },
+       {
+            "durationData": {
+                "duration": -1,
+                "stackLimit": -1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "effectTargetType": "Creator",
+                "showInTargetPreview": false,
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "StatusEffect-Attack_SelfDamageDFA-T1",
+                "Name": "DFA SELF-INFLICTED DAMAGE DECREASED",
+                "Details": "DFA attacks deal 10% less damage to the attacker.",
+                "Icon": "uixSvgIcon_equipment_ActuatorLeg"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "appliesEachTick": false,
+                "effectsPersistAfterDestruction": false,
+                "statName": "DFASelfDamage",
+                "operation": "Float_Multiply",
+                "modValue": "0.8",
+                "modType": "System.Single",
+                "targetWeaponSubType": "DFA"
+            }
+        }
+	],
+    "ComponentTags": {
+        "items": ["BLACKLISTED",
+            "component_type_stock",
+			"cae_ai_offence",
+			"cae_ai_speed"
+        ],
+        "tagSetSourceFile": ""
+    }
+}

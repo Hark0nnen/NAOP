@@ -59,10 +59,10 @@
         "Manufacturer" : "Toho Heavy Industries",
         "Model" : "Danmaku",
         "UIName" : "Minigun",
-        "Id" : "Weapon_MachineGun_Minigun",
+        "Id" : "Weapon_MachineGun_Minigun_Toho",
         "Name" : "Bullet Hell",
         "Details" : "This custom weapon was built for the 3069 Solaris Grand Champion, Personman. Holy hell, boss, this isn't a machine gun, it's a miniaturized RAC! How did they get it so lightweight and compact... The entire frame seems to be machined from a single block of Clan-Endo steel, the barrels forged from Vanadium Chromium, and the insides are all coated with some kinda hypercompressed carbon allotrope... it's harder than diamonds. Christ, how much money did they sink into this?! Some issues I can see with this - on a weapon this light, compact, and rapid firing; the recoil is gonna be fierce enough to affect the rest of the guns on that limb, and the heat buildup ain't trivial either.",
-        "Icon" : "uixSvgIcon_weapon_Ballistic"
+        "Icon" : "MachineGun"
     },
     "BonusValueA" : "",
     "BonusValueB" : "",

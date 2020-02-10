@@ -3,7 +3,8 @@
 	"Custom": {
 		"Category" : [
 			{ "CategoryID": "Cockpit" },
-			{ "CategoryID": "CockpitFCS" }
+			{ "CategoryID": "CockpitFCS" },
+           { "CategoryID": "AdvZoom" }
 		],
 		"WorkOrderCosts": {
 			"Install": {
@@ -13,13 +14,12 @@
 		},
         "BonusDescriptions": {
             "Bonuses": [	
-	                "Accuracy: +6",
-                        "CQBDecay: 5",
-                        "CQBDecayRange: 60",
+			"EvasionIgnore: +2",
+			"CQBVisor: 5, 60",
 			"Health: +2",
 			"Crits: +50%",
 			"Initiative: +3",
-	                "CockpitSensors: 2",
+	                "AdvancedSensors: 2",
 			"IsCockpit"
             ]
         },
@@ -109,24 +109,13 @@
         {
             "durationData" : {
                 "duration" : -1,
-                "ticksOnActivations" : false,
-                "useActivationsOfTarget" : false,
-                "ticksOnEndOfRound" : false,
-                "ticksOnMovements" : false,
                 "stackLimit" : -1,
-                "clearedWhenAttacked" : false
             },
             "targetingData" : {
                 "effectTriggerType" : "Passive",
-                "triggerLimit" : 0,
-                "extendDurationOnTrigger" : 0,
-                "specialRules" : "NotSet",
                 "effectTargetType" : "Creator",
-                "range" : 0,
-                "forcePathRebuild" : false,
-                "forceVisRebuild" : false,
                 "showInTargetPreview" : false,
-                "showInStatusPanel" : true
+                "showInStatusPanel" : false
             },
             "effectType" : "StatisticEffect",
             "Description" : {
@@ -137,25 +126,11 @@
             },
             "nature" : "Buff",
             "statisticData" : {
-                "appliesEachTick" : false,
-                "effectsPersistAfterDestruction" : false,
-                "statName" : "AccuracyModifier",
-                "operation" : "Float_Add",
-                "modValue" : "-6.0",
-                "modType" : "System.Single",
-                "additionalRules" : "NotSet",
-                "targetCollection" : "Weapon",
-                "targetWeaponCategory" : "NotSet",
-                "targetWeaponType" : "NotSet",
-                "targetAmmoCategory" : "NotSet",
-                "targetWeaponSubType" : "NotSet"
-            },
-            "tagData" : null,
-            "floatieData" : null,
-            "actorBurningData" : null,
-            "vfxData" : null,
-            "instantModData" : null,
-            "poorlyMaintainedEffectData" : null
+               "statName": "EvasivePipsIgnored",
+                "operation": "Float_Add",
+                "modValue": "2.0",
+                "modType": "System.Single",
+            }
         },		
         {
             "durationData" : {
@@ -257,43 +232,11 @@
             "statisticData": {
                 "statName": "LV_ZOOM_VISION",
                 "operation": "Set",
-                "modValue": "0_5_2",
+                "modValue": "-5_0_2",
                 "modType": "System.String"
             }
         },
-        {
-            "durationData" : {
-                "duration": -1,
-                "stackLimit": -1
-            },
-            "targetingData" : {
-                "effectTriggerType" : "Passive",
-                "specialRules" : "NotSet",
-                "effectTargetType" : "Creator",
-                "range" : 0.0,
-                "forcePathRebuild" : false,
-                "forceVisRebuild" : true,
-                "showInTargetPreview" : false,
-                "showInStatusPanel" : false
-            },
-            "effectType" : "StatisticEffect",
-            "Description" :
-            {
-                "Id" : "LV_Probe_Carrier",
-                "Name" : "Active Probe (Passive)",
-                "Details" : "Reduces effectiveness of stealthed and ECM shielded units",
-                "Icon" : "uixSvgIcon_status_ECM-ghost"
-            },
-            "statisticData" :
-            {
-                "statName" : "LV_Probe_Carrier",
-                "operation": "Int_Add",
-                "modValue": "1",
-                "modType": "System.Int32"
-            },
-            "nature" : "Buff"
-        },
-                   {
+       {
             "durationData" : {
                 "duration": -1,
                 "stackLimit": -1
@@ -318,7 +261,7 @@
             },
             "statisticData" :
             {
-                "statName" : "LV_Advanced_Sensors",
+                "statName" : "LV_ADVANCED_SENSORS",
                 "operation": "Int_Add",
                 "modValue": "2",
                 "modType": "System.Int32"

@@ -1,25 +1,30 @@
 {
     "Custom": {
-        "Category": [{
-            "CategoryID": "ChassisSupport"
-        }],
-        "ComponentExplosion": {
-            "ExplosionDamage": 25
-        },
-		"Flags" : { "flags" : [ "not_broken", "no_salvage", "autorepair" ] },
+        "Category": [
+                {
+                        "CategoryID": "Special"
+                },
+                {
+                        "CategoryID": "PositiveQuirk"
+                }
+	],
+		"Flags" : { "flags" : [ "not_broken", "not_destroyed", "default" ] },
         "BonusDescriptions": {
             "Bonuses": [
 		"ACAccuracy: +2",
-		"ACDamage: +25%",
+		"ShotsFiredAC: +1",
 		"BallisticACRange: +15%",
-				"ACHeatGenerated: +10%",
-				"RecoilAC: +1",
-                "WeaponBoom: 25"
+		"ACHeatGenerated: +10%",
+		"RecoilAC: +1",
+		"Quirk"
             ]
         },
         "InventorySorter": {
             "SortKey": "00027"
-        }
+        },
+               "MechConfiguration" : {
+
+                }
     },
     "StatName": null,
     "RelativeModifier": 0,
@@ -30,11 +35,11 @@
         "Purchasable": true,
         "Manufacturer": "Optimus",
         "Model": "Drill la Drill",
-        "UIName": "Support Systems (LK)",
+        "UIName": "Support Systems (CM)",
         "Id": "Gear_Support_DrillLaDrill",
-        "Name": "Support Systems (LK)",
+        "Name": "Support Systems (CM)",
         "Details": "<b><color=#009933>Drill la Drill:</color></b> The Lady Killer has advanced autocannon mountings and feeding mechanisms , allowing usage of overcharged shells, increasing damage and range. This comes at the cost of increased heat and recoil.",
-        "Icon": "uixSvgIcon_equipment_TTS"
+        "Icon": "SpecialistSlot"
     },
     "BonusValueA": "+ 15% PPC Damage",
     "BonusValueB": "+ 20% PPC Heat",
@@ -42,9 +47,9 @@
     "ComponentSubType": "NotSet",
     "PrefabIdentifier": "",
     "BattleValue": 0,
-    "InventorySize": 2,
-    "Tonnage": 1.5,
-    "AllowedLocations": "All",
+    "InventorySize": 1,
+    "Tonnage": 0,
+    "AllowedLocations": "CenterTorso",
     "DisallowedLocations": "All",
     "CriticalComponent": false,
     "statusEffects": [
@@ -152,10 +157,10 @@
             },
             "nature": "Buff",
             "statisticData": {
-            "statName": "DamagePerShot",
-                "operation": "Float_Multiply",
-                "modValue": "1.25",
-                "modType": "System.Single",
+            "statName": "ShotsWhenFired",
+                "operation": "Int_Add",
+                "modValue": "1",
+                "modType": "System.Int32",
                         "targetCollection" : "Weapon",
                 "targetWeaponCategory" : "NotSet",
                 "targetWeaponType" : "Autocannon",

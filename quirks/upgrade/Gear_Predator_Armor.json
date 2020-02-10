@@ -1,0 +1,483 @@
+{
+    "Custom": {
+        "Color": {
+            "UIColor": "Gold"
+        },
+        "ComponentExplosion": {
+            "ExplosionDamage": 30
+        },
+        "Linked": {
+            "Links": [
+                {
+                    "ComponentDefId": "Linked_Predator_Armor",
+                    "Location": "Head"
+                },
+                {
+                    "ComponentDefId": "Linked_Predator_Armor",
+                    "Location": "LeftTorso"
+                },
+                {
+                    "ComponentDefId": "Linked_Predator_Armor",
+                    "Location": "RightTorso"
+                },
+                {
+                    "ComponentDefId": "Linked_Predator_Armor",
+                    "Location": "LeftArm"
+                },
+                {
+                    "ComponentDefId": "Linked_Predator_Armor",
+                    "Location": "RightArm"
+                },
+                {
+                    "ComponentDefId": "Linked_Predator_Armor",
+                    "Location": "LeftLeg"
+                },
+                {
+                    "ComponentDefId": "Linked_Predator_Armor",
+                    "Location": "RightLeg"
+                }
+            ]
+        },
+        "CriticalEffects": {
+            "LinkedStatisticName": "Predator Aromor"
+        },
+        "WorkOrderCosts": {
+            "Install": {
+                "TechCost": "2.5 * [[Chassis.Tonnage]] / 10",
+                "CBillCost": "2000 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 10"
+            }
+        },
+        "Category": [
+            {
+                "CategoryID": "Armor"
+            },
+            {
+                "CategoryID": "ECM"
+            },
+            {
+                "CategoryID": "StealthSystem"
+            }
+        ],
+        "ArmorRepair": {
+            "ArmorTPCost": 2,
+            "ArmorCBCost": 3
+        },
+        "Flags": {
+            "flags": [
+                "not_broken",
+                "no_salvage",
+                "autorepair"
+            ]
+        },
+        "BonusDescriptions": {
+            "Bonuses": [
+		"Predator",
+                "HaarJel",
+                "HaarJelTurn",
+                "HaarJelArmor: 12",
+                "HaarJelStructure: 4",
+                "FluidBoom: 30",
+                "Defense: +2",
+		"DamageTaken: -15%",
+		"BreachImmunity",
+                "LocalECM: 5",
+                "StealthSensors: 50%, 4, 2, 4, 6",
+                "MimeticStealth: 50%, 4, 5",
+                "Visibility: -50%",
+                "Signature: -50%",
+                "Reserved: 14",
+                "HeatGenerated: +20%",
+                "HeatPerTurn: +10",
+                "ArmorTPCost: 75%",
+                "ArmorCBCost: 75%"
+            ]
+        },
+        "InventorySorter": {
+            "SortKey": "00009"
+        },
+        "ActivatableComponent": {
+            "ButtonName": "Predator Armor",
+            "CanNotBeActivatedManualy": true,
+            "NoUniqueCheck": true,
+            "ActivationMessage": "Repairs Initiated",
+            "DeactivationMessage": "Repairs Complete",
+            "presistantVFX": {
+                "VFXPrefab": "vfxprfprtl_heatventsm_loop",
+                "VFXScaleX": 1,
+                "VFXScaleY": 1,
+                "VFXScaleZ": 1
+            },
+            "Repair": {
+                "InnerStructure": 4,
+                "Armor": 12,
+                "MechStructureLocations": [],
+                "MechArmorLocations": [],
+                "VehicleLocations": [],
+                "BuildingLocations": [],
+                "AffectInstalledLocation": true,
+                "repairTrigger": {
+                    "OnActivation": false,
+                    "OnDamage": "None",
+                    "AtEndOfTurn": true
+                }
+            }
+        }
+    },
+    "StatName": null,
+    "RelativeModifier": 0,
+    "AbsoluteModifier": 0,
+    "Description": {
+        "Cost": 2500000,
+        "Rarity": 18,
+        "Purchasable": true,
+        "Manufacturer": "Unknown",
+        "Model": "Predator",
+        "UIName": "Predator Armor",
+        "Id": "Gear_Predator_Armor",
+        "Name": "Predator Armor",
+        "Details": "Boss, this thing is... i dont even have words for it... Its matches Chameleon at stealth, its absorbs damage, and it self-repairs",
+        "Icon": "StealthArmor"
+    },
+    "BonusValueA": "Bulwark",
+    "BonusValueB": "Requires ECM",
+    "ComponentType": "Upgrade",
+    "ComponentSubType" : "Prototype_ElectronicWarfare",
+    "PrefabIdentifier": "",
+    "BattleValue": 0,
+    "InventorySize": 2,
+    "Tonnage": 1,
+    "AllowedLocations": "CenterTorso",
+    "DisallowedLocations": "All",
+    "CriticalComponent": false,
+    "statusEffects": [
+       {
+            "durationData" : {
+                "duration": -1,
+                "stackLimit": -1
+            },
+            "targetingData" : {
+                 "effectTriggerType": "Passive",
+                "effectTargetType": "Creator",
+                "showInTargetPreview": false,
+                "showInStatusPanel": false
+            },
+            "effectType" : "StatisticEffect",
+            "Description" :
+            {
+                                "Id" : "LV_ECM_SHIELD",
+                                "Name" : "ECM_Shield_OmniStealth",
+                                "Details" : "IPSUM SUCKUM",
+                                "Icon" : "uixSvgIcon_status_ECM-missileDef"
+            },
+            "statisticData" :
+            {
+                                "statName" : "LV_ECM_SHIELD",
+                                "operation": "Int_Add",
+                                "modValue": "5",
+                                "modType": "System.Int32"
+            },
+            "nature" : "Buff"
+        },
+                {
+                "durationData" : {
+                    "duration": -1,
+                    "stackLimit": 1
+                },
+                "targetingData" : {
+                     "effectTriggerType": "Passive",
+                "effectTargetType": "Creator",
+                "showInTargetPreview": false,
+                "showInStatusPanel": false
+                },
+                "effectType" : "StatisticEffect",
+                "Description" :
+                {
+                    "Id" : "LV_ECM_SHIELD_EMITTER_COUNT",
+                    "Name" : "ECM Shield Emitter Count",
+                    "Details" : "Counter for the number of ECM emitters currently affecting an actor with shielding.",
+                    "Icon" : "uixSvgIcon_status_ECM-missileDef"
+                },
+                "statisticData" :
+                {
+                    "statName" : "LV_ECM_SHIELD_EMITTER_COUNT",
+                    "operation": "Int_Add",
+                    "modValue": "1",
+                    "modType": "System.Int32"
+                },
+                "nature" : "Buff"
+            },
+        {
+            "durationData" : {
+                "duration": -1,
+                "stackLimit": 1
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "specialRules" : "NotSet",
+                "effectTargetType" : "Creator",
+                "range" : 0.0,
+                "forcePathRebuild" : false,
+                "forceVisRebuild" : true,
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false
+            },
+            "effectType" : "StatisticEffect",
+            "Description" :
+            {
+                "Id" : "LV_Stealth_Effect",
+                "Name" : "STEALTH",
+                "Details" : "Makes the carrier much harder to detect with stealth",
+                "Icon" : "uixSvgIcon_status_ECM-ghost"
+            },
+            "statisticData" : 
+            {
+                "statName" : "LV_STEALTH",
+                "operation" : "Set",
+                "modValue": "0.5_4_2_4_6",
+                "modType": "System.String"
+            },
+            "nature" : "Buff"
+        },
+         {
+            "durationData" : {
+                "duration": -1,
+                "stackLimit": 1
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "specialRules" : "NotSet",
+                "effectTargetType" : "Creator",
+                "range" : 0.0,
+                "forcePathRebuild" : false,
+                "forceVisRebuild" : true,
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false
+            },
+            "effectType" : "StatisticEffect",
+            "Description" :
+            {
+                "Id" : "LV_MIMETIC",
+                "Name" : "MIMETIC ARMOR",
+                "Details" : "Makes the carrier much harder to see with eyes",
+                "Icon" : "uixSvgIcon_status_ECM-ghost"
+            },
+            "statisticData" : 
+            {
+                "statName" : "LV_MIMETIC",
+                "operation" : "Set",
+                "modValue": "0.5_4_5",
+                "modType": "System.String"
+            },
+            "nature" : "Buff"
+        },  
+		{
+            "durationData": {
+                "duration": -1,
+                "stackLimit": -1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "effectTargetType": "Creator",
+				"showInTargetPreview": false,
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "Stealth_Signature_Decrease_Stealth",
+                "Name": "Stealth Signature Decrease",
+                "Details": "Signature Statuseffect.",
+                "Icon": "uixSvgIcon_equipment_TTS"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "statName": "SensorSignatureModifier",
+                "operation": "Float_Multiply",
+                "modValue": "0.5",
+                "modType": "System.Single"
+            }
+        },
+		{
+            "durationData": {
+                "duration": -1,
+                "stackLimit": -1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "effectTargetType": "Creator",
+                "showInTargetPreview": false,
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "Stealth_Visibility_Decrease_Stealth",
+                "Name": "Stealth Visbility Decrease",
+                "Details": "Visibility Statuseffect.",
+                "Icon": "uixSvgIcon_equipment_TTS"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "statName": "SpottingVisibilityMultiplier",
+                "operation": "Float_Multiply",
+                "modValue": "0.5",
+                "modType": "System.Single"
+            }
+        },
+		{
+            "durationData": {
+                "duration": -1,
+                "stackLimit": -1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "effectTargetType": "Creator",
+                "showInTargetPreview": false,
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "Stealth_Heat_Generation_Stealth",
+                "Name": "Increased Heat",
+                "Details": "Heat generation",
+                "Icon": "uixSvgIcon_equipment_ThermalExchanger"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "statName": "HeatGenerated",
+                "operation": "Float_Multiply",
+                "modValue": "1.20",
+                "modType": "System.Single",
+                "targetCollection": "Weapon"
+            }
+        },
+        {
+            "durationData": {
+                "duration": -1,
+                "stackLimit": -1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "effectTargetType": "Creator",
+                "showInTargetPreview": false,
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "Stealth_Heat_Capacity_Stealth",
+                "Name": "Decreased Heat Capacity",
+                "Details": "Heat Capacity Penalty",
+                "Icon": "uixSvgIcon_equipment_ThermalExchanger"
+            },
+            "nature": "Debuff",
+            "statisticData": {
+                "statName": "HeatSinkCapacity",
+                "operation": "Int_Add",
+                "modValue": "-10",
+                "modType": "System.Int32"
+            }
+        },
+       {
+            "durationData": {
+                "duration": -1,
+                "ticksOnActivations": false,
+                "useActivationsOfTarget": false,
+                "ticksOnEndOfRound": false,
+                "ticksOnMovements": false,
+                "stackLimit": 10,
+                "clearedWhenAttacked": false
+            },
+            "targetingData": {
+                "effectTargetsCreator": true,
+                "effectTriggerType": "Passive",
+                "triggerLimit": 0,
+                "extendDurationOnTrigger": 0,
+                "specialRules": "NotSet",
+                "effectTargetType": "Creator",
+                "range": 0,
+                "forcePathRebuild": false,
+                "forceVisRebuild": false,
+                "showInTargetPreview": false,
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "StatusEffect-GyroDefMelee",
+                "Name": "Spiked Armour Plates",
+                "Details": "All incoming Melee damage reduced extra Melee Damage.",
+                "Icon": "uixSvgIcon_mwFury"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "appliesEachTick": false,
+                "effectsPersistAfterDestruction": false,
+                "statName": "DamageReductionMultiplierAll",
+                "operation": "Float_Multiply",
+                "modValue": "0.85",
+                "modType": "System.Single"
+            },
+            "tagData": null,
+            "floatieData": null,
+            "actorBurningData": null,
+            "vfxData": null,
+            "instantModData": null,
+            "poorlyMaintainedEffectData": null
+        },
+       {
+            "durationData": {
+                "duration": -1,
+                "stackLimit": 1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "effectTargetType": "Creator",
+                "showInTargetPreview": false,
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "GECMInterference",
+                "Name": "GECM Interference",
+                "Details": "Guardian ECM making this unit harder to hit.",
+                "Icon": "uixSvgIcon_equipment_Gyro"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "statName": "ToHitThisActor",
+                "operation": "Float_Add",
+                "modValue": "2.0",
+                "modType": "System.Single"
+            }
+        },
+                {
+            "durationData": {
+                "duration": -1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "effectTargetType": "Creator"
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "BreachImmunity",
+                "Name": "BreachImmunity",
+                "Details": "Immune to Hull Breach",
+                "Icon": "uixSvgIcon_ability_precisionstrike"
+            },
+            "statisticData": {
+                "statName": "CBTBE_HullBreachImmunity",
+                "operation": "Set",
+                "modValue": "true",
+                "modType": "System.Boolean"
+            },
+            "nature": "Buff"
+        }
+    ],
+    "ComponentTags": {
+        "items": [
+            "component_type_stock",
+	    "BLACKLISTED",
+            "StealthArmor",
+            "ElectronicCounterMeasures"
+        ],
+        "tagSetSourceFile": ""
+    }
+}

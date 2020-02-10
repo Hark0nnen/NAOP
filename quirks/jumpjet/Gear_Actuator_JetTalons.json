@@ -1,0 +1,348 @@
+{
+    "Custom": {
+        "Category": [
+            {
+                "CategoryID": "LegFootActuator"
+            },
+	    {
+        	"CategoryID" : "LegLowerActuator"
+            },
+           {
+            "CategoryID": "LegJJ"
+            }
+        ],
+        "Flags": {
+            "flags": [
+                "not_broken",
+                "no_salvage",
+                "autorepair"
+            ]
+        },
+        "BonusDescriptions": {
+            "Bonuses": [
+               "JumpCapacity: 1",
+                "JumpHeat: 3",
+                "MeleeAcc: +1",
+                "DFAAcc: +2",
+                "Melee2: +10",
+                "DFA2: +20",
+		"DFASelfDamage: -10%",
+		"StandUP: 20%"
+            ]
+        },
+        "InventorySorter": {
+            "SortKey": "8888"
+        }
+    },
+    "JumpCapacity": 1,
+    "MinTonnage": 0,
+    "MaxTonnage": 200,
+    "Description": {
+        "Cost": 550000,
+        "Rarity": 10,
+        "Purchasable": true,
+        "Manufacturer": "Unknown",
+        "Model": "Jet Talons",
+        "UIName": "Jet Talons",
+        "Id": "Gear_Actuator_JetTalons",
+        "Name": "Jet Talons",
+        "Details": "This specialized set of Leg actuators enhance all Melee and DFA actions.",
+        "Icon": "uixSvgIcon_ability_angelofdeath"
+    },
+    "BonusValueA": "+20 DFA&Melee Dmg.",
+    "BonusValueB": "+2 DFA&Melee Acc.",
+    "ComponentType": "JumpJet",
+    "ComponentSubType": "Functionality",
+    "BattleValue": 0,
+    "InventorySize": 2,
+    "Tonnage": 1,
+    "AllowedLocations": "Legs",
+    "DisallowedLocations": "All",
+    "CriticalComponent": false,
+    "statusEffects": [
+        {
+            "durationData": {
+                "duration": -1,
+                "ticksOnActivations": false,
+                "useActivationsOfTarget": false,
+                "ticksOnEndOfRound": false,
+                "ticksOnMovements": false,
+                "stackLimit": -1,
+                "clearedWhenAttacked": false
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "triggerLimit": 0,
+                "extendDurationOnTrigger": 0,
+                "specialRules": "NotSet",
+                "effectTargetType": "Creator",
+                "range": 0,
+                "forcePathRebuild": false,
+                "forceVisRebuild": false,
+                "showInTargetPreview": false,
+                "showInStatusPanel": true
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "StatusEffect-TalonsDFA",
+                "Name": "Bird of Prey",
+                "Details": "Mech has Talons.",
+                "Icon": "uixSvgIcon_ability_angelofdeath"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "appliesEachTick": false,
+                "effectsPersistAfterDestruction": false,
+                "statName": "DamagePerShot",
+                "operation": "Float_Add",
+                "modValue": "20.0",
+                "modType": "System.Single",
+                "additionalRules": "NotSet",
+                "targetCollection": "Weapon",
+                "targetWeaponCategory": "NotSet",
+                "targetWeaponType": "NotSet",
+                "targetAmmoCategory": "NotSet",
+                "targetWeaponSubType": "DFA"
+            }
+        },
+        {
+            "durationData": {
+                "duration": -1,
+                "ticksOnActivations": false,
+                "useActivationsOfTarget": false,
+                "ticksOnEndOfRound": false,
+                "ticksOnMovements": false,
+                "stackLimit": -1,
+                "clearedWhenAttacked": false
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "triggerLimit": 0,
+                "extendDurationOnTrigger": 0,
+                "specialRules": "NotSet",
+                "effectTargetType": "Creator",
+                "range": 0,
+                "forcePathRebuild": false,
+                "forceVisRebuild": false,
+                "showInTargetPreview": false,
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "StatusEffect-TalonsMelee",
+                "Name": "MELEE DAMAGE INCREASED",
+                "Details": "Melee attacks deal [AMT] more damage.",
+                "Icon": "uixSvgIcon_equipment_ActuatorArm"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "appliesEachTick": false,
+                "effectsPersistAfterDestruction": false,
+                "statName": "DamagePerShot",
+                "operation": "Float_Add",
+                "modValue": "10.0",
+                "modType": "System.Single",
+                "additionalRules": "NotSet",
+                "targetCollection": "Weapon",
+                "targetWeaponCategory": "NotSet",
+                "targetWeaponType": "NotSet",
+                "targetAmmoCategory": "NotSet",
+                "targetWeaponSubType": "Melee"
+            }
+        },
+        {
+            "durationData": {
+                "duration": -1,
+                "ticksOnActivations": false,
+                "useActivationsOfTarget": false,
+                "ticksOnEndOfRound": false,
+                "ticksOnMovements": false,
+                "stackLimit": -1,
+                "clearedWhenAttacked": false
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "triggerLimit": 0,
+                "extendDurationOnTrigger": 0,
+                "specialRules": "NotSet",
+                "effectTargetType": "Creator",
+                "range": 0,
+                "forcePathRebuild": false,
+                "forceVisRebuild": false,
+                "showInTargetPreview": false,
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "StatusEffect-TalonsMeleeACC",
+                "Name": "MELEE HIT CHANCE DECREASED",
+                "Details": "Melee attacks attempted have their hit decreased by 2.",
+                "Icon": "uixSvgIcon_equipment_Gyro"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "appliesEachTick": false,
+                "effectsPersistAfterDestruction": false,
+                "statName": "AccuracyModifier",
+                "operation": "Float_Add",
+                "modValue": "-1.0",
+                "modType": "System.Single",
+                "additionalRules": "NotSet",
+                "targetCollection": "Weapon",
+                "targetWeaponCategory": "NotSet",
+                "targetWeaponType": "NotSet",
+                "targetAmmoCategory": "NotSet",
+                "targetWeaponSubType": "Melee"
+            }
+        },
+        {
+            "durationData": {
+                "duration": -1,
+                "ticksOnActivations": false,
+                "useActivationsOfTarget": false,
+                "ticksOnEndOfRound": false,
+                "ticksOnMovements": false,
+                "stackLimit": -1,
+                "clearedWhenAttacked": false
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "triggerLimit": 0,
+                "extendDurationOnTrigger": 0,
+                "specialRules": "NotSet",
+                "effectTargetType": "Creator",
+                "range": 0,
+                "forcePathRebuild": false,
+                "forceVisRebuild": false,
+                "showInTargetPreview": false,
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "StatusEffect-TalonsDFAACC",
+                "Name": "MELEE HIT CHANCE DECREASED",
+                "Details": "Melee attacks attempted have their hit decreased by 2.",
+                "Icon": "uixSvgIcon_equipment_Gyro"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "appliesEachTick": false,
+                "effectsPersistAfterDestruction": false,
+                "statName": "AccuracyModifier",
+                "operation": "Float_Add",
+                "modValue": "-2.0",
+                "modType": "System.Single",
+                "additionalRules": "NotSet",
+                "targetCollection": "Weapon",
+                "targetWeaponCategory": "NotSet",
+                "targetWeaponType": "NotSet",
+                "targetAmmoCategory": "NotSet",
+                "targetWeaponSubType": "DFA"
+            }
+        },
+                {
+                        "durationData": {
+                                "duration": -1,
+                                "ticksOnActivations": false,
+                                "useActivationsOfTarget": false,
+                                "ticksOnEndOfRound": false,
+                                "ticksOnMovements": false,
+                                "stackLimit": -1,
+                                "clearedWhenAttacked": false
+                        },
+                        "targetingData": {
+                                "effectTriggerType": "Passive",
+                                "triggerLimit": 0,
+                                "extendDurationOnTrigger": 0,
+                                "specialRules": "NotSet",
+                                "effectTargetType": "Creator",
+                                "range": 0,
+                                "forcePathRebuild": false,
+                                "forceVisRebuild": false,
+                                "showInTargetPreview": false,
+                                "showInStatusPanel": false
+                        },
+                        "effectType": "StatisticEffect",
+                        "Description": {
+                                "Id": "StatusEffect-Attack_SelfDamageDFA-JJ",
+                                "Name": "DFA SELF-INFLICTED DAMAGE DECREASED",
+                                "Details": "DFA attacks deal 10% less damage to the attacker.",
+                                "Icon": "uixSvgIcon_equipment_ActuatorLeg"
+                        },
+                        "statisticData": {
+                                "appliesEachTick": false,
+                                "effectsPersistAfterDestruction": false,
+                                "statName": "DFASelfDamage",
+                                "operation": "Float_Multiply",
+                                "modValue": "0.90",
+                                "modType": "System.Single",
+                                "additionalRules": "NotSet",
+                                "targetCollection": "NotSet",
+                                "targetWeaponCategory": "NotSet",
+                                "targetWeaponType": "NotSet",
+                                "targetAmmoCategory": "NotSet",
+                                "targetWeaponSubType": "DFA"
+                        },
+                        "nature": "Buff"
+                },
+      {
+            "durationData" : {
+                        "duration": -1,
+                "stackLimit": -1
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "effectTargetType" : "Creator",
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false
+            },
+            "effectType" : "StatisticEffect",
+            "Description" : {
+                "Id" : "ActuatorStandUp",
+                "Name" : "Intact Actuator",
+                "Details" : "Chance to stand up improved by actuator",
+                "Icon" : "uixSvgIcon_equipment_ActuatorArm"
+            },
+            "statisticData" : {
+                "statName" : "CAEStoodUpRollMod",
+                "operation" : "Float_Add",
+                "modValue" : "0.2",
+                "modType" : "System.Single"
+            },
+            "nature" : "Buff"
+        },
+        {
+            "durationData": {
+                "duration": -1,
+                "stackLimit": -1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "effectTargetType": "Creator",
+                "showInTargetPreview": false,
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "StatusEffect-JumpHeat",
+                "Name": "Jump Jet Heat",
+                "Details": "This Jump Jets Heat Generation per Hex",
+                "Icon": "uixSvgIcon_equipment_ThermalExchanger"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "statName": "JumpHeat",
+                "operation": "Float_Add",
+                "modValue": "3",
+                "modType": "System.Single"
+            }
+        }
+    ],
+    "ComponentTags": {
+        "items": [
+            "component_type_variant",
+            "component_type_variant2"
+        ],
+        "tagSetSourceFile": ""
+    }
+}

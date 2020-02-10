@@ -11,13 +11,25 @@
   
   "FixedEquipment": [
 		{
-			"ComponentDefID": "Gear_Actuator_Prototype_VibroSword",
+			"ComponentDefID": "Special_Cleric",
 			"ComponentDefType": "Upgrade",
 			"DamageLevel": "Functional",
 			"GUID": null,
 			"HardpointSlot": 1,
 			"IsFixed": true,
-			"MountedLocation": "LeftArm",
+			"MountedLocation": "CenterTorso",
+			"SimGameUID": "",
+			"hasPrefabName": false,
+			"prefabName": null
+		},
+		{
+			"ComponentDefID": "Special_VibroSword_5tons",
+			"ComponentDefType": "Upgrade",
+			"DamageLevel": "Functional",
+			"GUID": null,
+			"HardpointSlot": 1,
+			"IsFixed": true,
+			"MountedLocation": "CenterTorso",
 			"SimGameUID": "",
 			"hasPrefabName": false,
 			"prefabName": null
@@ -108,7 +120,7 @@
     "Details": "This custom BattleMech is the personal ride of Edgelord, a infamous Pirate gang leader and fan of 21st Century Kuritan, I mean, Japanese culture. It is built with stolen Toho Heavy Industries technology, and is equipped with experimental MASC and overcharged weapons systems. <b><color=#53ff1a>Restricted Actuators- Right: Lower</color></b>",
     "Icon": "uixTxrIcon_cataphract"
   },
-  "MovementCapDefID": "movedef_cataphract_CTF-1X",
+  "MovementCapDefID": "movedef_heavymech",
   "PathingCapDefID": "pathingdef_heavy",
   "HardpointDataDefID": "hardpointdatadef_cataphract",
   "PrefabIdentifier": "chrPrfMech_cataphractBase-001",
@@ -120,7 +132,7 @@
   "Heatsinks": 0,
   "TopSpeed": 120,
   "TurnRadius": 90,
-  "MaxJumpjets": 4,
+  "MaxJumpjets": 20,
   "Stability": 100,
   "StabilityDefenses": [
     0,
@@ -228,10 +240,26 @@
         {
           "WeaponMount": "AntiPersonnel",
           "Omni": false
+        },
+        {
+          "WeaponMountID": "Special",
+          "Omni": false
+        },
+        {
+          "WeaponMountID": "Special",
+          "Omni": false
+        },
+        {
+          "WeaponMountID": "SpecialMelee",
+          "Omni": false
+        },
+        {
+          "WeaponMountID": "SpecialMelee",
+          "Omni": false
         }
       ],
       "Tonnage": 0,
-      "InventorySlots": 12,
+      "InventorySlots": 15,
       "MaxArmor": 220,
       "MaxRearArmor": 110,
       "InternalStructure": 110

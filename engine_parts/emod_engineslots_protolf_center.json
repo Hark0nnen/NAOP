@@ -20,11 +20,7 @@
 				{ "ComponentDefId" : "emod_engineslots_size4", "Location": "RightTorso" }
 			]
 		},
-		"Flags" : { "flags" : [
-               "not_broken",
-                "vital"
-           ] 
-},
+		"Flags" : { "flags" : [ "vital", "engine_part" ] },
         "BonusDescriptions": {
             "Bonuses": [
                 "EngineWeight: -70%",
@@ -72,7 +68,7 @@
         "Id" : "emod_engineslots_protolf_center",
         "Name" : "Li Engine",
         "Details" : "It has long been known that Lithium-based fusion is aneutronic, and thus does not require massive shielding. During the height of the Star League, Naval Lithium Fusion reactors were built far more lightly than a hydrogen powerplant of the same rating, and can run over a decade on a single Lithium-Deuteride fusion fuel cartridge, comparable to Fission reactors. However, Lithium is orders of magnitude more rare than Hydrogen, which is by far the most common element, and even worse, the design produces copious waste heat, a massive emissions signature, and is bulkier than a conventional reactor.",
-        "Icon" : "uixSvgIcon_equipment_Heatsink"
+        "Icon" : "power-generator"
     },
     "BonusValueA" : "- 70% Engine Weight",
     "BonusValueB" : "+ 8 Slots Required | + 9 Heat | 20% Signature",

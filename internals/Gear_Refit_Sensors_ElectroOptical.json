@@ -1,18 +1,25 @@
 {
 
-	"Custom" :  {"Category": [{ "CategoryID": "SensorsRefit"}],
+	"Custom" :  {"Category": [{ "CategoryID": "SensorsRefit"},
+	    { "CategoryID": "Special" }],
         "BonusDescriptions": {
             "Bonuses": [
-				"Sensors: -15%",
+				"Sensors: -25%",
 				"Sight: +25%",
-				"Sight2: 50"
+				"Sight2: 50",
+				"Special"
             ]
         },
             "InventorySorter" : {
-                "SortKey" : "00024"
-            }		
-	},
-
+                "SortKey" : "00201"
+            },
+                "MechConfiguration" : {
+                },
+        "HandHeld" : {
+        "Tonnage" : 0,
+        "HandsUsed" : false
+	}
+    },
     "StatName" : null,
     "RelativeModifier" : 0,
     "AbsoluteModifier" : 0,
@@ -26,7 +33,7 @@
         "Id" : "Gear_Refit_Sensors_ElectroOptical",
         "Name" : "Electro Optical Refit",
         "Details" : "With the tremendous proliferation of advanced ECM systems, many MechWarriors demanded a way to increase visual target acquisition ability *without* increasing tonnage. The Oculus refit by Toho Heavy Industries is carefully optimized, modestly reducing sensors ability for a significant increase in visual capability, by removing a few sensor clusters and using the freed mass to place enhanced optical rangefinders & networked electro-optical cameras.",
-        "Icon" : "uixSvgIcon_equipment_TTS"
+        "Icon" : "circuitry"
     },
     "BonusValueA" : "+25% Sight",
     "BonusValueB" : "-10% Sensors",
@@ -36,7 +43,7 @@
     "BattleValue" : 0,
     "InventorySize" : 1,
     "Tonnage" : 0,
-    "AllowedLocations" : "All",
+    "AllowedLocations" : "CenterTorso",
     "DisallowedLocations" : "All",
     "CriticalComponent" : false,
     "statusEffects" : [
@@ -75,7 +82,7 @@
                 "effectsPersistAfterDestruction" : false,
                 "statName" : "SensorDistanceAbsolute",
                 "operation" : "Float_Multiply",
-                "modValue" : "0.85",
+                "modValue" : "0.75",
                 "modType" : "System.Single",
                 "additionalRules" : "NotSet",
                 "targetCollection" : "NotSet",
@@ -197,7 +204,6 @@
     "ComponentTags" : {
         "items" : [
             "component_type_stock",
-			"lv-vision-zoom_m3"
         ],
         "tagSetSourceFile" : ""
     }

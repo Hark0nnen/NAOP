@@ -18,7 +18,7 @@
 			"GUID": null,
 			"HardpointSlot": -1,
 			"IsFixed": true,
-			"MountedLocation": "LeftTorso",
+			"MountedLocation": "CenterTorso",
 			"SimGameUID": "",
 			"hasPrefabName": false,
 			"prefabName": null
@@ -37,7 +37,7 @@
     "Details": "This custom design by Optimus is designed to minimize observability and maximize sensors sensitivity, using the best of ClanTech and prototype LosTech. It fills the inside of it's chassis with lightweight radar-absorbent, signature-reducing nanofoam, and is fitted with a plethora of powerful sensors and advanced ECM gear; the actuators are fitted with sound insulation, and even the air intakes have baffles. Unfortunately, this has lead to a considerable increase in heat generation.<b><color=#53ff1a>Restricted Actuators- Left: Upper, Right: Upper</color></b>",
     "Icon": "uixTxrIcon_jenner"
   },
-  "MovementCapDefID": "movedef_jenner_JR7-IIC",
+  "MovementCapDefID": "movedef_lightmech",
   "PathingCapDefID": "pathingdef_light",
   "HardpointDataDefID": "hardpointdatadef_jenner",
   "PrefabIdentifier": "chrPrfMech_jennerBase-001",
@@ -49,7 +49,7 @@
   "Heatsinks": 0,
   "TopSpeed": 65,
   "TurnRadius": 90,
-  "MaxJumpjets": 6,
+  "MaxJumpjets": 20,
   "Stability": 100,
   "StabilityDefenses": [
     0,
@@ -177,10 +177,26 @@
         {
           "WeaponMount": "AntiPersonnel",
           "Omni": false
+        },
+        {
+          "WeaponMountID": "Special",
+          "Omni": false
+        },
+        {
+          "WeaponMountID": "Special",
+          "Omni": false
+        },
+        {
+          "WeaponMountID": "SpecialMelee",
+          "Omni": false
+        },
+        {
+          "WeaponMountID": "SpecialMelee",
+          "Omni": false
         }
       ],
       "Tonnage": 0,
-      "InventorySlots": 12,
+      "InventorySlots": 15,
       "MaxArmor": 110,
       "MaxRearArmor": 55,
       "InternalStructure": 55

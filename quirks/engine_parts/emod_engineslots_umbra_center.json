@@ -20,7 +20,7 @@
 				{ "ComponentDefId" : "emod_engineslots_size3", "Location": "RightTorso" }
 			]
 		},
-		"Flags" : { "flags" : [ "not_broken", "no_salvage", "autorepair" ] },
+		"Flags" : { "flags" : [ "vital", "engine_part", "not_broken", "no_salvage", "autorepair" ] },
         "BonusDescriptions": {
             "Bonuses": [
                 "WalkSpeed: +25%",
@@ -72,7 +72,7 @@
         "Id" : "emod_engineslots_umbra_center",
         "Name" : "Umbra Li Engine",
         "Details" : "Built using ultra-efficient LosTech high-temperature superconductive Magneto Hydrodynamic systems around an experimental Lithium Fusion core, the Umbra engine is the epitome of quiet, high efficiency designs, fully unsealing it's potential. The Umbra extracts energy via layered MHD fields, then the decelerated fusion byproducts are used to heat a Mercury Vapor Turbine, extracting additional power while simultaneously reducing waste heat. This stealthy design effectively utilizes the near-maximal amount of energy possible, resulting in minimal signature emissions and unrivaled reactor efficiency.",
-        "Icon" : "uixSvgIcon_equipment_Heatsink"
+        "Icon" : "power-generator"
     },
     "BonusValueA" : "- 75% Engine Weight | -33% Signature",
     "BonusValueB" : "+ 6 Slots | + 10 Heat | -20% Heat Generation|",

@@ -11,6 +11,12 @@
 	
 	"DependsOn": [ "RogueTech Core", "CustomComponents", "MechEngineer", "Custom Ammo Categories", "CustomActivatableEquipment"],
 	"ConflictsWith": [],
+       "DataAddendumEntries":[
+                {
+            "name":"BattleTech.AmmoCategoryEnumeration",
+            "path":"AmmoCategory.json"
+        }
+    ],
 
     "Manifest": [
 			{ "Type": "WeaponDef", "Path": "weapon" },

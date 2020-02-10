@@ -62,7 +62,7 @@
         "Id": "emod_armorslots_graphenefoam",
         "Name": "Foamed Graphene Composite",
         "Details": "Less than two thirds the weight of standard armor, this modular protection design incorporates a thick belt of Foamed Graphene stuffing armor steel boxes, reducing chances of a penetrating impact causing critical damage. It is also highly-signature absorbent across a wide spectrum, decreasing emissions in a non-trivial manner. Even better, Foamed Graphene is produced as an industrial byproduct of Hyperdiamond fabrication, making this armor relatively affordable. Unfortunately, it is a potent insulator, significantly increasing heat generation, and must be layered far deeper to achieve the same protection, reducing volume available. <b><color=#00ff00>CASE Enabled</color></b>",
-        "Icon": "uixSvgIcon_action_end"
+        "Icon": "shieldcomb"
     },
     "BonusValueA": "-33% Armor Weight|",
     "BonusValueB": "10 Slots Slots",

@@ -7,12 +7,12 @@
                         "Location" : "CenterTorso",
                         "Type" : "Upgrade"
 		}
-        ]
+        ],
   },
-  
-  "FixedEquipment": [ {
-			"MountedLocation": "RightArm",
-			"ComponentDefID": "Gear_Actuator_Prototype_PowerMace",
+  "FixedEquipment": [ 
+		{
+			"MountedLocation": "CenterTorso",
+			"ComponentDefID": "Special_VibroMace",
 			"SimGameUID": null,
 			"ComponentDefType": "Upgrade",
 			"HardpointSlot": -1,
@@ -33,16 +33,6 @@
 		}, {
 			"MountedLocation": "LeftArm",
 			"ComponentDefID": "Gear_Actuator_Spiked_Pauldron",
-			"SimGameUID": null,
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": -1,
-			"GUID": null,
-			"DamageLevel": "Functional",
-			"prefabName": null,
-			"hasPrefabName": false
-		}, {
-			"MountedLocation": "LeftArm",
-			"ComponentDefID": "Gear_Carebear_VibroClaws",
 			"SimGameUID": null,
 			"ComponentDefType": "Upgrade",
 			"HardpointSlot": -1,
@@ -91,7 +81,7 @@
 			"prefabName": null,
 			"hasPrefabName": false
 		}, {
-			"MountedLocation": "LeftTorso",
+			"MountedLocation": "CenterTorso",
 			"ComponentDefID": "Gear_Support_Chargelot",
 			"SimGameUID": null,
 			"ComponentDefType": "Upgrade",
@@ -115,7 +105,7 @@
     "Details": "The Baron is the personal ride of von Harkonnen, a minor planetary noble turned Pirate Warlord. His 'Mech is fitted with a plethora of hand-to-hand weaponry, a sprinting-optimized frame, and an experimental MASC. It has left a trail of broken cockpits in his wake.",
     "Icon": "uixTxrIcon_mauler"
   },
-  "MovementCapDefID": "movedef_mauler_MAL-1R",
+  "MovementCapDefID": "movedef_assaultmech",
   "PathingCapDefID": "pathingdef_assault",
   "HardpointDataDefID": "hardpointdatadef_mauler",
   "PrefabIdentifier": "chrprfmech_maulerbase-001",
@@ -127,7 +117,7 @@
   "Heatsinks": 0,
   "TopSpeed": 105,
   "TurnRadius": 90,
-  "MaxJumpjets": 3,
+  "MaxJumpjets": 20,
   "Stability": 200,
   "StabilityDefenses": [
     0,
@@ -224,10 +214,25 @@
     {
       "Location": "CenterTorso",
       "Hardpoints": [
-
+        {
+          "WeaponMountID": "Special",
+          "Omni": false
+        },
+        {
+          "WeaponMountID": "Special",
+          "Omni": false
+        },
+        {
+          "WeaponMountID": "SpecialMelee",
+          "Omni": false
+        },
+        {
+          "WeaponMountID": "SpecialMelee",
+          "Omni": false
+        }
       ],
       "Tonnage": 0,
-      "InventorySlots": 12,
+      "InventorySlots": 15,
       "MaxArmor": 340,
       "MaxRearArmor": 165,
       "InternalStructure": 155

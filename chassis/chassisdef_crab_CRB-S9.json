@@ -1,5 +1,9 @@
 {
   "Custom": {
+    "ArmActuatorSupport": {
+      "LeftLimit": "Lower",
+      "RightLimit": "Lower"
+    },
   "ChassisDefaults" : [{
                         "CategoryID" : "Cooling",
                         "DefID" : "emod_kit_dhs_RISC",
@@ -15,19 +19,31 @@
 			"GUID": null,
 			"HardpointSlot": 1,
 			"IsFixed": true,
-			"MountedLocation": "LeftTorso",
+			"MountedLocation": "CenterTorso",
 			"SimGameUID": "",
 			"hasPrefabName": false,
 			"prefabName": null
 		},
 		{
-			"ComponentDefID": "Weapon_MachineGun_Minigun",
+			"ComponentDefID": "Weapon_MachineGun_Minigun_Toho",
 			"ComponentDefType": "Weapon",
 			"DamageLevel": "Functional",
 			"GUID": null,
 			"HardpointSlot": 1,
 			"IsFixed": true,
 			"MountedLocation": "LeftArm",
+			"SimGameUID": "",
+			"hasPrefabName": false,
+			"prefabName": null
+		},
+		{
+			"ComponentDefID": "Weapon_MachineGun_Minigun_Toho",
+			"ComponentDefType": "Weapon",
+			"DamageLevel": "Functional",
+			"GUID": null,
+			"HardpointSlot": 1,
+			"IsFixed": true,
+			"MountedLocation": "RightArm",
 			"SimGameUID": "",
 			"hasPrefabName": false,
 			"prefabName": null
@@ -46,7 +62,7 @@
     "Details": "This custom Crab has been built for the 3069 Solaris Grand Champion, Personman, as an MG platform. The arm anti-personnel mounts have been stripped and replaced with ballistic ammo feeds. It incorporates a fusion of prototype, Clan, and New Dallas Memory Core technology.",
     "Icon": "Tohou"
   },
-  "MovementCapDefID": "movedef_crab_CRB-27",
+  "MovementCapDefID": "movedef_mediummech",
   "PathingCapDefID": "pathingdef_medium",
   "PrefabBase": "crab",
   "PrefabIdentifier": "chrPrfMech_crabBase-001",
@@ -58,7 +74,7 @@
   "Heatsinks": 0,
   "TopSpeed": 80,
   "TurnRadius": 90,
-  "MaxJumpjets": 4,
+  "MaxJumpjets": 20,
   "Stability": 100,
   "StabilityDefenses": [
     0,
@@ -143,10 +159,25 @@
     {
       "Location": "CenterTorso",
       "Hardpoints": [
-
+        {
+          "WeaponMountID": "Special",
+          "Omni": false
+        },
+        {
+          "WeaponMountID": "Special",
+          "Omni": false
+        },
+        {
+          "WeaponMountID": "SpecialMelee",
+          "Omni": false
+        },
+        {
+          "WeaponMountID": "SpecialMelee",
+          "Omni": false
+        }
       ],
       "Tonnage": 0,
-      "InventorySlots": 12,
+      "InventorySlots": 15,
       "MaxArmor": 160,
       "MaxRearArmor": 80,
       "InternalStructure": 80

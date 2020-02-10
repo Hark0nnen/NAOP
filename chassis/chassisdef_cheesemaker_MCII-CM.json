@@ -34,7 +34,7 @@
 			"hasPrefabName": false
 		}, {
 			"MountedLocation": "CenterTorso",
-			"ComponentDefID": "Gear_Gyro_Omnimech",
+			"ComponentDefID": "Gear_Gyro_Omni_Dreadnought",
 			"SimGameUID": null,
 			"ComponentDefType": "Upgrade",
 			"HardpointSlot": -1,
@@ -74,7 +74,7 @@
 			"hasPrefabName": false
 		}, {
 			"MountedLocation": "CenterTorso",
-			"ComponentDefID": "emod_engineslots_compactlf_center",
+			"ComponentDefID": "emod_engineslots_cxl_center",
 			"SimGameUID": null,
 			"ComponentDefType": "HeatSink",
 			"HardpointSlot": -1,
@@ -83,7 +83,7 @@
 			"prefabName": null,
 			"hasPrefabName": false
 		}, {
-			"MountedLocation": "LeftTorso",
+			"MountedLocation": "CenterTorso",
 			"ComponentDefID": "Gear_Support_DrillLaDrill",
 			"SimGameUID": null,
 			"ComponentDefType": "Upgrade",
@@ -110,13 +110,13 @@
 		"Purchasable": true,
 		"Manufacturer": "",
 		"Model": "",
-		"UIName": "Lady Killer MCMk2-LK",
-		"Id": "chassisdef_ladykiller_MCMk2-LK",
-		"Name": "Lady Killer",
-		"Details": "This custom Mad Cat MkII is the personal ride of IlKhan Morphyum Kerensky, made infamous when he 'accidentally' fragged an allied BattleMech because he 'needed a hole to shoot the enemy through'. As could be imagined, the Lady Killer is an Autocannon specialist. <b><color=#53ff1a>Restricted Actuators- Omni</color></b>",
+		"UIName": "Cheesemaker MCII-CM",
+		"Id": "chassisdef_cheesemaker_MCII-CM",
+		"Name": "Cheesemaker",
+		"Details": "This captured Mad Cat MkII was remade by Toho Heavy Industries into showcase platform for their new upgraded ultra autocannons. While new UACs weren't a bad product at all, it is this special chassis that allowed them to really shine. <b><color=#53ff1a>Restricted Actuators- Omni</color></b>",
 		"Icon": "LadyKiller"
 	},
-    "MovementCapDefID": "movedef_madcatmkii",
+    "MovementCapDefID": "movedef_assaultmech",
 	"PathingCapDefID": "pathingdef_assault",
 	"HardpointDataDefID": "hardpointdatadef_madcatmkii",
 	"PrefabIdentifier": "chrprfmech_madcatmkiibase-001",
@@ -128,7 +128,7 @@
 	"Heatsinks": 0,
 	"TopSpeed": 105,
 	"TurnRadius": 130,
-	"MaxJumpjets": 3,
+	"MaxJumpjets": 20,
 	"Stability": 100,
 	"StabilityDefenses": [
 		0,
@@ -176,19 +176,11 @@
         },
         {
           "WeaponMount": "Ballistic",
-          "Omni": false
+          "Omni": true
         },
         {
           "WeaponMount": "Ballistic",
-          "Omni": false
-        },
-        {
-          "WeaponMount": "AntiPersonnel",
-          "Omni": false
-        },
-        {
-          "WeaponMount": "AntiPersonnel",
-          "Omni": false
+          "Omni": true
         }
       ],
       "Tonnage": 0,
@@ -202,27 +194,19 @@
       "Hardpoints": [
         {
           "WeaponMount": "Energy",
-          "Omni": false
+          "Omni": true
         },
         {
           "WeaponMount": "Energy",
-          "Omni": false
+          "Omni": true
         },
         {
           "WeaponMount": "Missile",
-          "Omni": false
+          "Omni": true
         },
         {
           "WeaponMount": "Missile",
-          "Omni": false
-        },
-        {
-          "WeaponMount": "AntiPersonnel",
-          "Omni": false
-        },
-        {
-          "WeaponMount": "AntiPersonnel",
-          "Omni": false
+          "Omni": true
         }
       ],
       "Tonnage": 0,
@@ -236,27 +220,31 @@
       "Hardpoints": [
         {
           "WeaponMount": "Missile",
-          "Omni": false
-        },
-        {
-          "WeaponMount": "Missile",
-          "Omni": false
-        },
-        {
-          "WeaponMount": "Ballistic",
-          "Omni": false
+          "Omni": true
         },
         {
           "WeaponMount": "AntiPersonnel",
+          "Omni": true
+        },
+        {
+          "WeaponMountID": "Special",
           "Omni": false
         },
         {
-          "WeaponMount": "AntiPersonnel",
+          "WeaponMountID": "Special",
+          "Omni": false
+        },
+        {
+          "WeaponMountID": "SpecialMelee",
+          "Omni": false
+        },
+        {
+          "WeaponMountID": "SpecialMelee",
           "Omni": false
         }
       ],
       "Tonnage": 0,
-      "InventorySlots": 12,
+      "InventorySlots": 15,
       "MaxArmor": 290,
       "MaxRearArmor": 145,
       "InternalStructure": 145
@@ -266,27 +254,19 @@
       "Hardpoints": [
         {
           "WeaponMount": "Energy",
-          "Omni": false
+          "Omni": true
         },
         {
           "WeaponMount": "Energy",
-          "Omni": false
+          "Omni": true
         },
         {
           "WeaponMount": "Missile",
-          "Omni": false
+          "Omni": true
         },
         {
           "WeaponMount": "Missile",
-          "Omni": false
-        },
-        {
-          "WeaponMount": "AntiPersonnel",
-          "Omni": false
-        },
-        {
-          "WeaponMount": "AntiPersonnel",
-          "Omni": false
+          "Omni": true
         }
       ],
       "Tonnage": 0,
@@ -308,19 +288,11 @@
         },
         {
           "WeaponMount": "Ballistic",
-          "Omni": false
+          "Omni": true
         },
         {
           "WeaponMount": "Ballistic",
-          "Omni": false
-        },
-        {
-          "WeaponMount": "AntiPersonnel",
-          "Omni": false
-        },
-        {
-          "WeaponMount": "AntiPersonnel",
-          "Omni": false
+          "Omni": true
         }
       ],
       "Tonnage": 0,
@@ -388,7 +360,7 @@
 			"z": -1
 		}
 	],
-	"VariantName": "MCII-LK",
+	"VariantName": "MCII-CM",
 	"ChassisTags": {
 		"items": [
 			"OmniMech",

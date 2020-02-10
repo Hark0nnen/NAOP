@@ -1,0 +1,174 @@
+{
+    "Custom": {
+		"Category": [
+		{
+			"CategoryID": "PositiveQuirk"
+		},
+                {
+	                "CategoryID": "SpecialJammer"
+	        }
+		],
+		"BonusDescriptions": {
+			"Bonuses": [
+                "Defense: +1",
+		"LocalEcm: 2",
+                "Visibility: -10%",
+                "Signature: -10%",
+				"Quirk"
+			]
+		},
+		"InventorySorter": {
+			"SortKey": "00201"
+		},
+		"Flags": {
+		  "flags": [
+			"not_broken",
+			"not_destroyed",
+			"default"
+		  ]
+		},
+		"MechConfiguration" : {
+					
+		}
+    },
+    "StatName": null,
+    "RelativeModifier": 0,
+    "AbsoluteModifier": 0,
+    "Description": {
+        "Cost": 130000,
+        "Rarity": 3,
+        "Purchasable": true,
+        "Manufacturer": "General",
+        "Model": "Standard",
+        "UIName": "Ambusher",
+        "Id": "Special_Quirk_Ambusher",
+        "Name": "Amnusher",
+        "Details": "Ambusher Stealth/ECM systems are exceptional",
+        "Icon": "SpecialistSlot"
+    },
+    "BonusValueA": "+ 1 Hit Defense",
+    "BonusValueB": "",
+    "ComponentType": "Upgrade",
+    "ComponentSubType": "NotSet",
+    "PrefabIdentifier": "",
+    "BattleValue": 0,
+    "InventorySize": 1,
+    "Tonnage": 0.0,
+    "AllowedLocations": "CenterTorso",
+    "DisallowedLocations": "All",
+    "CriticalComponent": false,
+    "statusEffects": [
+        {
+            "durationData": {
+                "duration": -1,
+                "stackLimit": -1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "effectTargetType": "Creator",
+                "showInTargetPreview": false,
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "StatusEffect-Defense_ToHit-T3",
+                "Name": "HARDER TO HIT",
+                "Details": "Provides a penalty to all attacks against this unit.",
+                "Icon": "uixSvgIcon_equipment_Gyro"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "statName": "ToHitThisActor",
+                "operation": "Float_Add",
+                "modValue": "1.0",
+                "modType": "System.Single"
+            }
+        },
+       {
+            "durationData" : {
+                "duration": -1,
+                "stackLimit": -1
+            },
+            "targetingData" : {
+                 "effectTriggerType": "Passive",
+                "effectTargetType": "Creator",
+                "showInTargetPreview": false,
+                "showInStatusPanel": false
+            },
+            "effectType" : "StatisticEffect",
+            "Description" :
+            {
+                                "Id" : "IFFJAMMER",
+                                "Name" : "Makes it easier for enemies to know where you are, but harder to attack",
+                                "Details" : "IPSUM SUCKUM",
+                                "Icon" : "uixSvgIcon_status_ECM-missileDef"
+            },
+            "statisticData" :
+            {
+                                "statName" : "LV_ECM_SHIELD",
+                                "operation": "Int_Add",
+                                "modValue": "2",
+                                "modType": "System.Int32"
+            },
+            "nature" : "Buff"
+        },
+                {
+                    "durationData": {
+                        "duration": -1,
+                        "stackLimit": -1
+                    },
+                    "targetingData": {
+                        "effectTriggerType": "Passive",
+                        "effectTargetType": "Creator",
+                        "showInTargetPreview": false,
+                        "showInStatusPanel": false
+                    },
+                    "effectType": "StatisticEffect",
+                    "Description": {
+                        "Id": "Stealth_Signature_Decrease_Stealth",
+                        "Name": "Stealth Signature Decrease",
+                        "Details": "Signature Statuseffect.",
+                        "Icon": "uixSvgIcon_equipment_TTS"
+                    },
+                    "nature": "Buff",
+                    "statisticData": {
+                        "statName": "SensorSignatureModifier",
+                        "operation": "Float_Multiply",
+                        "modValue": "0.9",
+                        "modType": "System.Single"
+                    }
+                },
+                {
+                    "durationData": {
+                        "duration": -1,
+                        "stackLimit": -1
+                    },
+                    "targetingData": {
+                        "effectTriggerType": "Passive",
+                        "effectTargetType": "Creator",
+                        "showInTargetPreview": false,
+                        "showInStatusPanel": false
+                    },
+                    "effectType": "StatisticEffect",
+                    "Description": {
+                        "Id": "Stealth_Visibility_Decrease_Stealth",
+                        "Name": "Stealth Visbility Decrease",
+                        "Details": "Visibility Statuseffect.",
+                        "Icon": "uixSvgIcon_equipment_TTS"
+                    },
+                    "nature": "Buff",
+                    "statisticData": {
+                        "statName": "SpottingVisibilityMultiplier",
+                        "operation": "Float_Multiply",
+                        "modValue": "0.9",
+                        "modType": "System.Single"
+                    }
+                }
+    ],
+    "ComponentTags": {
+        "items": [
+            "component_type_stock"
+        ],
+        "tagSetSourceFile": ""
+    }
+}

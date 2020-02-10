@@ -12,14 +12,10 @@
         "BonusDescriptions": {
             "Bonuses": [
                 "ArmAccuracy: +3",
-                "Recoil: -1",
+                "Recoil: -2",
                 "Radius: +30%",
-                "MeleeAcc: -2",
-                "ActuatorWeight: 10%"
+                "MeleeAcc: -2"
             ]
-        },
-        "Weights": {
-            "StructureFactor": 1.1
         },
         "InventorySorter": {
             "SortKey": "00020"
@@ -40,13 +36,13 @@
         "Cost": 200000,
         "Rarity": 99,
         "Purchasable": false,
-        "Manufacturer": "Optimus",
+        "Manufacturer": "Toho Heavy Industries",
         "Model": "Advanced",
         "UIName": "Advanced Omni Mount",
         "Id": "Gear_Actuator_Advanced_Omni_Mount",
-        "Name": "Advanced Omni Mount ",
+        "Name": "Advanced Omni Mount",
         "Details": "Weapon Actuators are a collection of specialised Servos and Compensators allowing a BattleMech's Arm mounted Weapons to Fire with greater Accuracy. <b><color=#800080>Shoulder/Upper Arm Actuator.</color></b> Reduces Melee, Improves Arm Mounted Weapons.",
-        "Icon": "uixSvgIcon_equipment_ActuatorArm"
+        "Icon": "dorsal-scales"
     },
     "BonusValueA": "+3 Arm Mounted Accuracy|",
     "BonusValueB": "-2 Recoil|-2 Melee Accuracy.",
@@ -133,7 +129,7 @@
             "statisticData": {
                 "statName": "RefireModifier",
                 "operation": "Int_Add",
-                "modValue": "-1",
+                "modValue": "-2",
                 "modType": "System.Int32",
                 "targetCollection": "Weapon"
             }

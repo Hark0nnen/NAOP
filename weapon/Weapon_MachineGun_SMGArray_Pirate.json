@@ -15,6 +15,7 @@
 		},
 		
     "Category" : "AntiPersonnel",
+    "weaponCategoryID": "SpecialMelee",
     "Type" : "MachineGun",
     "WeaponSubType" : "MachineGun",
     "MinRange" : 0,
@@ -26,7 +27,7 @@
     ],
     "AmmoCategory" : "Flamer",
     "StartingAmmoCapacity" : 45,
-    "HeatGenerated" : 5,
+    "HeatGenerated" : 2,
     "Damage" : 1,
     "OverheatedDamageMultiplier" : 0,
     "EvasiveDamageMultiplier" : 0,
@@ -52,8 +53,8 @@
         "UIName" : "SMG Array",
         "Id" : "Weapon_MachineGun_SMGArray_Pirate",
         "Name" : "SMG Array",
-        "Details" : "Boss... The pirates took a crate of SMGs - yes, the peashooters infantry grunts get to use for urban combat - and welded them together, to a mech hardpoint. My god, they rigged the triggers together with a *string*... The guns aren't welded together that accurately, but the sheer amount of fire means at least some of the bullets gotta hit. The biggest problem is they're just not compatible with a Mech's ammo feed, or any existing ammo bins, so you've literally gotta have a guy manually reload 60 SMGs with stick magazines, which would take forever. Heh, only retarded pirates would ever use this design... Right commander? Boss?",
-        "Icon" : "uixSvgIcon_weapon_Ballistic"
+        "Details" : "Boss... The pirates took a crate of SMGs - yes, the peashooters infantry grunts get to use for urban combat - and welded them together, to a mech hardpoint. My god, they rigged the triggers together with a *string*... The guns aren't welded together that accurately, but the sheer amount of fire means at least some of the bullets gotta hit. The biggest problem is they're just not compatible with a Mech's ammo feed, or any existing ammo bins, so you've literally gotta have a guy manually reload 60 SMGs with stick magazines, which would take forever. Heh, only retarded pirates would ever use this design... Right commander? Boss? \n<b><color=#F79232>45 rounds.</color></b>",
+        "Icon" : "MachineGun"
     },
     "BonusValueA" : "",
     "BonusValueB" : "",

@@ -37,12 +37,6 @@
       "Full": "{0} stability damage on failure"
     },
     {
-      "Bonus": "ActiveSignature",
-      "Short": "{0} Sig",
-      "Long": "{0} Signature",
-      "Full": "{0} sensor signature when active"
-    },
-    {
       "Bonus": "ActiveDamageTaken",
       "Short": "{0} Dmg.Tkn",
       "Long": "{0} Damage taken",
@@ -52,7 +46,7 @@
       "Bonus": "Predator",
       "Short": "Predator Armor",
       "Long": "Predator Armor",
-      "Full": "Provides Stealth Charges. Absorbs damage. Making unit harder to hit. Is Self Repairing."
+      "Full": "Chameleon. Absorbs damage. Makes unit harder to hit. Is Self Repairing."
     }
   ]
 }

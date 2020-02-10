@@ -87,13 +87,13 @@
       "prefabName": null
     },
 		{
-			"ComponentDefID": "Gear_Combat_Shield_Proto_M",
+			"ComponentDefID": "Special_Shield_4",
 			"ComponentDefType": "Upgrade",
 			"DamageLevel": "Functional",
 			"GUID": null,
 			"HardpointSlot": -1,
 			"IsFixed": true,
-			"MountedLocation": "LeftArm",
+			"MountedLocation": "CenterTorso",
 			"SimGameUID": "",
 			"hasPrefabName": false,
 			"prefabName": null
@@ -112,7 +112,7 @@
     "Details": "This personal ride of the infamous Pirate Queen, Lady Alekto, is designed to abuse it's stealth and rapidly execute it's targets at close range. The standard weaponry was removed and replaced with a Medium Combat Shield and Ultra-LBX 20 for CQB combat. Three flamers, two Light PPC and twenty MRM tubes give the pilot options outide of raw damage.",
     "Icon": "uixTxrIcon_blackknight"
   },
-  "MovementCapDefID": "movedef_blackknight_BL-6-KNT",
+  "MovementCapDefID": "movedef_heavymech",
   "PathingCapDefID": "pathingdef_heavy",
   "HardpointDataDefID": "hardpointdatadef_blackknight",
   "PrefabIdentifier": "chrPrfMech_blackknightBase-001",
@@ -124,7 +124,7 @@
   "Heatsinks": 0,
   "TopSpeed": 64,
   "TurnRadius": 90,
-  "MaxJumpjets": 4,
+  "MaxJumpjets": 20,
   "Stability": 100,
   "StabilityDefenses": [
     0,
@@ -232,10 +232,26 @@
         {
           "WeaponMount": "Energy",
           "Omni": false
+        },
+        {
+          "WeaponMountID": "Special",
+          "Omni": false
+        },
+        {
+          "WeaponMountID": "Special",
+          "Omni": false
+        },
+        {
+          "WeaponMountID": "SpecialMelee",
+          "Omni": false
+        },
+        {
+          "WeaponMountID": "SpecialMelee",
+          "Omni": false
         }
       ],
       "Tonnage": 0,
-      "InventorySlots": 12,
+      "InventorySlots": 15,
       "MaxArmor": 230,
       "MaxRearArmor": 115,
       "InternalStructure": 115

@@ -2,7 +2,7 @@
 
 	"Custom": {
         "Category": [
-                        { "CategoryID": "w/e/l/pulse" }
+                        { "CategoryID": "w/e/p/hppc" }
                 ],
 	"ComponentExplosion": { "ExplosionDamage": 200, "HeatDamage": 100, "StabilityDamage": 50 }, 
         "BonusDescriptions": {
@@ -137,18 +137,10 @@
             },
             "nature" : "Debuff",
             "statisticData" : {
-                "appliesEachTick" : false,
-                "effectsPersistAfterDestruction" : false,
-                "statName" : "AccuracyModifier",
-                "operation" : "Float_Add",
-                "modValue" : "8.0",
-                "modType" : "System.Single",
-                "additionalRules" : "NotSet",
-                "targetCollection" : "NotSet",
-                "targetWeaponCategory" : "NotSet",
-                "targetWeaponType" : "NotSet",
-                "targetAmmoCategory" : "NotSet",
-                "targetWeaponSubType" : "NotSet"
+	        "statName": "LV_ECM_JAMMED",
+	        "operation": "Int_Add",
+	        "modValue": "8",
+	        "modType": "System.Int32"
             },
             "tagData" : null,
             "floatieData" : null,

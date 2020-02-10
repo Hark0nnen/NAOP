@@ -1,0 +1,344 @@
+{
+    "Custom": {
+        "EngineHeatBlock": {
+            "HeatSinkCount": 0
+        },
+        "Weights": {
+            "EngineFactor": 0.5
+        },
+        "WorkOrderCosts": {
+            "Install": {
+                "TechCost": "2 * [[Chassis.Tonnage]] / 2",
+                "CBillCost": "20000 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 30"
+            }
+        },
+        "Category": [
+            {
+                "CategoryID": "EngineShield"
+            },
+            {
+                "CategoryID": "EnginePart"
+            },
+            {
+                "CategoryID": "EngineHeatBlock"
+            },
+            {
+                "CategoryID": "Supercharger"
+            }
+        ],
+        "Flags": {
+            "flags": [
+                "vital",
+                "not_broken",
+		"no_salvage",
+		 "autorepair"
+            ]
+        },
+        "BonusDescriptions": {
+            "Bonuses": [
+                "WalkSpeed: +15%",
+                "JumpDistance: +15%",
+                "EngineWeight: -50%",
+                "HeatGenerated: +20%",
+		"HeatPerTurn: 10",
+                "Activatable",
+                "ActivatedRunSpeed: +50%",
+                "ActiveHeatPerTurn: 20",
+                "ActiveSignature: +50%",
+                "FailChance: 10%",
+                "FailChanceTurn: 10%",
+                "FailCritSelf",
+		"FailReducPilot"
+            ]
+        },
+        "InventorySorter": {
+            "SortKey": "00013"
+        },
+        "ActivatableComponent": {
+            "ButtonName": "SuperCharger",
+            "CanNotBeActivatedManualy": false,
+            "FailFlatChance": 0.1,
+            "FailRoundsStart": 2,
+            "FailChancePerTurn": 0.1,
+            "SelfCrit": true,
+            "FailPilotingBase": 5,
+            "FailPilotingMult": 0.1,
+            "NoUniqueCheck": true,
+            "ExplodeOnDamage": true,
+            "Explosion": {
+                "Chance": 0.02,
+                "VFX": "WFX_Nuke",
+                "TempDesignMask": "DesignMaskRadiation",
+                "VFXActorStat": "EngineExplodeVFX",
+                "RangeActorStat": "EngineExplodeRange",
+                "DamageActorStat": "EngineExplodeDamage",
+                "HeatActorStat": "EngineExplodeHeat",
+                "StabilityActorStat": "EngineExplodeStability",
+                "ChanceActorStat": "EngineExplodeChance",
+                "FireTerrainChanceActorStat": "EngineExplodeFireChance",
+                "FireTerrainStrengthActorStat": "EngineExplodeFireStrength",
+                "FireDurationWithoutForestActorStat": "EngineExplodeTerrainDuration",
+                "FireTerrainCellRadiusActorStat": "EngineExplodeFireRadius",
+                "TempDesignMaskActorStat": "EngineExplodeDesignMask",
+                "TempDesignMaskTurnsActorStat": "EngineExplodeDesignMaskDuration",
+                "TempDesignMaskCellRadiusActorStat": "EngineExplodeDesignMaskRadius"
+            },
+            "statusEffects": [
+                {
+                    "durationData": {
+                        "duration": -1,
+                        "stackLimit": -1
+                    },
+                    "targetingData": {
+                        "effectTriggerType": "Passive",
+                        "effectTargetType": "Creator",
+                        "showInTargetPreview": false,
+                        "showInStatusPanel": false
+                    },
+                    "effectType": "StatisticEffect",
+                    "Description": {
+                        "Id": "SuperchargerSprint",
+                        "Name": "Supercharged",
+                        "Details": "Supercharged Engines",
+                        "Icon": "uixSvgIcon_action_evasivemove"
+                    },
+                    "nature": "Buff",
+                    "statisticData": {
+                                                "statName" : "CBTBE_RunMultiMod",
+                                                "operation" : "Float_Add",
+                                                "modValue" : "0.6",
+                                                "modType" : "System.Single"
+                    }
+                },
+                {
+                    "durationData": {
+                        "duration": -1,
+                        "stackLimit": -1
+                    },
+                    "targetingData": {
+                        "effectTriggerType": "Passive",
+                        "effectTargetType": "Creator",
+                        "showInTargetPreview": false,
+                        "showInStatusPanel": false
+                    },
+                    "effectType": "StatisticEffect",
+                    "Description": {
+                        "Id": "SuperchargerHeat",
+                        "Name": "Supercharged",
+                        "Details": "Supercharged Engines",
+                        "Icon": "uixSvgIcon_action_evasivemove"
+                    },
+                    "statisticData": {
+                        "statName": "HeatSinkCapacity",
+                        "operation": "Int_Add",
+                        "modValue": "-20",
+                        "modType": "System.Int32"
+                    },
+                    "nature": "Buff"
+                },
+                {
+                    "durationData": {
+                        "duration": -1,
+                        "stackLimit": -1
+                    },
+                    "targetingData": {
+                        "effectTriggerType": "Passive",
+                        "effectTargetType": "Creator",
+                        "showInTargetPreview": false,
+                        "showInStatusPanel": false
+                    },
+                    "effectType": "StatisticEffect",
+                    "Description": {
+                        "Id": "Stealth_Signature_Decrease_NSS",
+                        "Name": "Stealth Signature Decrease",
+                        "Details": "Signature Statuseffect.",
+                        "Icon": "uixSvgIcon_equipment_TTS"
+                    },
+                    "nature": "Buff",
+                    "statisticData": {
+                        "statName": "SensorSignatureModifier",
+                        "operation": "Float_Multiply",
+                        "modValue": "1.5",
+                        "modType": "System.Single"
+                    }
+                }
+            ]
+        }
+    },
+    "Description": {
+        "Cost": 5000000,
+        "Rarity": 99,
+        "Purchasable": false,
+        "Manufacturer": "Unknown",
+        "Model": "SuperHot",
+        "UIName": "Engine Hot",
+        "Id": "emod_engineslots_hot",
+        "Name": "Hot Engine",
+        "Details": "Boss, this is a very \"interesting\" design. They stripped ALL internal heat sinking and containment, overcharged it and then put a supercharger on top of it. This thing can toast you mech by itself even without activated SC. Totaly useless if you intent to put any weapon in a mech, but if your goal is to rip your enemies apart in melee, its compact AND light. Just watch your heat.",
+        "Icon": "power-generator"
+    },
+    "BonusValueA": "",
+    "BonusValueB": "",
+    "ComponentType": "HeatSink",
+    "ComponentSubType": "Heatsink",
+    "PrefabIdentifier": "",
+    "BattleValue": 0,
+    "InventorySize": 2,
+    "Tonnage": -2,
+    "AllowedLocations": "CenterTorso",
+    "DisallowedLocations": "All",
+    "CriticalComponent": false,
+    "statusEffects": [
+        {
+            "durationData": {
+                "duration": -1,
+                "ticksOnActivations": false,
+                "useActivationsOfTarget": false,
+                "ticksOnEndOfRound": false,
+                "ticksOnMovements": false,
+                "stackLimit": 1,
+                "clearedWhenAttacked": false
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "triggerLimit": 0,
+                "extendDurationOnTrigger": 0,
+                "specialRules": "NotSet",
+                "effectTargetType": "Creator",
+                "range": 0,
+                "forcePathRebuild": false,
+                "forceVisRebuild": false,
+                "showInTargetPreview": false,
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "StatusEffect-Overdrive",
+                "Name": "High Jumper",
+                "Details": "More jump range.",
+                "Icon": "uixSvgIcon_equipment_HeatBank"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "appliesEachTick": false,
+                "effectsPersistAfterDestruction": false,
+                "statName": "JumpDistanceMultiplier",
+                "operation": "Float_Multiply",
+                "modValue": "1.15",
+                "modType": "System.Single",
+                "additionalRules": "NotSet",
+                "targetCollection": "NotSet",
+                "targetWeaponCategory": "NotSet",
+                "targetWeaponType": "NotSet",
+                "targetAmmoCategory": "NotSet",
+                "targetWeaponSubType": "NotSet"
+            },
+            "tagData": null,
+            "floatieData": null,
+            "actorBurningData": null,
+            "vfxData": null,
+            "instantModData": null,
+            "poorlyMaintainedEffectData": null
+        },
+        {
+            "durationData": {
+                "duration": -1,
+                "ticksOnActivations": false,
+                "useActivationsOfTarget": false,
+                "ticksOnEndOfRound": false,
+                "ticksOnMovements": false,
+                "stackLimit": 1,
+                "clearedWhenAttacked": false
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "triggerLimit": 0,
+                "extendDurationOnTrigger": 0,
+                "specialRules": "NotSet",
+                "effectTargetType": "Creator",
+                "range": 0,
+                "forcePathRebuild": false,
+                "forceVisRebuild": false,
+                "showInTargetPreview": false,
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "SVSuperchargerWalk",
+                "Name": "Supercharged",
+                "Details": "Supercharged Engines",
+                "Icon": "uixSvgIcon_action_evasivemove"
+            },
+            "statisticData": {
+                "statName": "WalkSpeed",
+                "operation": "Float_Multiply",
+                "modValue": "1.15",
+                "modType": "System.Single"
+            },
+            "nature": "Buff"
+        },
+        {
+            "durationData": {
+                "duration": -1,
+                "stackLimit": -1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "effectTargetType": "Creator",
+                "showInTargetPreview": false,
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "SuperchargerHeat",
+                "Name": "Supercharged",
+                "Details": "Supercharged Engines",
+                "Icon": "uixSvgIcon_action_evasivemove"
+            },
+            "statisticData": {
+                "statName": "EndMoveHeat",
+                "operation": "Int_Add",
+                "modValue": "10",
+                "modType": "System.Int32"
+            },
+            "nature": "Buff"
+        },
+        {
+            "durationData": {
+                "duration": -1,
+                "stackLimit": -1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "effectTargetType": "Creator",
+                "showInTargetPreview": false,
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "Stealth_Heat_Generation_Stealth",
+                "Name": "Increased Heat",
+                "Details": "Heat generation",
+                "Icon": "uixSvgIcon_equipment_ThermalExchanger"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "statName": "HeatGenerated",
+                "operation": "Float_Multiply",
+                "modValue": "1.20",
+                "modType": "System.Single",
+                "targetCollection": "Weapon"
+            }
+        }
+    ],
+    "ComponentTags": {
+        "items": [
+            "component_type_stock",
+            "cae_ai_explode",
+            "cae_ai_heat",
+            "cae_ai_speed",
+	    "ProtoEngine"
+        ],
+        "tagSetSourceFile": ""
+    }
+}

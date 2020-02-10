@@ -20,11 +20,7 @@
 				{ "ComponentDefId" : "emod_engineslots_size4", "Location": "RightTorso" }
 			]
 		},
-		"Flags" : { "flags" : [
-               "not_broken",
-                "vital"
-           ] 
-},
+		"Flags" : { "flags" : [ "vital", "engine_part" ] },
 		"ArmorRepair" : { "ArmorTPCost" : 1.5, "ArmorCBCost" : 1.5 },		
         "BonusDescriptions": {
             "Bonuses": [
@@ -76,7 +72,7 @@
         "Id" : "emod_engineslots_psxl_center",
         "Name" : "Engine Pirate SXL",
         "Details" : "The Pirates took a beautiful, pristine XXL engine and stripped down the rad shielding until it interfered with their own electronics. 'Course they fried their first test pilot, they then put in a couple of boronated plates between it and the cockpit, but that jury rigged shielding is gonna to transmit waste heat - and rads - right up the Mechwarrior's butt. Any mech with will be *stewing* in waste heat. Figure in the rads, and it's gonna glow on every sensor in the AO... Sorry boss, I ain't gonna send my MechTechs to work on this without Hazmat gear, and that's going to slow down work.",
-        "Icon" : "uixSvgIcon_equipment_Heatsink"
+        "Icon" : "power-generator"
     },
     "BonusValueA" : "- 80% Engine Weight | - 2 Accuracy",
     "BonusValueB" : "+ 8 Slots Required | + 21 Heat | +100% Signature",

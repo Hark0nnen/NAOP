@@ -1,0 +1,470 @@
+{
+    "Custom": {
+       "Category": [
+	    { "CategoryID": "Special" },
+	    { "CategoryID": "HandHeld" },
+            { "CategoryID": "w/s/h/HandHeld" }
+
+	],
+        "MechConfiguration" : {
+        },
+        "HandHeld" : {
+        "Tonnage" : 6,
+        "HandsUsed" : true
+	},
+        "BonusDescriptions": {
+            "Bonuses": [
+		"HandHeldMelee: 6",
+                "WpnAccuracy: +3",
+                "Haywire",
+                "ImpMove: 40%",
+                "ImpAccuracy: -2",
+                "ImpHeatSink: -50%",
+                "MeleeAcc: +2",
+                "Melee: +50",
+                "Melee: +15%",
+                "MeleeStab: +100%",
+                "NoAA",
+                "HandHeldArmored"
+            ]
+        },
+       "Flags": {
+            "flags": [
+	        "not_broken",
+                "not_destroyed",
+                "ignore_damage",
+                "no_salvage"
+            ]
+        },
+        "InventorySorter": {
+            "SortKey": "04001"
+        }
+
+    },
+    "weaponCategoryID": "SpecialMelee",
+    "Type": "PPC",
+    "WeaponSubType": "PPCER",
+    "MinRange": 0,
+    "MaxRange": 40,
+    "RangeSplit": [
+        25,
+        25,
+        40
+    ],
+    "AmmoCategory": "NotSet",
+    "StartingAmmoCapacity": 0,
+    "HeatGenerated": 5,
+    "Damage": 5,
+    "OverheatedDamageMultiplier": 0,
+    "EvasiveDamageMultiplier": 0,
+    "EvasivePipsIgnored": 0,
+    "DamageVariance": 0,
+    "HeatDamage": 15,
+    "AccuracyModifier": -3,
+    "CriticalChanceMultiplier": 1,
+        "APArmorShardsMod": 0,
+        "APMaxArmorThickness": 1,
+        "APCriticalChanceMultiplier": 0.5,
+    "AOECapable": false,
+    "IndirectFireCapable": false,
+    "RefireModifier": 0,
+    "ShotsWhenFired": 1,
+    "ProjectilesPerShot": 1,
+    "AttackRecoil": 0,
+    "Instability": 10,
+    "CantHitUnaffecedByPathing": true,
+    "WeaponEffectID": "WeaponEffect-Weapon_PPC",
+    "Description": {
+        "Cost": 2000000,
+        "Rarity": 99,
+        "Purchasable": false,
+        "Manufacturer": "Unknown",
+        "Model": "Thunder",
+        "UIName": "Thunder Blade",
+        "Id": "Linked_Thunder_Blade",
+        "Name": "Thunder Blade",
+        "Details": "They combined a rectractable blade with a mech taser. Whatever is hit by this thing, if it doesnt die outright, will definitely won't be able to retailate",
+        "Icon": "uixSvgIcon_run_n_gun"
+    },
+    "BonusValueA": "Damage Falloff|",
+    "BonusValueB": "1 Recoil",
+    "ComponentType": "Weapon",
+    "ComponentSubType": "Weapon",
+    "PrefabIdentifier": "PPC",
+    "BattleValue": 0,
+    "InventorySize": 1,
+    "Tonnage": 0,
+    "AllowedLocations": "CenterTorso",
+    "DisallowedLocations": "All",
+    "CriticalComponent": false,
+    "statusEffects": [
+        {
+            "durationData": {
+                "duration": 2,
+                "ticksOnActivations": true,
+                "useActivationsOfTarget": true,
+                "ticksOnEndOfRound": false,
+                "ticksOnMovements": false,
+                "stackLimit": 6,
+                "clearedWhenAttacked": false
+            },
+            "targetingData": {
+                "effectTriggerType": "OnHit",
+                "triggerLimit": 0,
+                "extendDurationOnTrigger": 0,
+                "specialRules": "NotSet",
+                "effectTargetType": "NotSet",
+                "range": 0,
+                "forcePathRebuild": false,
+                "forceVisRebuild": false,
+                "showInTargetPreview": false,
+                "showInStatusPanel": true
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "Taser-Effect",
+                "Name": "Tasered",
+                "Details": "The Mech's Systems have been scrambled.",
+                "Icon": "uixSvgIcon_shipUpgrade_power2"
+            },
+            "nature": "Debuff",
+            "statisticData": {
+                "appliesEachTick": false,
+                "effectsPersistAfterDestruction": false,
+                "statName": "AccuracyModifier",
+                "operation": "Float_Add",
+                "modValue": "2.0",
+                "modType": "System.Single",
+                "additionalRules": "NotSet",
+                "targetCollection": "NotSet",
+                "targetWeaponCategory": "NotSet",
+                "targetWeaponType": "NotSet",
+                "targetAmmoCategory": "NotSet",
+                "targetWeaponSubType": "NotSet"
+            },
+            "tagData": null,
+            "floatieData": null,
+            "actorBurningData": null,
+            "vfxData": null,
+            "instantModData": null,
+            "poorlyMaintainedEffectData": null
+        },
+        {
+            "durationData": {
+                "duration": 2,
+                "ticksOnActivations": true,
+                "useActivationsOfTarget": true,
+                "ticksOnEndOfRound": false,
+                "ticksOnMovements": false,
+                "stackLimit": 6,
+                "clearedWhenAttacked": false
+            },
+            "targetingData": {
+                "effectTriggerType": "OnHit",
+                "triggerLimit": 0,
+                "extendDurationOnTrigger": 0,
+                "specialRules": "NotSet",
+                "effectTargetType": "NotSet",
+                "range": 0,
+                "forcePathRebuild": false,
+                "forceVisRebuild": false,
+                "showInTargetPreview": false,
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "Taser-Effect1",
+                "Name": "Walk Impaired",
+                "Details": "The Mech's Movement is reduced.",
+                "Icon": "uixSvgIcon_status_sensorsImpaired"
+            },
+            "nature": "Debuff",
+            "statisticData": {
+                "appliesEachTick": false,
+                "effectsPersistAfterDestruction": false,
+                "statName": "WalkSpeed",
+                "operation": "Float_Multiply",
+                "modValue": "0.6",
+                "modType": "System.Single",
+                "additionalRules": "NotSet",
+                "targetCollection": "NotSet",
+                "targetWeaponCategory": "NotSet",
+                "targetWeaponType": "NotSet",
+                "targetAmmoCategory": "NotSet",
+                "targetWeaponSubType": "NotSet"
+            },
+            "tagData": null,
+            "floatieData": null,
+            "actorBurningData": null,
+            "vfxData": null,
+            "instantModData": null,
+            "poorlyMaintainedEffectData": null
+        },
+        {
+            "durationData": {
+                "duration": 2,
+                "ticksOnActivations": true,
+                "useActivationsOfTarget": true,
+                "ticksOnEndOfRound": false,
+                "ticksOnMovements": false,
+                "stackLimit": 6,
+                "clearedWhenAttacked": false
+            },
+            "targetingData": {
+                "effectTriggerType": "OnHit",
+                "triggerLimit": 0,
+                "extendDurationOnTrigger": 0,
+                "specialRules": "NotSet",
+                "effectTargetType": "NotSet",
+                "range": 0,
+                "forcePathRebuild": false,
+                "forceVisRebuild": false,
+                "showInTargetPreview": false,
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "Taser-Effect2",
+                "Name": "Move Impaired",
+                "Details": "The Mech's Movement is reduced.",
+                "Icon": "uixSvgIcon_status_sensorsImpaired"
+            },
+            "nature": "Debuff",
+            "statisticData": {
+                "appliesEachTick": false,
+                "effectsPersistAfterDestruction": false,
+                "statName": "RunSpeed",
+                "operation": "Float_Multiply",
+                "modValue": "0.6",
+                "modType": "System.Single",
+                "additionalRules": "NotSet",
+                "targetCollection": "NotSet",
+                "targetWeaponCategory": "NotSet",
+                "targetWeaponType": "NotSet",
+                "targetAmmoCategory": "NotSet",
+                "targetWeaponSubType": "NotSet"
+            },
+            "tagData": null,
+            "floatieData": null,
+            "actorBurningData": null,
+            "vfxData": null,
+            "instantModData": null,
+            "poorlyMaintainedEffectData": null
+        },
+        {
+            "durationData": {
+                "duration": 2,
+                "ticksOnActivations": true,
+                "useActivationsOfTarget": true,
+                "ticksOnEndOfRound": false,
+                "ticksOnMovements": false,
+                "stackLimit": 6,
+                "clearedWhenAttacked": false
+            },
+            "targetingData": {
+                "effectTriggerType": "OnHit",
+                "triggerLimit": 0,
+                "extendDurationOnTrigger": 0,
+                "specialRules": "NotSet",
+                "effectTargetType": "SingleTarget",
+                "range": 0,
+                "forcePathRebuild": false,
+                "forceVisRebuild": false,
+                "showInTargetPreview": false,
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "Taser-Effect3",
+                "Name": "Cooling Impaired",
+                "Details": "The Mech's cooling is impaired.",
+                "Icon": "uixSvgIcon_status_sensorsImpaired"
+            },
+            "nature": "Debuff",
+            "statisticData": {
+                "appliesEachTick": false,
+                "effectsPersistAfterDestruction": false,
+                "statName": "HeatGenerated",
+                "operation": "Float_Multiply",
+                "modValue": "1.5",
+                "modType": "System.Single",
+                "additionalRules": "NotSet",
+                "targetCollection": "Weapon",
+                "targetWeaponCategory": "NotSet",
+                "targetWeaponType": "NotSet",
+                "targetAmmoCategory": "NotSet",
+                "targetWeaponSubType": "NotSet"
+            },
+            "tagData": null,
+            "floatieData": null,
+            "actorBurningData": null,
+            "vfxData": null,
+            "instantModData": null,
+            "poorlyMaintainedEffectData": null
+        },
+        {
+            "durationData": {
+                "duration": -1,
+                "ticksOnActivations": false,
+                "useActivationsOfTarget": false,
+                "ticksOnEndOfRound": false,
+                "ticksOnMovements": false,
+                "stackLimit": -1,
+                "clearedWhenAttacked": false
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "triggerLimit": 0,
+                "extendDurationOnTrigger": 0,
+                "specialRules": "NotSet",
+                "effectTargetType": "Creator",
+                "range": 0,
+                "forcePathRebuild": false,
+                "forceVisRebuild": false,
+                "showInTargetPreview": false,
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "StatusEffect-Attack_DamageMelee-T6",
+                "Name": "MELEE DAMAGE INCREASED",
+                "Details": "Melee attacks deal [AMT] more damage.",
+                "Icon": "uixSvgIcon_equipment_ActuatorArm"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "appliesEachTick": false,
+                "effectsPersistAfterDestruction": false,
+                "statName": "DamagePerShot",
+                "operation": "Float_Add",
+                "modValue": "50.0",
+                "modType": "System.Single",
+                "additionalRules": "NotSet",
+                "targetCollection": "Weapon",
+                "targetWeaponCategory": "NotSet",
+                "targetWeaponType": "NotSet",
+                "targetAmmoCategory": "NotSet",
+                "targetWeaponSubType": "Melee"
+            },
+            "tagData": null,
+            "floatieData": null,
+            "actorBurningData": null,
+            "vfxData": null,
+            "instantModData": null,
+            "poorlyMaintainedEffectData": null
+        },
+        {
+            "durationData": {
+                "duration": -1,
+                "stackLimit": -1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "effectTargetType": "Creator",
+                "showInTargetPreview": false,
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "StatusEffect-HandMelee",
+                "Name": "Hand Melee Damage",
+                "Details": "Melee attacks deal 50% Extra damage.",
+                "Icon": "uixSvgIcon_equipment_ActuatorArm"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "statName": "DamagePerShot",
+                "operation": "Float_Multiply",
+                "modValue": "1.15",
+                "modType": "System.Single",
+                "targetCollection": "Weapon",
+                "targetWeaponSubType": "Melee"
+            }
+        },
+        {
+            "durationData": {
+                "duration": -1,
+                "stackLimit": -1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "effectTargetType": "Creator",
+                "showInTargetPreview": false,
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "StatusEffect-HandMeleeStab",
+                "Name": "Hand Melee Damage",
+                "Details": "Melee attacks deal 20% Extra stab damage.",
+                "Icon": "uixSvgIcon_equipment_ActuatorArm"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "statName": "Instability",
+                "operation": "Float_Multiply",
+                "modValue": "2.0",
+                "modType": "System.Single",
+                "targetCollection": "Weapon",
+                "targetWeaponSubType": "Melee"
+            }
+        },
+        {
+            "durationData": {
+                "duration": -1,
+                "ticksOnActivations": false,
+                "useActivationsOfTarget": false,
+                "ticksOnEndOfRound": false,
+                "ticksOnMovements": false,
+                "stackLimit": -1,
+                "clearedWhenAttacked": false
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "triggerLimit": 0,
+                "extendDurationOnTrigger": 0,
+                "specialRules": "NotSet",
+                "effectTargetType": "Creator",
+                "range": 0,
+                "forcePathRebuild": false,
+                "forceVisRebuild": false,
+                "showInTargetPreview": false,
+                "showInStatusPanel": false
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "StatusEffect-EliteSword",
+                "Name": "Solaris ChainSword",
+                "Details": "Melee attacks have +2 Accuracy.",
+                "Icon": "uixSvgIcon_run_n_gun"
+            },
+            "nature": "Buff",
+            "statisticData": {
+                "appliesEachTick": false,
+                "effectsPersistAfterDestruction": false,
+                "statName": "AccuracyModifier",
+                "operation": "Float_Add",
+                "modValue": "-2.0",
+                "modType": "System.Single",
+                "additionalRules": "NotSet",
+                "targetCollection": "Weapon",
+                "targetWeaponCategory": "NotSet",
+                "targetWeaponType": "NotSet",
+                "targetAmmoCategory": "NotSet",
+                "targetWeaponSubType": "Melee"
+            },
+            "tagData": null,
+            "floatieData": null,
+            "actorBurningData": null,
+            "vfxData": null,
+            "instantModData": null,
+            "poorlyMaintainedEffectData": null
+        }
+    ],
+    "ComponentTags": {
+        "items": [
+	    "BLACKLISTED"
+        ],
+        "tagSetSourceFile": ""
+    }
+}

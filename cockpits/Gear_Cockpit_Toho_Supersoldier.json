@@ -5,7 +5,9 @@
 		   {"CategoryID": "VirtualRealityPilotingPod"},
 		   { "CategoryID": "CockpitSensors"},
 		   { "CategoryID": "Cockpit" },
-		   { "CategoryID": "CockpitFCS" }
+		   { "CategoryID": "CockpitFCS" },
+          { "CategoryID": "AdvZoom" },
+           { "CategoryID": "ThermalVision" }
 		],
 		"WorkOrderCosts": {
 			"Install": {
@@ -15,22 +17,21 @@
 		},
         "BonusDescriptions": {
             "Bonuses": [
+				"MultiTracker",
+				"AcePilot",
 				"Defense: +1",
 				"Accuracy: +2",
-                "WeaponDamage: +15%",
+		                "WeaponDamage: +15%",
 				"DamageTaken: -15%",
 				"Initiative: +4",
 				"Sensors: +10%",
 				"Sight: +10%",
-				"AdvZoom: 3",
-				"AdvZoomRange: 300",
-				"ThermalVision: 2",
-				"ThermalVisionHeat: 30",
-		                "CockpitSensors: 2",
+				"AdvancedZoom: 3, 300",
+                                "ThermalVision: 2, 30, 300",
+		                "AdvancedSensors: 2",
 				"PilotOverheat",
 				"PilotShutDown",
-				"IsCockpit",
-				"IsVRPP"
+				"IsCockpit"
             ]
         },
             "InventorySorter" : {
@@ -66,9 +67,59 @@
     "CriticalComponent" : false,
     "statusEffects" : [
         {
+            "durationData" : {
+                "duration" : -1,
+                "stackLimit" : -1
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "effectTargetType" : "Creator",
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false
+            },
+            "effectType" : "StatisticEffect",
+            "Description" : {
+                "Id" : "IRAllowMultiTargetEffect",
+                "Name" : "IRMULTITARGET",
+                "Details" : "Enables multi-target.",
+                "Icon" : "uixSvgIcon_equipment_ActuatorArm"
+            },
+            "nature" : "Buff",
+            "statisticData" : {
+                "statName" : "IRAllowMultiTarget",
+                "operation" : "Set",
+                "modValue" : "true",
+                "modType" : "System.Boolean"
+            }
+        },
+	   {
+                       "durationData": {
+                                "duration": -1,
+                                "stackLimit": 1
+                        },
+                        "targetingData": {
+                                "effectTriggerType": "Passive",
+                                "effectTargetType": "Creator"
+                        },
+                        "effectType": "StatisticEffect",
+                        "Description": {
+                                "Id": "InterFaceMoveAfterShoot",
+                                "Name": "ACE PILOT",
+                                "Details": "This unit can use its movement before or after shooting.",
+                                "Icon": "uixSvgIcon_run_n_gun"
+                        },
+                        "statisticData": {
+                                "statName": "CanMoveAfterShooting",
+                                "operation": "Set",
+                                "modValue": "true",
+                                "modType": "System.Boolean"
+                        },
+                        "nature": "Buff"
+                },
+        {
 				"durationData" : {
 				"duration" : -1,
-                "stackLimit" : -1
+		                "stackLimit" : -1
 				},
 			"targetingData" : {
 				"effectTargetsCreator" : true,
@@ -491,41 +542,9 @@
             "statisticData": {
                 "statName": "LV_HEAT_VISION",
                 "operation": "Set",
-                "modValue": "2_30",
+                "modValue": "-2_30_300",
                 "modType": "System.String"
             }
-        },
-        {
-            "durationData" : {
-                "duration": -1,
-                "stackLimit": -1
-            },
-            "targetingData" : {
-                "effectTriggerType" : "Passive",
-                "specialRules" : "NotSet",
-                "effectTargetType" : "Creator",
-                "range" : 0.0,
-                "forcePathRebuild" : false,
-                "forceVisRebuild" : true,
-                "showInTargetPreview" : false,
-                "showInStatusPanel" : false
-            },
-            "effectType" : "StatisticEffect",
-            "Description" :
-            {
-                "Id" : "LV_Probe_Carrier",
-                "Name" : "Active Probe (Passive)",
-                "Details" : "Reduces effectiveness of stealthed and ECM shielded units",
-                "Icon" : "uixSvgIcon_status_ECM-ghost"
-            },
-            "statisticData" :
-            {
-                "statName" : "LV_Probe_Carrier",
-                "operation": "Int_Add",
-                "modValue": "1",
-                "modType": "System.Int32"
-            },
-            "nature" : "Buff"
         },
                    {
             "durationData" : {
@@ -552,7 +571,7 @@
             },
             "statisticData" :
             {
-                "statName" : "LV_Advanced_Sensors",
+                "statName" : "LV_ADVANCED_SENSORS",
                 "operation": "Int_Add",
                 "modValue": "3",
                 "modType": "System.Int32"

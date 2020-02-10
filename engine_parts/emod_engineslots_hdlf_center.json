@@ -21,10 +21,10 @@
 			]
 		},
 		"Flags" : { "flags" : [
-               "not_broken",
-                "vital"
-           ] 
-},
+                              "vital",
+                                "engine_part"
+		           ] 
+		},
         "BonusDescriptions": {
             "Bonuses": [
                 "EngineWeight: -44%",
@@ -72,7 +72,7 @@
         "Id" : "emod_engineslots_hdlf_center",
         "Name" : "Li Engine (HD)",
         "Details" : "An attempt at creating an engine that could survive the destruction of both side torsos without dramatically increasing engine weight, the High Density Lithium Fusion reactor decreases efficiency to develop a near-Linear design, further increasing waste heat. It barely protrudes into the side torsos, and has redundant containment systems in the core. Emissions signature has increased, however.",
-        "Icon" : "uixSvgIcon_equipment_Heatsink"
+        "Icon" : "power-generator"
     },
     "BonusValueA" : "- 44% Engine Weight",
     "BonusValueB" : "+ 2 Slots Required | + 12 Heat | 15% Signature",

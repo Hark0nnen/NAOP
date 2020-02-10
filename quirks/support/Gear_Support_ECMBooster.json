@@ -1,30 +1,29 @@
 {
 
 	"Custom": {
-		 "Category": [{
-            "CategoryID": "ChassisSupport"
-        }],
-        "ComponentExplosion": {
-            "ExplosionDamage": 25
-        },
-		"Flags" : { "flags" : [ "not_broken", "no_salvage", "autorepair" ] },
-		"WorkOrderCosts": {
-			"Install": {
-				"TechCost": "[[Chassis.Tonnage]]/8",
-				"CBillCost": "[[Chassis.Tonnage]] * 1.35"
-			}
-		},
+		 "Category": [
+                {
+                        "CategoryID": "PositiveQuirk"
+                },
+                {
+            "CategoryID": "SpecialJammer"
+	        }
+	],
+	"Flags" : { "flags" : [ "not_broken", "not_destroyed", "default" ] },
         "BonusDescriptions": {
             "Bonuses": [
 				"Defense: +2",
-				"IFFJammer: 3",
+				"Jammer: 4, 300",
 				"HeatGenerated: +15%",
-				"WeaponBoom: 25"
+				"Quirk"
             ]
         },
             "InventorySorter" : {
                 "SortKey" : "00027"
-            }		
+            },
+               "MechConfiguration" : {
+
+                }
 	},
 
     "StatName" : null,
@@ -48,11 +47,78 @@
     "ComponentSubType" : "NotSet",
     "PrefabIdentifier" : "",
     "BattleValue" : 0,
-    "InventorySize" : 2,
-    "Tonnage" : 1.5,
-    "AllowedLocations" : "All",
+    "InventorySize" : 1,
+    "Tonnage" : 0,
+    "AllowedLocations" : "CenterTorso",
     "DisallowedLocations" : "All",
     "CriticalComponent" : false,
+    "Auras": [
+    {
+      "Id": "Gear_ECM_JAMMER",
+      "Name": "JAMMER",
+      "ReticleColor": "#0066ff",
+      "Range": 300,
+          "HideOnNotSelected": false,
+      "RemoveOnSensorLock": false,
+      "State": "Online",
+      "ApplySelf": false,
+      "AllyStealthAffection": "None",
+      "EnemyStealthAffection": "NegativeThree",
+      "IsPositiveToAlly": false,
+      "IsNegativeToEnemy": true,
+       "ownerVFX": [
+      ],
+      "targetVFX": [
+      ],
+      "removeOwnerVFX": [
+      ],
+      "removeTargetVFX": [
+      ],
+      "ownerSFX": [
+      ],
+      "targetSFX": [
+      ],
+      "removeOwnerSFX": [
+      ],
+      "removeTargetSFX": [
+      ],
+      "statusEffects": [
+        {
+            "durationData" : {
+                "duration": -1,
+                "stackLimit": -1,
+                                "uniqueEffectIdStackLimit": 1
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "specialRules" : "NotSet",
+                "effectTargetType" : "EnemiesWithinRange",
+                "range" : 0.0,
+                "forcePathRebuild" : false,
+                "forceVisRebuild" : true,
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false
+            },
+            "effectType" : "StatisticEffect",
+            "Description" :
+            {
+                                "Id" : "LV_ECM_JAM",
+                                "Name" : "ECM Jammer",
+                                "Details" : "Jamming ECM, reduces sensor checks for enemies in field",
+                                "Icon" : "uixSvgIcon_action_sensorlock"
+            },
+            "statisticData" :
+            {
+                                "statName" : "LV_ECM_JAMMED",
+                                "operation": "Int_Add",
+                                "modValue": "4",
+                                "modType": "System.Int32"
+            },
+            "nature" : "Debuff"
+        }
+      ]
+    }
+    ],
     "statusEffects" : [
        {
           "durationData": {
@@ -104,45 +170,12 @@
             "targetCollection": "Weapon"
           },
           "nature": "Buff"
-        },
-        {
-            "durationData" : {
-                "duration": -1,
-                "stackLimit": 1,
-                                "uniqueEffectIdStackLimit": 1
-            },
-            "targetingData" : {
-                "effectTriggerType" : "Passive",
-                "specialRules" : "Aura",
-                "effectTargetType" : "EnemiesWithinRange",
-                "range" : 190.0,
-                "forcePathRebuild" : false,
-                "forceVisRebuild" : true,
-                "showInTargetPreview" : false,
-                "showInStatusPanel" : false
-            },
-            "effectType" : "StatisticEffect",
-            "Description" :
-            {
-                                "Id" : "EWS_ECM_JAM",
-                                "Name" : "ECM Jammer",
-                                "Details" : "Jamming ECM, reduces sensor checks for enemies in field",
-                                "Icon" : "uixSvgIcon_action_sensorlock"
-            },
-            "statisticData" :
-            {
-                                "statName" : "LV_ECM_JAMMED",
-                                "operation": "Int_Add",
-                                "modValue": "3",
-                                "modType": "System.Int32"
-            },
-            "nature" : "Debuff"
         }
     ],
     "ComponentTags" : {
         "items" : [
 			"BLACKLISTED",
-			"component_type_stock",
+			"component_type_stock"
         ],
         "tagSetSourceFile" : ""
     }

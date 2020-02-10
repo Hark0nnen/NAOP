@@ -1,0 +1,158 @@
+{
+  "Custom": {
+    "Category": [
+                    { "CategoryID": "HandHeld" },
+                    { "CategoryID": "w/s/h/HandHeld" }
+                ],
+    "MechConfiguration" : {
+                },
+    "BonusDescriptions": {
+      "Bonuses": [
+       "HandHeld: 10",
+      "IsGauss",
+      "WpnAccuracy: +3",
+        "HandHeldAmmo: 120",
+        "HandHeldArmored"
+      ]
+    },
+    "InventorySorter": {
+      "SortKey": "01417"
+    },
+	"Flags": {
+      "flags": [
+        "not_broken",
+        "no_salvage",
+        "not_destroyed",
+        "ignore_damage"
+      ]
+    },
+       "HandHeld" : {
+        "Tonnage" : 10,
+        "HandsUsed" : true
+    }
+  },
+  "weaponCategoryID": "Special",
+  "Type": "Gauss",
+  "WeaponSubType": "Gauss",
+  "MinRange": 180,
+  "MaxRange": 930,
+  "RangeSplit": [
+    240,
+    420,
+    840
+  ],
+  "AmmoCategory": "GAUSS",
+  "StartingAmmoCapacity": 25,
+  "HeatGenerated": 5,
+  "Damage": 100,
+  "OverheatedDamageMultiplier": 0,
+  "EvasiveDamageMultiplier": 0,
+  "EvasivePipsIgnored": 0,
+  "DamageVariance": 0,
+  "HeatDamage": 0,
+  "AccuracyModifier": -3,
+  "CriticalChanceMultiplier": 1,
+  "APCriticalChanceMultiplier": 1.05,
+  "APMaxArmorThickness": 300,
+  "APArmorShardsMod": 0.5,
+  "AOECapable": false,
+  "IndirectFireCapable": false,
+  "RefireModifier": 0,
+  "ShotsWhenFired": 1,
+  "ProjectilesPerShot": 1,
+  "AttackRecoil": 4,
+  "Instability": 20,
+  "WeaponEffectID": "WeaponEffect-Weapon_GaussRifle",
+  "Description": {
+    "Cost": 3000000,
+    "Rarity": 99,
+    "Purchasable": true,
+    "Manufacturer": "Unknown",
+    "Model": "Assault Gauss",
+    "UIName": "Assault Gauss",
+    "Id": "Weapon_Gauss_Assault",
+    "Name": "Assault Gauss",
+    "Details": "This is multi-mode Gauss Cannon that is fully replacing a mech arm. Such integrated installation gives it increased accuracy and decreased recoil. Fire modes consist of single maximum accelarated shell, two under accelerated shells and 20 shrapnel pellets. \n\n This weapons has a fixed capacity of <b><color=#F79232>25 rounds.</color></b> \n\n <b><color=#099ff2>VOLATILE!</color></b> \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch to less safe alternate firing modes</color> </b>",
+    "Icon": "GAUSS"
+  },
+  "BonusValueA": "Damage Falloff",
+  "BonusValueB": "",
+  "ComponentType": "Weapon",
+  "ComponentSubType": "Weapon",
+  "PrefabIdentifier": "Gauss",
+  "BattleValue": 0,
+  "InventorySize": 1,
+  "Tonnage": 0,
+  "AllowedLocations": "CenterTorso",
+  "DisallowedLocations": "All",
+  "DisableClustering": false,
+  "ImprovedBallistic": true,
+  "BallisticDamagePerPallet": true,
+  "AlternateDamageCalc": true,
+  "DamageNotDivided": true,
+  "CriticalComponent": false,
+  "Modes": [
+    {
+      "Id": "Std",
+      "UIName": "STD",
+      "isBaseMode": true,
+      "AIHitChanceCap": 0.3
+    },
+    {
+      "Id": "x2",
+      "UIName": "X2",
+      "isBaseMode": false,
+      "HeatGenerated": 5,
+      "AIHitChanceCap": 0.4,
+      "AccuracyModifier": 2,
+      "EvasivePipsIgnored": 0,
+      "RefireModifier": 3,
+      "FlatJammingChance": 0.2,
+      "GunneryJammingMult": 0.02,
+      "GunneryJammingBase": 5,
+      "ShotsWhenFired": 1,
+      "DamagePerShot": -30.0,
+      "Instability": -6,
+      "MinRange": -90,
+      "MaxRange": -150,
+      "ShortRange": -60,
+      "MiddleRange": -60,
+      "LongRange": -120
+    },
+    {
+      "Id": "Shrapnel",
+      "UIName": "Shrapnel",
+      "isBaseMode": false,
+      "HeatGenerated": 5,
+      "EvasivePipsIgnored": 2,
+      "FlatJammingChance": 0.15,
+      "GunneryJammingMult": 0.02,
+      "GunneryJammingBase": 5,
+      "AIHitChanceCap": 0.1,
+      "DistantVariance": 0.5,
+      "RefireModifier": 3,
+      "CriticalChanceMultiplier": 1.0,
+      "APArmorShardsMod": 0,
+      "APMaxArmorThickness": 1,
+      "ShotsWhenFired": 1,
+      "ProjectilesPerShot": 9,
+      "DamagePerShot": -92.0,
+      "Instability": -18,
+      "MinRange": -180,
+      "MaxRange": -200,
+      "ShortRange": -90,
+      "MiddleRange": -90,
+      "LongRange": -180
+    }
+  ],
+  "statusEffects": [
+
+  ],
+  "ComponentTags": {
+    "items": [
+      "component_type_stock",
+      "range_standard"
+    ],
+    "tagSetSourceFile": ""
+  } 
+}

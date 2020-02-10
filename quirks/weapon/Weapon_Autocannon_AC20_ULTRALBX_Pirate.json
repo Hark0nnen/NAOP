@@ -6,9 +6,11 @@
             "Bonuses": [
 				"WpnRecoil: 4",
 				"Explodium: 12%",
+				"WeaponJAMFlat: 32%",
 				"DakkaBoom: 60",
 				"LBX",
-		    		"Ultra"
+		    		"Ultra",
+				"LosTech"
             ]
         },	
             "InventorySorter" : {
@@ -28,7 +30,7 @@
     ],
     "AmmoCategory" : "LBX20",
     "StartingAmmoCapacity" : 0,
-    "HeatGenerated" : 15,
+    "HeatGenerated" : 30,
     "Damage" : 100,
     "OverheatedDamageMultiplier" : 0,
     "EvasiveDamageMultiplier" : 0,
@@ -42,8 +44,8 @@
   "APCriticalChanceMultiplier": 0.5,
     "AOECapable" : false,
     "IndirectFireCapable" : false,
-    "RefireModifier" : 2,
-    "ShotsWhenFired" : 1,
+    "RefireModifier" : 4,
+    "ShotsWhenFired" : 2,
     "ProjectilesPerShot" : 1,
     "AttackRecoil" : 4,
     "Instability" : 4.4,
@@ -62,7 +64,7 @@
         "Id" : "Weapon_Autocannon_AC20_ULTRALBX_Pirate",
         "Name" : "Ultra LBX 20 (P)",
         "Details" : "Boss, the pirates jury-rigged an rotary autoloader, specialized for LBX shells, on a Clan Ultra autocannon. On one hand, it can jam and double feed, resulting in the gun exploding. On the upside, it's possible to fire off an almost-literal wall of lead with this weapon, which *should* make it even easier to hit the target... except the frame the pirates put on it rattles. Oh, they also wired it to some extremely heavy duty speakers that blare out 'ULTRAKILL!' every time the MechWarrior destroys something with them. \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch firing mode</color> </b>",
-        "Icon" : "uixSvgIcon_weapon_Ballistic"
+        "Icon" : "LBX"
     },
     "BonusValueA" : "",
     "BonusValueB" : "",
@@ -80,15 +82,23 @@
                 {
                         "Id":"x1",
                         "UIName":"x1",
-                        "isBaseMode":false
+                        "isBaseMode":false,
+                        "ShotsWhenFired": -1,
+                        "RefireModifier" : -2,
+                        "HeatGenerated" : -15,
+			"AIHitChanceCap": 0.1,
+			"FlatJammingChance": 0.2,
+			"GunneryJammingMult": 0.05,
+			"GunneryJammingBase": 3
                 },
                 {
                         "Id":"x2",
                         "UIName":"x2",
                         "isBaseMode":true,
-                        "ShotsWhenFired": 1,
-                        "RefireModifier" : 2,
-                        "HeatGenerated" : 15
+			"AIHitChanceCap": 0.4,
+			"FlatJammingChance": 0.32,
+			"GunneryJammingMult": 0.08,
+			"GunneryJammingBase": 3
                 }
         ],
 	

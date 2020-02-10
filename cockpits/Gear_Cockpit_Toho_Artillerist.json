@@ -3,7 +3,9 @@
 	"Custom": {
 		"Category" : [ 
 		   { "CategoryID": "Cockpit" },
-		   { "CategoryID": "CockpitFCS" }
+		   { "CategoryID": "CockpitFCS" },
+          { "CategoryID": "AdvZoom" },
+           { "CategoryID": "ThermalVision" }
 		],
 		"WorkOrderCosts": {
 			"Install": {
@@ -14,16 +16,15 @@
         "BonusDescriptions": {
             "Bonuses": [
 				"Breaching",			
-                "Accuracy: +2",
+				"MultiTracker",
+		                "Accuracy: +2",
 				"IndirectAcc: +3",
 				"Range: +25%",
 				"Resolve: +2",
 				"Tacticon: +1",
-				"AdvZoom: 2",
-				"AdvZoomRange: 900",
-				"ThermalVision: 1",
-				"ThermalVisionHeat: 20",
-		                "CockpitSensors: 2",
+				"AdvancedZoom: 2, 600",
+                                "ThermalVision: 1, 20, 1500",
+		                "AdvancedSensors: 2",
 				"Sharer",
 				"IsCockpit"
             ]
@@ -60,6 +61,32 @@
     "DisallowedLocations" : "All",
     "CriticalComponent" : false,
     "statusEffects" : [
+       {
+            "durationData" : {
+                "duration" : -1,
+                "stackLimit" : -1
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "effectTargetType" : "Creator",
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false
+            },
+            "effectType" : "StatisticEffect",
+            "Description" : {
+                "Id" : "IRAllowMultiTargetEffect",
+                "Name" : "IRMULTITARGET",
+                "Details" : "Enables multi-target.",
+                "Icon" : "uixSvgIcon_equipment_ActuatorArm"
+            },
+            "nature" : "Buff",
+            "statisticData" : {
+                "statName" : "IRAllowMultiTarget",
+                "operation" : "Set",
+                "modValue" : "true",
+                "modType" : "System.Boolean"
+            }
+        },
 		{
             "durationData" : {
                 "duration" : -1,
@@ -421,7 +448,7 @@
             "statisticData": {
                 "statName": "LV_ZOOM_VISION",
                 "operation": "Set",
-                "modValue": "0_-2_30",
+                "modValue": "0_-2_20",
                 "modType": "System.String"
             }
         },
@@ -447,41 +474,9 @@
             "statisticData": {
                 "statName": "LV_HEAT_VISION",
                 "operation": "Set",
-                "modValue": "1_20",
+                "modValue": "-1_20_1500",
                 "modType": "System.String"
             }
-        },
-        {
-            "durationData" : {
-                "duration": -1,
-                "stackLimit": -1
-            },
-            "targetingData" : {
-                "effectTriggerType" : "Passive",
-                "specialRules" : "NotSet",
-                "effectTargetType" : "Creator",
-                "range" : 0.0,
-                "forcePathRebuild" : false,
-                "forceVisRebuild" : true,
-                "showInTargetPreview" : false,
-                "showInStatusPanel" : false
-            },
-            "effectType" : "StatisticEffect",
-            "Description" :
-            {
-                "Id" : "LV_Probe_Carrier",
-                "Name" : "Active Probe (Passive)",
-                "Details" : "Reduces effectiveness of stealthed and ECM shielded units",
-                "Icon" : "uixSvgIcon_status_ECM-ghost"
-            },
-            "statisticData" :
-            {
-                "statName" : "LV_Probe_Carrier",
-                "operation": "Int_Add",
-                "modValue": "1",
-                "modType": "System.Int32"
-            },
-            "nature" : "Buff"
         },
                    {
             "durationData" : {
@@ -508,10 +503,42 @@
             },
             "statisticData" :
             {
-                "statName" : "LV_Advanced_Sensors",
+                "statName" : "LV_ADVANCED_SENSORS",
                 "operation": "Int_Add",
                 "modValue": "2",
                 "modType": "System.Int32"
+            },
+            "nature" : "Buff"
+        },
+               {
+            "durationData" : {
+                "duration": -1,
+                "stackLimit": 1
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "specialRules" : "NotSet",
+                "effectTargetType" : "Creator",
+                "range" : 0.0,
+                "forcePathRebuild" : false,
+                "forceVisRebuild" : true,
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false
+            },
+            "effectType" : "StatisticEffect",
+            "Description" :
+            {
+                "Id" : "LV_Shares_Vision",
+                "Name" : "Vision Sharing",
+                "Details" : "Shows their vision when lancemattes move",
+                "Icon" : "uixSvgIcon_status_ECM-ghost"
+            },
+            "statisticData" :
+            {
+                "statName" : "LV_SHARES_VISION",
+                "operation" : "Set",
+                "modValue": "true",
+                "modType": "System.Boolean"
             },
             "nature" : "Buff"
         }

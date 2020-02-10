@@ -29,7 +29,7 @@
 		"UIName": "Railgun Shells",
 		"Id": "Ammo_AmmunitionBox_RailShell_L",
 		"Name": "Large Railgun Shells",
-		"Details": "Heavy railguns fire a denser round at ludicrous velocity, enabling high precision, incredible range, and extreme damage. <b><color=#099ff2>Does not explode.</color></b>\n\n <b><color=#00ffff>Right Click on Chance to hit during battle to swap Ammo Type</color> </b>",
+		"Details": "Heavy railguns fire a denser round at ludicrous velocity, enabling high precision, incredible range, and extreme damage. <b><color=#099ff2>Does not explode.</color></b>\n\n <b><color=#00ffff>Right Click on Chance to hit during battle to swap Ammo Type. Ctrl+click on ammunition counter to eject ammo.</color></color> </b>",
 		"Icon": "uixSvgIcon_ammoBox_Ballistic"
 	},
 	"BonusValueA": "",

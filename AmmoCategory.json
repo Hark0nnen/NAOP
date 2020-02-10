@@ -1,0 +1,60 @@
+{
+    "enumerationValueList" : [
+        {
+            "ID" : 6200,
+            "Name" : "SmartMissile",
+            "FriendlyName" : "SmartMissile",
+            "IsBallistic" : false,
+            "IsMissile" : true,
+            "IsEnergy" : false,
+            "IsSupport" : false,
+	    "UsesInternalAmmo" : false,
+            "UIColorRef" : "Missile",
+            "FallbackUIColor" : null,
+            "Icon" : "MissileHardpointIcon",
+            "OutOfAmmoAudioVOEvent" : "AmmoDepleted_LRM"
+        },
+                {
+            "ID" : 6201,
+            "Name" : "RailShell_L",
+            "FriendlyName" : "Large Railgun Shells",
+            "IsBallistic" : true,
+            "IsMissile" : false,
+            "IsEnergy" : false,
+            "IsSupport" : false,
+                        "UsesInternalAmmo" : false,
+            "UIColorRef" : "Ballistic",
+            "FallbackUIColor" : null,
+            "Icon" : "BallisticHardpointIcon",
+            "OutOfAmmoAudioVOEvent" : "AmmoDepleted_Gauss"
+        },
+                {
+            "ID" : 6202,
+            "Name" : "RailShell_M",
+            "FriendlyName" : "Medium Railgun Shells",
+            "IsBallistic" : true,
+            "IsMissile" : false,
+            "IsEnergy" : false,
+            "IsSupport" : false,
+                        "UsesInternalAmmo" : false,
+            "UIColorRef" : "Ballistic",
+            "FallbackUIColor" : null,
+            "Icon" : "BallisticHardpointIcon",
+            "OutOfAmmoAudioVOEvent" : "AmmoDepleted_Gauss"
+        },
+                {
+            "ID" : 6203,
+            "Name" : "RailShell_S",
+            "FriendlyName" : "Small Railgun Shells",
+            "IsBallistic" : true,
+            "IsMissile" : false,
+            "IsEnergy" : false,
+            "IsSupport" : false,
+                        "UsesInternalAmmo" : false,
+            "UIColorRef" : "Ballistic",
+            "FallbackUIColor" : null,
+            "Icon" : "BallisticHardpointIcon",
+            "OutOfAmmoAudioVOEvent" : "AmmoDepleted_Gauss"
+        }
+	]
+}

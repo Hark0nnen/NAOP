@@ -1,16 +1,14 @@
 {
 	"Custom": {
-        "Category": [{
-            "CategoryID": "CockpitFCS"
-        }],
+        "Category": [{ "CategoryID": "CockpitFCS"  },
+          { "CategoryID": "AdvZoom" },
+           { "CategoryID": "ThermalVision" },
+	],
         "BonusDescriptions": {
             "Bonuses": [
                 "Breaching",
-                                "Accuracy: +5",
-                                "CQBDecay: 5",
-                                "CQBDecayRange: 60",
-				"ThermalVision: 1",
-				"ThermalVisionHeat: 40",
+				"CQBVisor: 5, 60",
+				"ThermalVision: 1, 40, 200",
 				"Crits: +50%",
                 "FCS"
             ]
@@ -32,7 +30,7 @@
 		"Id": "Gear_FCS_Seeker",
 		"Name": "FCS (S)",
 		"Details": "This Fire Control System is maximized for close combat. It seeks out weak spots in the opponent's armor and is optimized for high speed tracking of targets at close range from an unstable platform.",
-		"Icon": "uixSvgIcon_equipment_TTS"
+		"Icon": "targeting"
 	},
 	"BonusValueA": "+ 1 Acc.",
 	"BonusValueB": "",
@@ -46,59 +44,7 @@
 	"DisallowedLocations": "All",
 	"CriticalComponent": false,
 	"statusEffects": [
-		   {
-            "durationData" : {
-                "duration" : -1,
-                "ticksOnActivations" : false,
-                "useActivationsOfTarget" : false,
-                "ticksOnEndOfRound" : false,
-                "ticksOnMovements" : false,
-                "stackLimit" : -1,
-                "clearedWhenAttacked" : false
-            },
-            "targetingData" : {
-                "effectTriggerType" : "Passive",
-                "triggerLimit" : 0,
-                "extendDurationOnTrigger" : 0,
-                "specialRules" : "NotSet",
-                "effectTargetType" : "Creator",
-                "range" : 0,
-                "forcePathRebuild" : false,
-                "forceVisRebuild" : false,
-                "showInTargetPreview" : false,
-                "showInStatusPanel" : true
-            },
-            "effectType" : "StatisticEffect",
-            "Description" : {
-                "Id" : "CQB-TO-HIT",
-                "Name" : "Cockpit Computer",
-                "Details" : "Improved Accuracy.",
-                "Icon" : "uixSvgIcon_ability_precisionstrike"
-            },
-            "nature" : "Buff",
-            "statisticData" : {
-                "appliesEachTick" : false,
-                "effectsPersistAfterDestruction" : false,
-                "statName" : "AccuracyModifier",
-                "operation" : "Float_Add",
-                "modValue" : "-5.0",
-                "modType" : "System.Single",
-                "additionalRules" : "NotSet",
-                "targetCollection" : "Weapon",
-                "targetWeaponCategory" : "NotSet",
-                "targetWeaponType" : "NotSet",
-                "targetAmmoCategory" : "NotSet",
-                "targetWeaponSubType" : "NotSet"
-            },
-            "tagData" : null,
-            "floatieData" : null,
-            "actorBurningData" : null,
-            "vfxData" : null,
-            "instantModData" : null,
-            "poorlyMaintainedEffectData" : null
-        },
-
-		{
+	{
             "durationData": {
                 "duration": -1
             },
@@ -168,7 +114,7 @@
             "statisticData": {
                 "statName": "LV_ZOOM_VISION",
                 "operation": "Set",
-                "modValue": "0_5_2",
+                "modValue": "-5_0_2",
                 "modType": "System.String"
             }
         },
@@ -194,7 +140,7 @@
             "statisticData": {
                 "statName": "LV_HEAT_VISION",
                 "operation": "Set",
-                "modValue": "1_40",
+                "modValue": "1_40_200",
                 "modType": "System.String"
             }
         }

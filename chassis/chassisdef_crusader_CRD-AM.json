@@ -9,7 +9,13 @@
                         "Location" : "CenterTorso",
                         "Type" : "Upgrade"
                 }
-        ]
+        ],
+               "HandHeldDefault" : {
+                        "Item1H_ID1" : "Special_VibroSword_6tons",
+                        "Type1" : "Upgrade",
+                        "Item1H_ID2" : "Special_Shield_6",
+                        "Type2" : "Upgrade"
+                }
   },
 
   "FixedEquipment": [
@@ -20,31 +26,19 @@
 			"GUID": null,
 			"HardpointSlot": 1,
 			"IsFixed": true,
-			"MountedLocation": "LeftTorso",
+			"MountedLocation": "CenterTorso",
 			"SimGameUID": "",
 			"hasPrefabName": false,
 			"prefabName": null
 		},
 		{
-			"ComponentDefID": "Gear_Actuator_Prototype_Vibrosword_NAOP",
+			"ComponentDefID": "Gear_Myomer_TSM",
 			"ComponentDefType": "Upgrade",
 			"DamageLevel": "Functional",
 			"GUID": null,
 			"HardpointSlot": 1,
 			"IsFixed": true,
-			"MountedLocation": "LeftArm",
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"prefabName": null
-		},
-		{
-			"ComponentDefID": "Gear_Combat_Shield_Proto_M",
-			"ComponentDefType": "Upgrade",
-			"DamageLevel": "Functional",
-			"GUID": null,
-			"HardpointSlot": 1,
-			"IsFixed": true,
-			"MountedLocation": "RightArm",
+			"MountedLocation": "CenterTorso",
 			"SimGameUID": "",
 			"hasPrefabName": false,
 			"prefabName": null
@@ -63,7 +57,7 @@
     "Details": "This Custom Crusader was built for Monty, an egotistical mercenary MechWarrior and famous Tactician hailing from the Federated Suns. It is fitted as a upper-midrange heavy brawler, exemplifying his doctrine.",
     "Icon": "uixTxrIcon_crusader"
   },
-  "MovementCapDefID": "movedef_thunderbolt_TDR-5S",
+  "MovementCapDefID": "movedef_heavymech",
   "PathingCapDefID": "pathingdef_heavy",
   "HardpointDataDefID": "hardpointdatadef_crusader",
   "PrefabIdentifier": "chrprfmech_crusaderhotd-001",
@@ -75,7 +69,7 @@
   "Heatsinks": 0,
   "TopSpeed": 120,
   "TurnRadius": 90,
-  "MaxJumpjets": 4,
+  "MaxJumpjets": 20,
   "Stability": 100,
   "StabilityDefenses": [
     0,
@@ -178,10 +172,25 @@
     {
       "Location": "CenterTorso",
       "Hardpoints": [
-
+        {
+          "WeaponMountID": "Special",
+          "Omni": false
+        },
+        {
+          "WeaponMountID": "Special",
+          "Omni": false
+        },
+        {
+          "WeaponMountID": "SpecialMelee",
+          "Omni": false
+        },
+        {
+          "WeaponMountID": "SpecialMelee",
+          "Omni": false
+        }
       ],
       "Tonnage": 0,
-      "InventorySlots": 12,
+      "InventorySlots": 15,
       "MaxArmor": 210,
       "MaxRearArmor": 105,
       "InternalStructure": 105

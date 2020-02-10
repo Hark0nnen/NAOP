@@ -1,0 +1,137 @@
+{
+    "Custom": {
+        "Color": {
+            "UIColor": "Gold"
+        },
+        "Category": [{
+            "CategoryID": "Linked_Void"
+        }],
+        "Flags": {
+            "flags": [
+				"default",
+                "not_broken",
+                "no_salvage",
+                "autorepair"
+            ]
+        },
+		 "ComponentExplosion": {
+            "ExplosionDamage": 30
+        },
+		"CriticalEffects" : {
+                    "LinkedStatisticName" : "Predator Armor"
+                },
+		"ErrorMessage": "Stealth Armor requires a ECM!",
+        "BonusDescriptions": {
+            "Bonuses": [
+               "Predator",
+                "HaarJel",
+                "HaarJelTurn",
+                "HaarJelArmor: 12",
+                "HaarJelStructure: 4",
+                "FluidBoom: 30",
+                "Defense: +2",
+                "DamageTaken: -15%",
+                "BreachImmunity",
+                "LocalECM: 5",
+                "StealthSensors: 50%, 4, 2, 4, 6",
+                "MimeticStealth: 50%, 4, 5",
+                "Visibility: -50%",
+                "Signature: -50%",
+                "Reserved: 14",
+                "HeatGenerated: +20%",
+                "HeatPerTurn: +10",
+                "ArmorTPCost: 75%",
+                "ArmorCBCost: 75%"
+            ]
+        },
+        "InventorySorter": {
+            "SortKey": "00009"
+        },
+        "ActivatableComponent": {
+            "ButtonName": "Predator Armor",
+            "CanNotBeActivatedManualy": true,
+            "NoUniqueCheck": true,
+            "ActivationMessage": "Repairs Initiated",
+            "DeactivationMessage": "Repairs Complete",
+            "presistantVFX": {
+                "VFXPrefab": "vfxprfprtl_heatventsm_loop",
+                "VFXScaleX": 1,
+                "VFXScaleY": 1,
+                "VFXScaleZ": 1
+            },
+            "Repair": {
+                "InnerStructure": 4,
+                "Armor": 12,
+                "MechStructureLocations": [],
+                "MechArmorLocations": [],
+                "VehicleLocations": [],
+                "BuildingLocations": [],
+                "AffectInstalledLocation": true,
+                "repairTrigger": {
+                    "OnActivation": false,
+                    "OnDamage": "None",
+                    "AtEndOfTurn": true
+                }
+            }
+        }
+    },
+    "StatName": null,
+    "RelativeModifier": 0,
+    "AbsoluteModifier": 0,
+    "Description": {
+        "Cost": 0,
+        "Rarity": 99,
+        "Purchasable": true,
+        "Manufacturer": "Unknown",
+        "Model": "Predator",
+        "UIName": "Predator Armor",
+        "Id": "Linked_Predator_Armor",
+        "Name": "Predator Armor",
+        "Details": "Boss, this thing is... i dont even have words for it... Its better than Chameleon at stealth, its absorbs damage,
+and it self-repairs",
+        "Icon": "StealthArmor"
+    },
+    "BonusValueA": "Bulwark",
+    "BonusValueB": "Requires ECM",
+    "ComponentType": "Upgrade",
+    "ComponentSubType": "NotSet",
+    "PrefabIdentifier": "",
+    "BattleValue": 0,
+    "InventorySize": 2,
+    "Tonnage": 0,
+    "AllowedLocations": "All",
+    "DisallowedLocations": "All",
+    "CriticalComponent": false,
+    "statusEffects": [
+	{
+            "durationData": {
+                "duration": -1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "effectTargetType": "Creator"
+            },
+            "effectType": "StatisticEffect",
+            "Description": {
+                "Id": "BreachImmunity",
+                "Name": "BreachImmunity",
+                "Details": "Immune to Hull Breach",
+                "Icon": "uixSvgIcon_ability_precisionstrike"
+            },
+            "statisticData": {
+                "statName": "CBTBE_HullBreachImmunity",
+                "operation": "Set",
+                "modValue": "true",
+                "modType": "System.Boolean"
+            },
+            "nature": "Buff"
+        }
+    ],
+    "ComponentTags": {
+        "items": [
+            "component_type_stock",
+	    "BLACKLISTED"
+        ],
+        "tagSetSourceFile": ""
+    }
+}

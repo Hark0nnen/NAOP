@@ -6,7 +6,6 @@
                 ],
         "BonusDescriptions": {
             "Bonuses": [
-				"Range: +10%",
 				"WpnAccuracy: +1",
 				"PipsIgnored: 1",
                 "WpnRecoil: 3",
@@ -35,7 +34,7 @@
     "AmmoCategory" : "NotSet",
     "StartingAmmoCapacity" : 0,
     "HeatGenerated" : 65,
-    "Damage" : 120,
+    "Damage" : 60,
     "OverheatedDamageMultiplier" : 0,
     "EvasiveDamageMultiplier" : 0,
     "EvasivePipsIgnored" : 1,
@@ -50,10 +49,13 @@
     "IndirectFireCapable" : false,
     "RefireModifier" : 3,
     "ShotsWhenFired" : 1,
-    "ProjectilesPerShot" : 1,
+    "ProjectilesPerShot" : 2,
     "AttackRecoil" : 3,
     "Instability" : 17.5,
     "FireTerrainChance": 0.30,
+    "ImprovedBallistic": true,
+    "BallisticDamagePerPallet": true,
+    "DamageNotDivided": true,
     "WeaponEffectID" : "WeaponEffect-Weapon_PPC",
     "Description" : {
         "Cost" : 4185000,
@@ -65,7 +67,7 @@
         "Id" : "Weapon_PPC_PulsedLF",
         "Name" : "Pulsed PPC",
         "Details" : "An special weapon integrated into Cataclysm's custom UrbanMech, incorporating Pulsed Plasma Compression technology. Though the maximal plasma mass decreased, containment density increased, enhancing range, velocity and accuracy. Most importantly, it fires two PPC shots simultaneously! It cannot be removed from the 'Unspeakable Trashcan' as it is integrated into it's specialized PPC support systems.",
-        "Icon" : "uixSvgIcon_weapon_Energy"
+        "Icon" : "PPC"
     },
     "BonusValueA" : "",
     "BonusValueB" : "",

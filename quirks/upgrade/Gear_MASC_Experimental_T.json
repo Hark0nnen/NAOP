@@ -4,15 +4,14 @@
         "BonusDescriptions": {
             "Bonuses": [
 	        "Activatable",
-                "ActiveWalkSpeed: +60%",
                 "ActivatedRunSpeed: +60%",
 		"ActiveMelee: +25%",
-                "ActiveHeatPerTurn: 15",
                 "FailChance: 10%",
                 "FailChanceTurn: 15%",
                 "FailLocation: Legs",
                 "FailCritLoc",
-		"MASCWeight: 33%"
+		"MASCWeight: 33%",
+		"CarryWeight: X2"
             ]
         },
 		"Flags" : { "flags" : [ "not_broken", "no_salvage", "autorepair" ] },
@@ -22,6 +21,9 @@
             "InventorySorter" : {
                 "SortKey" : "00023"
             },		
+               "TSMInfo" : {
+        "HandHeldFactor" : 2
+                },
               "ActivatableComponent":{
                         "ButtonName":"MASC",
                         "FailFlatChance": 0.1,
@@ -32,6 +34,8 @@
                         "FailDamageLocations":["LeftLeg","RightLeg"],
                         "FailPilotingBase": 5,
                         "FailPilotingMult": 0.1,
+			"CanNotBeActivatedManualy": false,
+			"NoUniqueCheck": true,
 			"statusEffects" : [
 		            {
 		                "durationData" : {
@@ -108,87 +112,13 @@
                                     "Icon" : "uixSvgIcon_action_evasivemove"
 	                        },
         	                "statisticData" :  {
-                                    "statName" : "WalkSpeed",
-	                            "operation" : "Float_Multiply",
-	                            "modValue" : "1.6",
-                                    "modType" : "System.Single"
+					        "statName" : "CBTBE_RunMultiMod",
+                                                "operation" : "Float_Add",
+                                                "modValue" : "0.6",
+                                                "modType" : "System.Single"
 	                        },
 	                        "nature" : "Buff"
-	                    },
-                            {
-	                        "durationData" : {
-		                    "duration" : -1,
-		                    "ticksOnActivations" : false,
-		                    "useActivationsOfTarget" : false,
-		                    "ticksOnEndOfRound" : false,
-		                    "ticksOnMovements" : false,
-		                    "stackLimit" : -1,
-		                    "clearedWhenAttacked" : false
-	                        },
-	                        "targetingData" : {
-			            "effectTriggerType" : "Passive",
-		                    "triggerLimit" : 0,
-		                    "extendDurationOnTrigger" : 0,
-		                    "specialRules" : "NotSet",
-		                    "effectTargetType" : "Creator",
-		                    "range" : 0,
-		                    "forcePathRebuild" : false,
-		                    "forceVisRebuild" : false,
-		                    "showInTargetPreview" : false,
-			            "showInStatusPanel" : true
-	                        },
-	                        "effectType" : "StatisticEffect",
-	                        "Description" : {
-                                    "Id" : "MASCSprint",
-                                    "Name" : "MASCS",
-                                    "Details" : "Myomer Accelerator Signal Circuitry.",
-                                    "Icon" : "uixSvgIcon_action_evasivemove"
-	                        },
-	                        "statisticData" : {
-                                    "statName" : "RunSpeed",
-                                    "operation" : "Float_Multiply",
-                                    "modValue" : "1.6",
-                                    "modType" : "System.Single"
-	                        },
-	                        "nature" : "Buff"
-	                    },
-			    {
-		                "durationData": {
-		                    "duration": -1,
-		                    "ticksOnActivations": false,
-		                    "useActivationsOfTarget": false,
-		                    "ticksOnEndOfRound": false,
-		                    "ticksOnMovements": false,
-		                    "stackLimit": -1,
-		                    "clearedWhenAttacked": false
-		                },
-		                "targetingData": {
-		                    "effectTriggerType": "Passive",
-		                    "triggerLimit": 0,
-		                    "extendDurationOnTrigger": 0,
-		                    "specialRules": "NotSet",
-		                    "effectTargetType": "Creator",
-		                    "range": 0,
-		                    "forcePathRebuild": false,
-		                    "forceVisRebuild": false,
-			            "showInTargetPreview": false,
-		                    "showInStatusPanel": false
-		                },
-		                "effectType": "StatisticEffect",
-		                "Description": {
-		                    "Id": "MASCHeat",
-                                    "Name": "MASC",
-                                    "Details": "Myomer Accelerator Signal Circuitry",
-                                    "Icon": "uixSvgIcon_action_evasivemove"
-		                },
-		                "statisticData": {
-		                    "statName": "HeatSinkCapacity",
-		                    "operation": "Int_Add",
-		                    "modValue": "-15",
-		                    "modType": "System.Int32"
-		                },
-		                "nature": "Buff"
-		            }
+	                    }
 			]
 		}
 	},
@@ -203,7 +133,7 @@
         "Id" : "Gear_MASC_Experimental_T",
         "Name" : "M.A.S.C. (E)",
         "Details" : "This prototype overclocked MASC system from Toho Heavy Industries further decreases twitch time and increases Myomer power density, but at the cost of increased heat generation. Furthermore, the Myomer stress was so great the first 'Mechs testing it rapidly became inoperative from frame deformation and catastrophic actuator failure, forcing any practical 'Mech incorporating this system to be equipped with Reinforced Structure and Heavy Leg Actuators. <b><color=#099ff2>Activatable: DEALS DAMAGE AND CRIT TO LEGS ON FAILURE. INSTABILITY WHEN DESTROYED!</color></b>",
-        "Icon" : "uixSvgIcon_equipment_HeatBank"
+        "Icon" : "wingfoot"
     },
     "BonusValueA" : "+33%Walk|+55%Sprint|",
     "BonusValueB" : "+33% Heat Generated",

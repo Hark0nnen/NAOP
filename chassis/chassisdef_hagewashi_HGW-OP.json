@@ -1,0 +1,435 @@
+{
+  "Custom": {
+    "ChassisDefaults": [
+    ]
+  },
+  "ChassisTags": {
+    "items": [
+      "mr-resize-0.9",
+      "ProtoMech"
+    ],
+    "tagSetSourceFile": ""
+  },
+  "FixedEquipment": [
+    {
+      "ComponentDefID": "Special_Quirk_Predator",
+      "ComponentDefType": "Upgrade",
+      "DamageLevel": "Functional",
+      "GUID": null,
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "MountedLocation": "CenterTorso",
+      "SimGameUID": "",
+      "hasPrefabName": false,
+      "prefabName": null
+    },
+    {
+      "ComponentDefID": "Weapon_Gauss_Assault",
+      "ComponentDefType": "Weapon",
+      "DamageLevel": "Functional",
+      "GUID": null,
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "MountedLocation": "CenterTorso",
+      "SimGameUID": "",
+      "hasPrefabName": false,
+      "prefabName": null
+    },
+    {
+      "ComponentDefID": "emod_structureslots_AdvTSM",
+      "ComponentDefType": "Upgrade",
+      "DamageLevel": "Functional",
+      "GUID": null,
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "MountedLocation": "CenterTorso",
+      "SimGameUID": "",
+      "hasPrefabName": false,
+      "prefabName": null
+    },
+    {
+      "ComponentDefID": "emod_engineslots_hot",
+      "ComponentDefType": "HeatSink",
+      "DamageLevel": "Functional",
+      "GUID": null,
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "MountedLocation": "CenterTorso",
+      "SimGameUID": "",
+      "hasPrefabName": false,
+      "prefabName": null
+    },
+    {
+      "ComponentDefID": "Gear_Actuator_JetTalons",
+      "ComponentDefType": "JumpJet",
+      "DamageLevel": "Functional",
+      "GUID": null,
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "MountedLocation": "RightLeg",
+      "SimGameUID": "",
+      "hasPrefabName": false,
+      "prefabName": null
+    },
+    {
+      "ComponentDefID": "Gear_Actuator_JetTalons",
+      "ComponentDefType": "JumpJet",
+      "DamageLevel": "Functional",
+      "GUID": null,
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "MountedLocation": "LeftLeg",
+      "SimGameUID": "",
+      "hasPrefabName": false,
+      "prefabName": null
+    },
+    {
+      "ComponentDefID": "Gear_JumpJet_HGW",
+      "ComponentDefType": "JumpJet",
+      "DamageLevel": "Functional",
+      "GUID": null,
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "MountedLocation": "RightTorso",
+      "SimGameUID": "",
+      "hasPrefabName": false,
+      "prefabName": null
+    },
+    {
+      "ComponentDefID": "Gear_JumpJet_HGW",
+      "ComponentDefType": "JumpJet",
+      "DamageLevel": "Functional",
+      "GUID": null,
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "MountedLocation": "LeftTorso",
+      "SimGameUID": "",
+      "hasPrefabName": false,
+      "prefabName": null
+    },
+    {
+      "ComponentDefID": "Protomech_part_hand",
+      "ComponentDefType": "Upgrade",
+      "DamageLevel": "Functional",
+      "GUID": null,
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "MountedLocation": "RightArm",
+      "SimGameUID": "",
+      "hasPrefabName": false,
+      "prefabName": null
+    },
+    {
+      "ComponentDefID": "Protomech_part_hand",
+      "ComponentDefType": "Upgrade",
+      "DamageLevel": "Functional",
+      "GUID": null,
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "MountedLocation": "LeftArm",
+      "SimGameUID": "",
+      "hasPrefabName": false,
+      "prefabName": null
+    },
+    {
+      "ComponentDefID": "Gear_Predator_Armor",
+      "ComponentDefType": "Upgrade",
+      "DamageLevel": "Functional",
+      "GUID": null,
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "MountedLocation": "CenterTorso",
+      "SimGameUID": "",
+      "hasPrefabName": false,
+      "prefabName": null
+    },
+    {
+      "ComponentDefID": "Linked_Predator_Armor",
+      "ComponentDefType": "Upgrade",
+      "DamageLevel": "Functional",
+      "GUID": null,
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "MountedLocation": "Head",
+      "SimGameUID": "",
+      "hasPrefabName": false,
+      "prefabName": null
+    },
+    {
+      "ComponentDefID": "Linked_Predator_Armor",
+      "ComponentDefType": "Upgrade",
+      "DamageLevel": "Functional",
+      "GUID": null,
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "MountedLocation": "RightTorso",
+      "SimGameUID": "",
+      "hasPrefabName": false,
+      "prefabName": null
+    },
+    {
+      "ComponentDefID": "Linked_Predator_Armor",
+      "ComponentDefType": "Upgrade",
+      "DamageLevel": "Functional",
+      "GUID": null,
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "MountedLocation": "LeftTorso",
+      "SimGameUID": "",
+      "hasPrefabName": false,
+      "prefabName": null
+    },
+    {
+      "ComponentDefID": "Linked_Predator_Armor",
+      "ComponentDefType": "Upgrade",
+      "DamageLevel": "Functional",
+      "GUID": null,
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "MountedLocation": "RightArm",
+      "SimGameUID": "",
+      "hasPrefabName": false,
+      "prefabName": null
+    },
+    {
+      "ComponentDefID": "Linked_Predator_Armor",
+      "ComponentDefType": "Upgrade",
+      "DamageLevel": "Functional",
+      "GUID": null,
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "MountedLocation": "LeftArm",
+      "SimGameUID": "",
+      "hasPrefabName": false,
+      "prefabName": null
+    },
+    {
+      "ComponentDefID": "Linked_Predator_Armor",
+      "ComponentDefType": "Upgrade",
+      "DamageLevel": "Functional",
+      "GUID": null,
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "MountedLocation": "RightLeg",
+      "SimGameUID": "",
+      "hasPrefabName": false,
+      "prefabName": null
+    },
+    {
+      "ComponentDefID": "Linked_Predator_Armor",
+      "ComponentDefType": "Upgrade",
+      "DamageLevel": "Functional",
+      "GUID": null,
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "MountedLocation": "LeftLeg",
+      "SimGameUID": "",
+      "hasPrefabName": false,
+      "prefabName": null
+    }
+  ],
+  "Description": {
+    "Cost": 20000000,
+    "Details": "This mysterious mechs appeared in hand of some Deep Periphery warlords and pirates. Their origin is unknown, was it some tehnology caceh from the past, or it is somebody fieldtesting experimental equipment? Who knows... What is known is that while this is a 40-ton beast, its actually more like Protomech than normal battlemech - almost all of its internal space is used by armor, structure and myomers, its piloted stricly by DNI and carries its main weapon in hands. And its full of muraculous technology.",
+    "Icon": "HatchetMan3",
+    "Id": "chassisdef_hagewashi_HGW",
+    "Manufacturer": null,
+    "Model": null,
+    "Name": "Hagewashi",
+    "Purchasable": false,
+    "Rarity": 99,
+    "UIName": "Hagewashi"
+  },
+  "HardpointDataDefID": "hardpointdatadef_hatchetman",
+  "MovementCapDefID": "movedef_mediummech",
+  "PathingCapDefID": "pathingdef_medium",
+  "PrefabBase": "hatchetman",
+  "PrefabIdentifier": "chrPrfMech_hatchetmanBase-001",
+  "weightClass": "LIGHT",
+  "Tonnage": 40,
+  "InitialTonnage": 4,
+  "MaxJumpjets": 20,
+  "MeleeDamage": 20,
+  "MeleeInstability": 10,
+  "MeleeToHitModifier": 0,
+  "DFADamage": 40,
+  "DFAInstability": 20,
+  "DFASelfDamage": 40,
+  "DFAToHitModifier": 0,
+  "PunchesWithLeftArm": false,
+  "Radius": 5,
+  "VisibilityMultiplier": 1,
+  "SensorRangeMultiplier": 1,
+  "Signature": 0,
+  "SpotterDistanceMultiplier": 1,
+  "Stability": 100,
+  "StabilityDefenses": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "StockRole": "Predator",
+  "TopSpeed": 240,
+  "TurnRadius": 90,
+  "Heatsinks": 0,
+  "LOSSourcePositions": [
+    {
+      "x": 0,
+      "y": 14,
+      "z": 0
+    },
+    {
+      "x": 4,
+      "y": 14,
+      "z": 0
+    },
+    {
+      "x": -4,
+      "y": 14,
+      "z": 0
+    }
+  ],
+  "LOSTargetPositions": [
+    {
+      "x": 0,
+      "y": 14,
+      "z": 0
+    },
+    {
+      "x": 4,
+      "y": 14,
+      "z": 0
+    },
+    {
+      "x": -4,
+      "y": 14,
+      "z": 0
+    },
+    {
+      "x": 2.5,
+      "y": 6,
+      "z": 2.5
+    },
+    {
+      "x": -2.5,
+      "y": 6,
+      "z": 2.5
+    }
+  ],
+  "Locations": [
+    {
+      "Hardpoints": [],
+      "InternalStructure": 16,
+      "InventorySlots": 6,
+      "Location": "Head",
+      "MaxArmor": 45,
+      "MaxRearArmor": -1,
+      "Tonnage": 0
+    },
+    {
+      "Hardpoints": [
+        {
+          "Omni": false,
+          "WeaponMount": "AntiPersonnel"
+        }
+      ],
+      "InternalStructure": 40,
+      "InventorySlots": 12,
+      "Location": "LeftArm",
+      "MaxArmor": 80,
+      "MaxRearArmor": -1,
+      "Tonnage": 0
+    },
+    {
+      "Hardpoints": [
+	{
+          "WeaponMount": "AntiPersonnel",
+          "Omni": false
+        }
+      ],
+      "InternalStructure": 60,
+      "InventorySlots": 12,
+      "Location": "LeftTorso",
+      "MaxArmor": 120,
+      "MaxRearArmor": 60,
+      "Tonnage": 0
+    },
+    {
+      "Hardpoints": [
+        {
+          "WeaponMountID": "Special",
+          "Omni": false
+        },
+        {
+          "WeaponMountID": "Special",
+          "Omni": false
+        },
+        {
+          "WeaponMountID": "SpecialMelee",
+          "Omni": false
+        },
+        {
+          "WeaponMountID": "SpecialMelee",
+          "Omni": false
+        }
+      ],
+      "InternalStructure": 80,
+      "InventorySlots": 15,
+      "Location": "CenterTorso",
+      "MaxArmor": 160,
+      "MaxRearArmor": 80,
+      "Tonnage": 0
+    },
+    {
+      "Hardpoints": [
+        {
+          "Omni": false,
+          "WeaponMount": "AntiPersonnel"
+        }
+      ],
+      "InternalStructure": 60,
+      "InventorySlots": 12,
+      "Location": "RightTorso",
+      "MaxArmor": 120,
+      "MaxRearArmor": 60,
+      "Tonnage": 0
+    },
+    {
+      "Hardpoints": [
+        {
+          "Omni": false,
+          "WeaponMount": "AntiPersonnel"
+        }
+      ],
+      "InternalStructure": 40,
+      "InventorySlots": 12,
+      "Location": "RightArm",
+      "MaxArmor": 80,
+      "MaxRearArmor": -1,
+      "Tonnage": 0
+    },
+    {
+      "Hardpoints": [],
+      "InternalStructure": 60,
+      "InventorySlots": 6,
+      "Location": "LeftLeg",
+      "MaxArmor": 120,
+      "MaxRearArmor": -1,
+      "Tonnage": 0
+    },
+    {
+      "Hardpoints": [],
+      "InternalStructure": 60,
+      "InventorySlots": 6,
+      "Location": "RightLeg",
+      "MaxArmor": 120,
+      "MaxRearArmor": -1,
+      "Tonnage": 0
+    }
+  ],
+  "VariantName": "HGW-OP",
+  "YangsThoughts": "This is a long range sniper version of this mysterious chassis. It comes with multipurpose handheld gauss weapon."
+}

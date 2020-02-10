@@ -1,0 +1,358 @@
+{
+	"MechTags": {
+		"items": [
+                       "unit_bracket_high",
+                        "unit_jumpOK",
+                        "unit_mech",
+                        "unit_light",
+                        "unit_lance_vanguard",
+			"unit_lance_assassin",
+			"unit_lance_tank",
+                        "unit_role_meleeonly",
+                        "unit_legendary",
+                        "unit_elite",
+                        "unit_advanced"
+                        "unit_release",
+                        "unit_ready",
+                        "MercenaryReviewBoard",
+                        "auriganmercenaries",
+                        "valkyrate",
+                        "auriganpirates",
+                        "tortuga",
+                        "castile",
+                        "chainelane",
+                        "axumite",
+                        "hanse",
+                        "jarnfolk",
+                        "delphi"
+		],
+		"tagSetSourceFile": ""
+	},
+	"ChassisID": "chassisdef_hoshoku-sha_HSK-OP",
+	"Description": {
+		"Cost": 4300000,
+		"Details": "This mysterious mechs appeared in hand of some Deep Periphery warlords and pirates. Their origin is unknown, was it some tehnology caceh from the past, or it is somebody fieldtesting experimental equipment? Who knows... What is known is that while this is a 40-ton beast, its actually more like Protomech than normal battlemech - almost all of its internal space is used by armor, structure and myomers, its piloted stricly by DNI and carries its main weapon in hands. And its full of muraculous technology.",
+		"Icon": "HatchetMan3",
+		"Id": "mechdef_hoshoku-sha_HSK-OP",
+		"Manufacturer": null,
+		"Model": null,
+		"Name": "Hoshoku-sha",
+		"Purchasable": true,
+		"Rarity": 99,
+		"UIName": "Hoshoku-sha"
+	},
+	"simGameMechPartCost": 440000,
+	"HeraldryID": null,
+	"Locations": [
+        {
+            "DamageLevel" : "Functional",
+            "Location" : "Head",
+            "CurrentArmor" : 45,
+            "CurrentRearArmor" : 0,
+            "CurrentInternalStructure" : 16,
+            "AssignedArmor" : 45,
+            "AssignedRearArmor" : 0
+        },
+        {
+            "DamageLevel" : "Functional",
+            "Location" : "CenterTorso",
+            "CurrentArmor" : 160,
+            "CurrentRearArmor" : 71,
+            "CurrentInternalStructure" : 80,
+            "AssignedArmor" : 160,
+            "AssignedRearArmor" : 71
+        },
+        {
+            "DamageLevel" : "Functional",
+            "Location" : "LeftTorso",
+            "CurrentArmor" : 120,
+            "CurrentRearArmor" : 59,
+            "CurrentInternalStructure" : 60,
+            "AssignedArmor" : 120,
+            "AssignedRearArmor" : 59
+        },
+        {
+            "DamageLevel" : "Functional",
+            "Location" : "RightTorso",
+            "CurrentArmor" : 120,
+            "CurrentRearArmor" : 59,
+            "CurrentInternalStructure" : 60,
+            "AssignedArmor" : 120,
+            "AssignedRearArmor" : 59
+        },
+        {
+            "DamageLevel" : "Functional",
+            "Location" : "LeftArm",
+            "CurrentArmor" : 80,
+            "CurrentRearArmor" : 0,
+            "CurrentInternalStructure" : 40,
+            "AssignedArmor" : 80,
+            "AssignedRearArmor" : 0
+        },
+        {
+            "DamageLevel" : "Functional",
+            "Location" : "RightArm",
+            "CurrentArmor" : 80,
+            "CurrentRearArmor" : 0,
+            "CurrentInternalStructure" : 40,
+            "AssignedArmor" : 80,
+            "AssignedRearArmor" : 0
+        },
+        {
+            "DamageLevel" : "Functional",
+            "Location" : "LeftLeg",
+            "CurrentArmor" : 120,
+            "CurrentRearArmor" : 0,
+            "CurrentInternalStructure" : 60,
+            "AssignedArmor" : 120,
+            "AssignedRearArmor" : 0
+        },
+        {
+            "DamageLevel" : "Functional",
+            "Location" : "RightLeg",
+            "CurrentArmor" : 120,
+            "CurrentRearArmor" : 0,
+            "CurrentInternalStructure" : 60,
+            "AssignedArmor" : 120,
+            "AssignedRearArmor" : 0
+        }
+    ],
+    "inventory" : [
+        {
+            "MountedLocation" : "CenterTorso",
+            "ComponentDefID" : "Gear_Cockpit_Torsomount_DNI",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "LeftTorso",
+            "ComponentDefID" : "Gear_Cockpit_LifeSupportA_Torso",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "RightTorso",
+            "ComponentDefID" : "Gear_Cockpit_LifeSupportB_Torso",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "Head",
+            "ComponentDefID" : "Gear_FCS_SilentStalker",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "Head",
+            "ComponentDefID" : "Gear_AP_CLAN",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "CenterTorso",
+            "ComponentDefID" : "emod_kit_dhs_proto",
+            "ComponentDefType" : "HeatSink",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "LeftArm",
+            "ComponentDefID" : "Gear_Actuator_Friedhof_Heracles",
+            "SimGameUID" : "",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : 0,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "RightArm",
+            "ComponentDefID" : "Gear_Actuator_Friedhof_Heracles",
+            "SimGameUID" : "",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : 0,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "LeftLeg",
+            "ComponentDefID" : "emod_leg_hip",
+            "SimGameUID" : "",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : 0,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "LeftLeg",
+            "ComponentDefID" : "emod_leg_upper",
+            "SimGameUID" : "",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : 0,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "RightLeg",
+            "ComponentDefID" : "emod_leg_hip",
+            "SimGameUID" : "",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : 0,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "RightLeg",
+            "ComponentDefID" : "emod_leg_upper",
+            "SimGameUID" : "",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : 0,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "LeftTorso",
+            "ComponentDefID" : "Gear_HeatSink_Prototype_Double",
+            "ComponentDefType" : "HeatSink",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "LeftTorso",
+            "ComponentDefID" : "Gear_HeatSink_Prototype_Double",
+            "ComponentDefType" : "HeatSink",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "RightTorso",
+            "ComponentDefID" : "Gear_HeatSink_Prototype_Double",
+            "ComponentDefType" : "HeatSink",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "RightTorso",
+            "ComponentDefID" : "Gear_HeatSink_Prototype_Double",
+            "ComponentDefType" : "HeatSink",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "RightArm",
+            "ComponentDefID" : "Gear_Actuator_Friedhof_Behemoth",
+            "SimGameUID" : "",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "hasPrefabName" : false
+        },
+        {
+            "MountedLocation" : "LeftArm",
+            "ComponentDefID" : "Gear_Actuator_Friedhof_Behemoth",
+            "SimGameUID" : "",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "hasPrefabName" : false
+        },
+        {
+            "MountedLocation" : "RightTorso",
+            "ComponentDefID" : "Gear_HeatSink_Prototype_Double",
+            "SimGameUID" : "",
+            "ComponentDefType" : "HeatSink",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "hasPrefabName" : false
+        },
+        {
+            "MountedLocation" : "LeftTorso",
+            "ComponentDefID" : "Gear_HeatSink_Prototype_Double",
+            "SimGameUID" : "",
+            "ComponentDefType" : "HeatSink",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "hasPrefabName" : false
+        },
+        {
+            "MountedLocation" : "RightTorso",
+            "ComponentDefID" : "Gear_Coolantpod_Clan_X4",
+            "ComponentDefType" : "HeatSink",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "LeftTorso",
+            "ComponentDefID" : "Gear_Coolantpod_Clan_X4",
+            "SimGameUID" : "",
+            "ComponentDefType" : "HeatSink",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "hasPrefabName" : false
+        },
+        {
+            "MountedLocation" : "CenterTorso",
+            "ComponentDefID" : "emod_engine_230",
+            "SimGameUID" : "",
+            "ComponentDefType" : "HeatSink",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "hasPrefabName" : false
+        }
+	]
+}

@@ -9,6 +9,18 @@
   
   "FixedEquipment": [
     {
+      "ComponentDefID": "Special_Quirk_Ambusher",
+      "ComponentDefType": "Upgrade",
+      "DamageLevel": "Functional",
+      "GUID": null,
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "MountedLocation": "CenterTorso",
+      "SimGameUID": "",
+      "hasPrefabName": false,
+      "prefabName": null
+    },
+    {
       "ComponentDefID": "Gear_quirk_ChameleonLightPolarizationShield",
       "ComponentDefType": "Upgrade",
       "DamageLevel": "Functional",
@@ -103,7 +115,7 @@
     "Details": "The S9 is the personal ride of the infamous Pirate Queen, Hellion. It comes fitted with pirate heavy weapons and advanced stealth systems, allowing it to perform as an supreme ambush predator. <b><color=#009933>Quirk: LosTech Stealth - Chameleon Light Polarization Shield</color></b> <b><color=#53ff1a>Restricted Actuators- Left: Lower, Right: Lower</color></b>",
     "Icon": "guerilla"
   },
-  "MovementCapDefID": "movedef_shadowhawk_SHD-2H",
+  "MovementCapDefID": "movedef_mediummech",
   "PathingCapDefID": "pathingdef_medium",
   "HardpointDataDefID": "hardpointdatadef_bushwacker",
   "PrefabIdentifier": "chrprfmech_bushwackerbase-001",
@@ -115,7 +127,7 @@
   "Heatsinks": 0,
   "TopSpeed": 80,
   "TurnRadius": 130,
-  "MaxJumpjets": 5,
+  "MaxJumpjets": 20,
   "Stability": 100,
   "StabilityDefenses": [
     0,
@@ -283,10 +295,26 @@
         {
           "WeaponMount": "AntiPersonnel",
           "Omni": false
+        },
+        {
+          "WeaponMountID": "Special",
+          "Omni": false
+        },
+        {
+          "WeaponMountID": "Special",
+          "Omni": false
+        },
+        {
+          "WeaponMountID": "SpecialMelee",
+          "Omni": false
+        },
+        {
+          "WeaponMountID": "SpecialMelee",
+          "Omni": false
         }
       ],
       "Tonnage": 0,
-      "InventorySlots": 12,
+      "InventorySlots": 15,
       "MaxArmor": 190,
       "MaxRearArmor": 90,
       "InternalStructure": 90
