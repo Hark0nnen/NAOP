@@ -183,7 +183,7 @@
         "UIName": "Advanced Myomer",
         "Id": "emod_structureslots_AdvTSM",
         "Name": "Advanced Myomer Composite",
-        "Details": "Instead of normal structure, almost entire insides of this mech is with filled advanced myomers interwoven with composite \"bones\". The mech doesnt have riggid joints, it is actually held as a whole by myomer, which makes it incredibly flexlible",
+        "Details": "Instead of normal structure, almost entire insides of this mech is filled with advanced myomers interwoven with composite \"bones\". The mech doesnt have riggid joints, it is actually held as a whole by myomer, which makes it incredibly flexlible",
         "Icon": "Structure"
     },
     "BonusValueA": "-50% Structure Weight|",

@@ -28,11 +28,8 @@
             "Bonuses": [
                 "DamageTaken: -33%",
                 "CritRes: -25%",
-				"BankMaxHeat: 15",
-                "BankThreshhold: 25",
-                "TEHeatgen: -5%",
-				"WalkSpeed: -10%",
-				"RunSpeed: -10%",
+                "TEHeatgen: -10%",
+		"WalkSpeed: -10%",
                 "ArmorTPCost: 150%",
                 "ArmorCBCost: 150%"
             ]
@@ -90,31 +87,6 @@
             },
             "nature": "Buff"
         },
-		{
-			"durationData": {
-				"duration": -1,
-				"stackLimit": 1
-			},
-			"targetingData": {
-				"effectTriggerType": "Passive",
-				"effectTargetType": "Creator",
-				"showInStatusPanel": true
-			},
-			"effectType": "StatisticEffect",
-			"Description": {
-				"Id": "HardenedPenaltyRun",
-				"Name": "Reduced Speed",
-				"Details": "Hardened Armour reduces movement.",
-				"Icon": "uixSvgIcon_equipment_ActuatorLeg"
-			},
-			"statisticData": {
-				"statName": "RunSpeed",
-				"operation": "Float_Multiply",
-				"modValue": "0.9",
-				"modType": "System.Single"
-			},
-			"nature": "Buff"
-		},
 		{
 			"durationData": {
 				"duration": -1,
@@ -186,108 +158,6 @@
             "instantModData": null,
             "poorlyMaintainedEffectData": null
         },
-		{
-            "durationData": {
-                "duration": -1,
-                "ticksOnActivations": false,
-                "useActivationsOfTarget": false,
-                "ticksOnEndOfRound": false,
-                "ticksOnMovements": false,
-                "stackLimit": -1,
-                "clearedWhenAttacked": false
-            },
-            "targetingData": {
-                "effectTriggerType": "Passive",
-                "triggerLimit": 0,
-                "extendDurationOnTrigger": 0,
-                "specialRules": "NotSet",
-                "effectTargetType": "Creator",
-                "range": 0,
-                "forcePathRebuild": false,
-                "forceVisRebuild": false,
-                "showInTargetPreview": false,
-                "showInStatusPanel": false
-            },
-            "effectType": "StatisticEffect",
-            "Description": {
-                "Id": "StatusEffect-Heat_ArmorH",
-                "Name": "MAX HEAT INCREASED",
-                "Details": "Improves Heat 15Max/25Threshold.",
-                "Icon": "uixSvgIcon_equipment_HeatBank"
-            },
-            "nature": "Buff",
-            "statisticData": {
-                "appliesEachTick": false,
-                "effectsPersistAfterDestruction": false,
-                "statName": "MaxHeat",
-                "operation": "Int_Add",
-                "modValue": "15",
-                "modType": "System.Int32",
-                "additionalRules": "NotSet",
-                "targetCollection": "NotSet",
-                "targetWeaponCategory": "NotSet",
-                "targetWeaponType": "NotSet",
-                "targetAmmoCategory": "NotSet",
-                "targetWeaponSubType": "NotSet"
-            },
-            "tagData": null,
-            "floatieData": null,
-            "actorBurningData": null,
-            "vfxData": null,
-            "instantModData": null,
-            "poorlyMaintainedEffectData": null
-        },
-        {
-            "durationData": {
-                "duration": -1,
-                "ticksOnActivations": false,
-                "useActivationsOfTarget": false,
-                "ticksOnEndOfRound": false,
-                "ticksOnMovements": false,
-                "stackLimit": -1,
-                "clearedWhenAttacked": false
-            },
-            "targetingData": {
-                "effectTriggerType": "Passive",
-                "triggerLimit": 0,
-                "extendDurationOnTrigger": 0,
-                "specialRules": "NotSet",
-                "effectTargetType": "Creator",
-                "range": 0,
-                "forcePathRebuild": false,
-                "forceVisRebuild": false,
-                "showInTargetPreview": false,
-                "showInStatusPanel": false
-            },
-            "effectType": "StatisticEffect",
-            "Description": {
-                "Id": "StatusEffect-Heat_ArmorH",
-                "Name": "Increased Overheat Level",
-                "Details": "Overheat threshold increased by 25",
-                "Icon": "uixSvgIcon_equipment_HeatBank"
-            },
-            "nature": "Buff",
-            "statisticData": {
-                "appliesEachTick": false,
-                "effectsPersistAfterDestruction": false,
-                "statName": "OverheatLevel",
-                "operation": "Int_Add",
-                "modValue": "25",
-                "modType": "System.Int32",
-                "additionalRules": "NotSet",
-                "targetCollection": "NotSet",
-                "targetWeaponCategory": "NotSet",
-                "targetWeaponType": "NotSet",
-                "targetAmmoCategory": "NotSet",
-                "targetWeaponSubType": "NotSet"
-            },
-            "tagData": null,
-            "floatieData": null,
-            "actorBurningData": null,
-            "vfxData": null,
-            "instantModData": null,
-            "poorlyMaintainedEffectData": null
-        },
         {
             "durationData": {
                 "duration": -1,
@@ -323,7 +193,7 @@
                 "effectsPersistAfterDestruction": false,
                 "statName": "HeatGenerated",
                 "operation": "Float_Multiply",
-                "modValue": "0.95",
+                "modValue": "0.90",
                 "modType": "System.Single",
                 "additionalRules": "NotSet",
                 "targetCollection": "Weapon",

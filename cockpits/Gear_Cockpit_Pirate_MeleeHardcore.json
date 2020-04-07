@@ -42,7 +42,7 @@
         "Id" : "Gear_Cockpit_Pirate_MeleeHardcore",
         "Name" : "Melee Pirate Cockpit",
         "Details" : "Boss... They took a pristine Toho Blade Cockpit, removed the armor, and smashed it into a half-dissected Direct Neural Interface system... Then they removed the normal MechWarrior crash seat and welded in a chair that looks like it's made from swords, it's gotta weigh a couple hundred kilos... It's got a note here: 'Do not remove, pointy seat keeps pilot lucid.' Sir, you want me to *fit* this thing to *our* mechs? Christ, I'm glad I'm just a MechTech...",
-        "Icon" : "uixSvgIcon_equipment_Comms"
+        "Icon" : "interface"
     },
     "BonusValueA" : "+3 Melee/DFA Accuracy | +1 Initiative.",
     "BonusValueB" : "-20% Spotting/Sensors | -3 Ranged Accuracy",

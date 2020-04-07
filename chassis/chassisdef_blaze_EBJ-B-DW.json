@@ -2,7 +2,8 @@
   "Custom": {
     "ArmActuatorSupport": {
 		"LeftLimit": "Upper",
-		"RightLimit": "Upper"
+		"RightLimit": "Upper",
+		"CustomDescription": "Omni Mech"
     },
 		"ChassisDefaults" : [
 		]
@@ -96,10 +97,10 @@
     "Purchasable": true,
     "Manufacturer": "",
     "Model": "",
-    "UIName": "Blaze EBJ-B-DW",
+    "UIName": "Ebon Jaguar",
     "Id": "chassisdef_blaze_EBJ-B-DW",
-    "Name": "Blaze",
-    "Details": "The personal BattleMech of Akodoreign, the Blaze continously delivers tremendous amounts of lasing power across the battlefield, and can even survive losing both torsos. <b><color=#53ff1a>Restricted Actuators- Omni</color></b>",
+    "Name": "Ebon Jaguar",
+    "Details": "The personal BattleMech of Akodoreign, the Blaze continously delivers tremendous amounts of lasing power across the battlefield, and can even survive losing both torsos.",
     "Icon": "EbonJagReign"
   },
   "MovementCapDefID": "movedef_heavymech",

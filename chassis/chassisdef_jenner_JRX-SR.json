@@ -31,10 +31,10 @@
     "Purchasable": true,
     "Manufacturer": "",
     "Model": "",
-    "UIName": "Watcher JRX-SR",
+    "UIName": "Jenner",
     "Id": "chassisdef_jenner_JRX-SR",
-    "Name": "Watcher",
-    "Details": "This custom design by Optimus is designed to minimize observability and maximize sensors sensitivity, using the best of ClanTech and prototype LosTech. It fills the inside of it's chassis with lightweight radar-absorbent, signature-reducing nanofoam, and is fitted with a plethora of powerful sensors and advanced ECM gear; the actuators are fitted with sound insulation, and even the air intakes have baffles. Unfortunately, this has lead to a considerable increase in heat generation.<b><color=#53ff1a>Restricted Actuators- Left: Upper, Right: Upper</color></b>",
+    "Name": "Jenner",
+    "Details": "This custom design by Optimus is designed to minimize observability and maximize sensors sensitivity, using the best of ClanTech and prototype LosTech. It fills the inside of it's chassis with lightweight radar-absorbent, signature-reducing nanofoam, and is fitted with a plethora of powerful sensors and advanced ECM gear; the actuators are fitted with sound insulation, and even the air intakes have baffles. Unfortunately, this has lead to a considerable increase in heat generation.",
     "Icon": "uixTxrIcon_jenner"
   },
   "MovementCapDefID": "movedef_lightmech",

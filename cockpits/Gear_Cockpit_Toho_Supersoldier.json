@@ -52,7 +52,7 @@
         "Id" : "Gear_Cockpit_Toho_Supersoldier",
         "Name" : "NSI Cockpit",
         "Details" : "The result of stolen Clan Society Enhanced Imaging research and unearthed Manei Dominei archives, the advanced NeuroSynchronous Interface system does not require combat drugs such as XA-3 and has much milder long term side effects, but requires expensive cybernetic interfaces, and subjects the MechWarrior to painful, potentially lethal neural feedback. In return, however, the pilot gains enormous benefits to reaction time and combat ability.",
-        "Icon" : "uixSvgIcon_equipment_Cockpit"
+        "Icon" : "interface"
     },
     "BonusValueA" : "",
     "BonusValueB" : "",
@@ -516,7 +516,7 @@
             "statisticData": {
                 "statName": "LV_ZOOM_VISION",
                 "operation": "Set",
-                "modValue": "0_-3_10",
+                "modValue": "0_-4_10",
                 "modType": "System.String"
             }
         },

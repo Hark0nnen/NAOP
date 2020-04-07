@@ -28,8 +28,8 @@
 		"Model": null,
 		"UIName": "Cheesemaker MCII-CM",
 		"Id": "mechdef_cheesemaker_MCII-CM",
-		"Name": "Cheesemaker",
-		"Details": "This captured Mad Cat MkII was remade by Toho Heavy Industries into showcase platform for their new upgraded ultra autocannons. While new UACs weren't a bad product at all, it is this special chassis that allowed them to really shine. <b><color=#53ff1a>Restricted Actuators- Omni</color></b>",
+		"Name": "Mad Cat Mk II MCII-CM",
+		"Details": "This captured Mad Cat MkII was remade by Toho Heavy Industries into showcase platform for their new upgraded ultra autocannons. While new UACs weren't a bad product at all, it is this special chassis that allowed them to really shine.",
 		"Icon": "LadyKiller"
 	},
 	"simGameMechPartCost": 4481266,

@@ -11,7 +11,7 @@
                         "unit_role_meleeonly",
                         "unit_legendary",
                         "unit_elite",
-                        "unit_advanced"
+                        "unit_advanced",
                         "unit_release",
                         "unit_ready",
                         "MercenaryReviewBoard",
@@ -31,7 +31,7 @@
 	"ChassisID": "chassisdef_hoshoku-sha_HSK-OP",
 	"Description": {
 		"Cost": 4300000,
-		"Details": "This mysterious mechs appeared in hand of some Deep Periphery warlords and pirates. Their origin is unknown, was it some tehnology caceh from the past, or it is somebody fieldtesting experimental equipment? Who knows... What is known is that while this is a 40-ton beast, its actually more like Protomech than normal battlemech - almost all of its internal space is used by armor, structure and myomers, its piloted stricly by DNI and carries its main weapon in hands. And its full of muraculous technology.",
+		"Details": "This mysterious mechs appeared in hand of some Deep Periphery warlords and pirates. Their origin is unknown, was it some technology cache from the past, or it is somebody fieldtesting experimental equipment? Who knows... What is known is that while this is a 40-ton beast, its actually more like Protomech than normal battlemech - almost all of its internal space is used by armor, structure and myomers, its piloted stricly by DNI and carries its main weapon in hands. And its full of miraculous technology.",
 		"Icon": "HatchetMan3",
 		"Id": "mechdef_hoshoku-sha_HSK-OP",
 		"Manufacturer": null,

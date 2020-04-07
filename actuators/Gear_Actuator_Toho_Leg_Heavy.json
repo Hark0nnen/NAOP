@@ -31,7 +31,7 @@
         "Id" : "Gear_Actuator_Toho_Leg_Heavy",
         "Name" : "Heavy Leg Actuator",
         "Details" : "Actuators control a 'Mech\u2019s limbs and are used to perform Melee attacks at close quarters. All 'Mechs come equipped with stock Actuators, which can be upgraded for improved performance.",
-        "Icon" : "uixSvgIcon_equipment_ActuatorLeg"
+        "Icon" : "steeltoe-boots"
     },
     "BonusValueA" : "+20% Structure Weight",
     "BonusValueB" : "",

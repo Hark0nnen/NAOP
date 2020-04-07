@@ -12,6 +12,17 @@
   "FixedEquipment": [ 
 		{
 			"MountedLocation": "CenterTorso",
+			"ComponentDefID": "Gear_Support_Chargelot",
+			"SimGameUID": null,
+			"ComponentDefType": "Upgrade",
+			"HardpointSlot": -1,
+			"GUID": null,
+			"DamageLevel": "Functional",
+			"prefabName": null,
+			"hasPrefabName": false
+		},
+		{
+			"MountedLocation": "CenterTorso",
 			"ComponentDefID": "Special_VibroMace",
 			"SimGameUID": null,
 			"ComponentDefType": "Upgrade",
@@ -80,17 +91,7 @@
 			"DamageLevel": "Functional",
 			"prefabName": null,
 			"hasPrefabName": false
-		}, {
-			"MountedLocation": "CenterTorso",
-			"ComponentDefID": "Gear_Support_Chargelot",
-			"SimGameUID": null,
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": -1,
-			"GUID": null,
-			"DamageLevel": "Functional",
-			"prefabName": null,
-			"hasPrefabName": false
-		}
+		} 
 	],
   
   "Description": {
@@ -99,9 +100,9 @@
     "Purchasable": true,
     "Manufacturer": "",
     "Model": "",
-    "UIName": "Baron MAL-B-H",
+    "UIName": "Mauler",
     "Id": "chassisdef_mauler_MAL-B-H",
-    "Name": "Baron",
+    "Name": "Mauler",
     "Details": "The Baron is the personal ride of von Harkonnen, a minor planetary noble turned Pirate Warlord. His 'Mech is fitted with a plethora of hand-to-hand weaponry, a sprinting-optimized frame, and an experimental MASC. It has left a trail of broken cockpits in his wake.",
     "Icon": "uixTxrIcon_mauler"
   },

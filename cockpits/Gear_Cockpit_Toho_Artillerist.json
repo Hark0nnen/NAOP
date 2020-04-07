@@ -448,7 +448,7 @@
             "statisticData": {
                 "statName": "LV_ZOOM_VISION",
                 "operation": "Set",
-                "modValue": "0_-2_20",
+                "modValue": "0_-3_20",
                 "modType": "System.String"
             }
         },

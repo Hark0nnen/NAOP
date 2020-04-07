@@ -72,7 +72,7 @@
         "Id": "Gear_Cockpit_Torsomount_DNI",
         "Name": "Predator Cockpit",
         "Details": "You cant really call this a cockpit. Its an armored anti-overload cocoon, with no monitors or controls. All it has is a DNI connector system that is far superior to Clan's EI or WoB's VDNI systems",
-        "Icon": "uixSvgIcon_equipment_Cockpit"
+        "Icon": "interface"
     },
     "BonusValueA": "Headshot Immunity",
     "BonusValueB": "",

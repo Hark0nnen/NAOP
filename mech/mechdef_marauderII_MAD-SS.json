@@ -23,10 +23,10 @@
     "Purchasable": true,
     "Manufacturer": null,
     "Model": null,
-    "UIName": "Sanctita",
+    "UIName": "Sanctita MAD-SS",
     "Id": "mechdef_marauderII_MAD-SS",
-    "Name": "Sanctita",
-    "Details": "Based on the Champion of Solaris design, the MAD-S7, this custom Marauder II was painstakingly built by Optimus using a fusion of Clan, LosTech and prototype technology. It features advanced weapon support systems, upgraded damage control and armor design. <b><color=#53ff1a>Restricted Actuators- Left: Lower, Right: Lower</color></b>",
+    "Name": "Marauder MAD-SS",
+    "Details": "Based on the Champion of Solaris design, the MAD-S7, this custom Marauder was painstakingly built by Optimus using a fusion of Clan, LosTech and prototype technology. It features advanced weapon support systems, upgraded damage control and armor design.",
     "Icon": "uixTxrIcon_marauder"
   },
   "simGameMechPartCost": 870000,

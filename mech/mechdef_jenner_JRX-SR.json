@@ -27,8 +27,8 @@
 		"Model": null,
 		"UIName": "Watcher JRX-SR",
 		"Id": "mechdef_jenner_JRX-SR",
-		"Name": "Watcher",
-		"Details": "This custom design by Optimus is designed to minimize observability and maximize sensors sensitivity, using the best of ClanTech and prototype LosTech. It fills the inside of it's chassis with lightweight radar-absorbent, signature-reducing nanofoam, and is fitted with a plethora of powerful sensors and advanced ECM gear; the actuators are fitted with sound insulation, and even the air intakes have baffles. Unfortunately, this has lead to a considerable increase in heat generation.<b><color=#53ff1a>Restricted Actuators- Left: Upper, Right: Upper</color></b>",
+		"Name": "Jenner JRX-SR",
+		"Details": "This custom design by Optimus is designed to minimize observability and maximize sensors sensitivity, using the best of ClanTech and prototype LosTech. It fills the inside of it's chassis with lightweight radar-absorbent, signature-reducing nanofoam, and is fitted with a plethora of powerful sensors and advanced ECM gear; the actuators are fitted with sound insulation, and even the air intakes have baffles. Unfortunately, this has lead to a considerable increase in heat generation.",
 		"Icon": "uixTxrIcon_jenner"
 	},
 	"simGameMechPartCost": 200000,
@@ -262,20 +262,10 @@
         },
         {
             "MountedLocation" : "CenterTorso",
-            "ComponentDefID" : "emod_kit_chs",
+            "ComponentDefID" : "radical_kit_chs",
             "ComponentDefType" : "HeatSink",
             "HardpointSlot" : -1,
             "IsFixed" : false,
-            "DamageLevel" : "Functional",
-            "prefabName" : "",
-            "hasPrefabName" : true
-        },
-        {
-            "MountedLocation" : "CenterTorso",
-            "ComponentDefID" : "Gear_Engine_Heatsinks",
-            "ComponentDefType" : "HeatSink",
-            "HardpointSlot" : -1,
-            "IsFixed" : true,
             "DamageLevel" : "Functional",
             "prefabName" : "",
             "hasPrefabName" : true
@@ -363,6 +353,16 @@
         },
         {
             "MountedLocation" : "CenterTorso",
+            "ComponentDefID" : "Gear_Supercharger",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "CenterTorso",
             "ComponentDefID" : "Gear_Articulated_Generic_Standard",
             "ComponentDefType" : "JumpJet",
             "HardpointSlot" : -1,
@@ -442,7 +442,7 @@
         },
         {
             "MountedLocation" : "RightArm",
-            "ComponentDefID" : "Gear_AdvancedMaterials2",
+            "ComponentDefID" : "Gear_AdvancedMaterials1",
             "ComponentDefType" : "Upgrade",
             "HardpointSlot" : -1,
             "IsFixed" : false,

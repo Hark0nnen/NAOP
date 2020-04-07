@@ -23,9 +23,9 @@
         "Purchasable": true,
         "Manufacturer": null,
         "Model": null,
-        "UIName": "Crab CRB-S9",
+        "UIName": "Tohou CRB-S9",
         "Id": "mechdef_crab_CRB-S9",
-        "Name": "Tohou",
+        "Name": "Crab CRB-S9",
         "Details": "This custom Crab has been built for the 3069 Solaris Grand Champion, Personman, as an MG platform. The arm anti-personnel mounts have been stripped and replaced with ballistic ammo feeds. The leg actuators and joints have been optimized for high speed movement. It incorporates a fusion of prototype, Clan, and New Dallas Memory Core technology.",
         "Icon": "Tohou"
     },

@@ -42,8 +42,8 @@
         "Model": null,
         "UIName": "Blaze EBJ-B-DW",
         "Id": "mechdef_blaze_EBJ-B-DW",
-        "Name": "Blaze",
-        "Details": "The personal BattleMech of Akodoreign, the Blaze continuously delivers tremendous amounts of lasing power across the battlefield, and can even survive losing both torsos. <b><color=#53ff1a>Restricted Actuators- Omni</color></b>",
+        "Name": "Ebon Jaguar EBJ-B-DW",
+        "Details": "The personal BattleMech of Akodoreign, the Blaze continuously delivers tremendous amounts of lasing power across the battlefield, and can even survive losing both torsos.",
         "Icon": "EbonJagReign"
     },
     "simGameMechPartCost": 1210000,

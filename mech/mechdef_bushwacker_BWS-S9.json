@@ -47,8 +47,8 @@
     "Model": null,
     "UIName": "AmBusher BSW-S9",
     "Id": "mechdef_bushwacker_BWS-S9",
-    "Name": "AmBusher",
-    "Details": "The S9 is the personal ride of the infamous Pirate Queen, Hellion. It comes fitted with pirate heavy weapons and advanced stealth systems, allowing it to perform as an supreme ambush predator. <b><color=#009933>Quirk: LosTech Stealth - Chameleon Light Polarization Shield</color></b> <b><color=#53ff1a>Restricted Actuators- Left: Lower, Right: Lower</color></b>",
+    "Name": "Bushwacker BSW-S9",
+    "Details": "The S9 is the personal ride of the infamous Pirate Queen, Hellion. It comes fitted with pirate heavy weapons and advanced stealth systems, allowing it to perform as an supreme ambush predator. ",
     "Icon": "guerilla"
   },
   "simGameMechPartCost": 1431034,

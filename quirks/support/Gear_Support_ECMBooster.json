@@ -39,7 +39,7 @@
         "Id" : "Gear_Support_ECMBooster",
         "Name" : "Support Systems (WR)",
         "Details" : "<b><color=#009933>White Noise:</color></b> This 'Mech has signature-dispersing material built into the structure, increasing the difficulty of detecting or hitting the 'Mech at the cost of increased heat generation.",
-        "Icon" : "uixSvgIcon_equipment_Cockpit"
+        "Icon" : "SpecialistSlot"
     },
     "BonusValueA" : "",
     "BonusValueB" : "",
