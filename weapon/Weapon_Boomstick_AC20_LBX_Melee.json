@@ -18,7 +18,7 @@
         }
     },
     "Category": "AntiPersonnel",
-    "weaponCategoryID": "SpecialMelee",
+    "WeaponCategoryID": "BattleArmor",
     "Type": "Autocannon",
     "WeaponSubType": "AC20",
     "MinRange": 0,

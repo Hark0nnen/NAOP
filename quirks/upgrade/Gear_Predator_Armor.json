@@ -80,7 +80,7 @@
                 "Defense: +2",
 		"DamageTaken: -15%",
 		"BreachImmunity",
-                "LocalECM: 5",
+                "LocalEcm: 5",
                 "StealthSensors: 50%, 4, 2, 4, 6",
                 "MimeticStealth: 50%, 4, 5",
                 "Visibility: -50%",
